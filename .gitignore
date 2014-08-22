@@ -1,0 +1,5 @@
+*.pyc
+*.pid
+*.swp
+*cache/
+output/

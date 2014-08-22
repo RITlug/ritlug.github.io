@@ -1,0 +1,3 @@
+{% extends "index.html" %}
+{% block title %}{{ super() }} — Tagged as {{ tag }}{% endblock %}
+{% set index_title = 'Tagged as <em>' + tag.name + '</em>' %}

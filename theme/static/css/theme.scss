@@ -1,0 +1,279 @@
+/* vim: set ts=4 sw=4 et: */
+
+@import "normalize";
+
+$orange: #F36E21;
+$brown:  #513127;
+$red:    mix($orange, darkred);
+$grey:   #C7C3BD;
+$black:  black;
+$white:  white;
+
+$lh: 1.5;
+$lh-small: 1.75;
+$wd-body: 28rem;
+$wd-side: 8rem;
+
+$pd-lst-short: 1rem;
+$pd-lst-long:  2rem;
+
+$fg-header: $white;
+$bg-header: $orange;
+$fg-side:   $black;
+$bg-side:   $grey;
+$fg-body:   $black;
+$bg-body:   $white;
+$fg-link:   lighten($black, 20%);
+$fg-active: $red;
+
+$font-header: "Alegreya", sans-serif;
+$font-head: "Cabin", serif;
+$font-body: "Source Sans Pro", sans-serif;
+
+h1, h2, h3, h4, h5, h6 { @extend %head; }
+ul, ol                 { @extend %list; }
+p, %head, %list        { @extend %block; }
+
+main %block {
+	margin-top: 1rem;
+}
+
+*, %head {
+	word-wrap: break-word;
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix {
+	position: relative;
+	&:after {
+		content: '.';
+		clear: both;
+		display: block;
+		visibility: hidden;
+		height: 0;
+	}
+}
+
+%head {
+	font-weight: bold;
+	font-size: 1rem;
+	line-height: 1rem;
+}
+
+code, pre, tt {
+	font-family: "Inconsolata", monospace;
+}
+
+%list, %list %list { padding-left: $pd-lst-short; margin: 0; }
+%list.long, ol     { padding-left: $pd-lst-long; }
+
+@mixin size($size) {
+	font-size:   $size;
+	line-height: $size;
+}
+
+@mixin desktop {                                        @content;   }
+@mixin tablet  { @media screen and (max-width: 768px) { @content; } }
+@mixin phone   { @media screen and (max-width: 480px) { @content; } }
+
+html {
+	@include desktop { @include size(24px); }
+	@include tablet  { @include size(22px); }
+	@include phone   { @include size(20px); }
+	font-family: $font-body;
+	height: 100%;
+}
+
+body {
+	@include size(1rem);
+	font-size:  (1rem / $lh);
+	line-height: 1rem;
+	background: $bg-side;
+	color:      $fg-side;
+	height: 100%;
+}
+
+main {
+	h1 {
+		@include desktop {
+			line-height: (2rem / $lh);
+			font-size:   (2rem / $lh);
+			padding-top: (2rem * (1 - 1 / $lh));
+			margin-top: 0;
+		}
+		@include phone {
+			line-height: 1rem;
+			font-size: 1rem;
+			padding-top: 0;
+		}
+	}
+	h2, h3, h4, h5 {
+		line-height: 1rem;
+		font-size: 1rem;
+	}
+	h6 {
+		line-height: 1rem;
+		font-size: (1rem / $lh);
+		text-align: center;
+		margin-top: 0;
+		&:not(:empty) {
+			&:before { content: '\2013\a0'; }
+			&:after  { content: '\a0\2013'; }
+		}
+	}
+}
+
+%head {
+	font-family: $font-head;
+}
+
+a {
+	font-weight: bold;
+	text-decoration: underline;
+
+	&       { color: $fg-link; }
+	&:hover { text-decoration: none; }
+
+	#head & { color: inherit; }
+}
+#head {
+	z-index: 99;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background: $bg-header;
+	color:      $fg-header;
+	text-align: center;
+	padding: 0.5rem 0;
+	h1 {
+		font-family: $font-header;
+		a { text-decoration: none; }
+	}
+	img {
+		vertical-align: middle;
+		position: relative;
+		right: 0.5rem;
+	}
+	@include desktop {
+		height: 3rem;
+		h1 { @include size(3rem); }
+		img { top: -6px; }
+	}
+	@include tablet {
+		height: 2rem;
+		h1 { @include size(2rem); }
+		img { display: none; }
+	}
+	@include phone {
+		h1 { font-size: 1.5rem; line-height: 2rem; }
+	}
+}
+
+#content {
+	margin: 0 auto;
+	clear: both;
+	background: $bg-side;
+	color:      $fg-side;
+	@include desktop {
+		display: table;
+		& > * { display: table-cell; }
+	}
+	@include phone {
+		display: block;
+		& > * { display: block; }
+	}
+}
+
+main, aside#sidebar {
+	padding: 0.5rem 1rem;
+	box-sizing: border-box;
+	max-width: 100%;
+	vertical-align: top;
+}
+
+aside#sidebar {
+	@include desktop { width: ($wd-side - 2rem); }
+	@include tablet  { width: 100%; }
+	nav {
+		margin-top: 1rem;
+		&:first-child { margin-top: 0; }
+	}
+	ul {
+		list-style-type: square;
+	}
+	li.active {
+		color: $fg-active;
+		a {
+			color: $fg-active;
+		}
+	}
+}
+
+main {
+	background: $bg-body;
+	color:      $fg-body;
+	@include desktop { width: $wd-body; }
+	@include tablet  { width: 100%; }
+}
+#content {
+	z-index: 0;
+	box-sizing: border-box;
+	@include desktop { padding: 4rem 0 0; }
+	@include tablet  { padding: 3rem 0 0; }
+	height: 100%;
+}
+
+hr {
+	visibility: hidden;
+	padding-bottom: 1em;
+}
+
+hr:after {
+	visibility: visible;
+	content: '\2042';
+	display: block;
+	text-align: center;
+}
+
+article {
+	margin: 1rem 0;
+}
+
+.meta {
+	font-style: italic;
+	font-size: (1rem / $lh-small);
+}
+
+.divider {
+	&:before { content: "\2013\a0"; }
+	&:after  { content: "\a0\2013"; }
+	text-align: center;
+	margin: 0.5rem 0;
+}
+
+article:after {
+	content: '\00A7';
+	display: block;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 1.5em;
+}
+
+article:last-of-type:after {
+	content: '';
+}
+
+#pagination {
+	display: block;
+	text-align: center;
+	margin-top: 1rem;
+	font-size: 1rem;
+	a {
+		text-decoration: none;
+	}
+}
+
+.nolink {
+	opacity: 0.5;
+}

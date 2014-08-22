@@ -1,0 +1,3 @@
+{% extends "index.html" %}
+{% block title %}{{ super() }} — Written by {{ author }}{% endblock %}
+{% set index_title = 'Written by <em>' + author.name + '</em>' %}

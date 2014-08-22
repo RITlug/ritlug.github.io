@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="{{ article.lang if article and article.lang else DEFAULT_LANG }}">
+	<head>
+	{% block headers %}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+		<title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Alegreya|Cabin|Inconsolata|Source+Sans+Pro">
+		{% assets filters="scss,autoprefixer,cleancss", output="css/theme.css", "css/theme.scss" %}
+			<link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+		{% endassets %}
+		{% assets filters="autoprefixer,cleancss", output="css/pygments.css", "css/pygments.css" %}
+			<link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}" media="not print">
+		{% endassets %}
+		<link rel="alternate" type="application/atom+xml" title="{{ SITENAME }} — Atom Feed" href="{{ SITEURL }}/{{ FEED_ATOM }}">
+		{% if FEED_RSS %}
+			<link rel="alternate" type="application/rss+xml" title="{{ SITENAME }} — RSS Feed" href="{{ SITEURL }}/{{ FEED_RSS }}">
+		{% endif %}
+		<meta property="og:site_name" content="{{ SITENAME }}">
+	{% endblock headers %}
+	</head>
+	<body>
+		<header id="head">
+			<h1><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/ritlug.png" alt=""><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+		</header>
+		<section id="content" class="clearfix">
+			<main>
+				{% block content %}{% endblock content %}
+			</main>
+			<aside id="sidebar">
+				<nav>
+					<h3>Navigation</h3>
+					<ul>
+						{% if DISPLAY_PAGES_ON_MENU %}{% for p in pages %}
+							<li><a href="{{ SITEURL }}/{{ p.url }}"{% if p == page %}{{ " class=\"active\" "}}{% endif %}>{{ p.short or p.title }}</a></li>
+						{% endfor %}{% endif %}
+						<li><a href="{{ SITEURL }}/archives.htm">Archives</a></li>
+						<li><a href="{{ SITEURL }}/categories.htm">Categories</a></li>
+						<li><a href="{{ SITEURL }}/tags.htm">Tags</a></li>
+						{% for name, uri in MENUITEMS %}
+							<li><a href="{{ uri|format(SITEURL)}}">{{ name }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+				{% if categories %}
+				<nav>
+					<h3>Categories</h3>
+					<ul>
+					{% for cat, null in categories %}
+						<li{%- if cat == category %}{{ " class=\"active\" "}}{% endif -%}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+					{% endfor %}
+					</ul>
+				</nav>
+				{% endif %}
+				<nav>
+					<h3>Social</h3>
+					<ul>
+					{% if FEED_ATOM %}
+						<li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}">Atom Feed</a></li>
+					{% endif %}
+					{% if FEED_RSS %}
+						<li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}">RSS Feed</a></li>
+					{% endif %}
+					{% if SOCIAL %}
+						{% for name, url in SOCIAL %}
+						<li><a href="{{ url }}">{{ name }}</a></li>
+						{% endfor %}
+					{% endif %}
+					{% if LINKS %}
+						{% for name, url in LINKS %}
+						<li><a href="{{ url }}">{{ name }}</a></li>
+						{% endfor %}
+					{% endif %}
+					</ul>
+				</nav>
+			</aside>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }} — Archives{% endblock %}
+{%- block content %}
+<h1>Archives</h1>
+{% for year, year_articles in dates | groupby('date.year') | sort(reverse = True) %}
+  {% for month, mon_articles in year_articles | groupby('date.month') | sort(reverse = True) %}
+    <h2>{{ year }}/{{ month }}</h2>
+    <ul>
+    {% for article in mon_articles %}
+      <li><a rel="bookmark" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+    {% endfor %}
+    </ul>
+  {% endfor %}
+{% endfor %}
+{% endblock content -%}

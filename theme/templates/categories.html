@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}{{ super() }} — Categories{% endblock title %}
+{%- block content %}
+<h1>Categories</h1>
+<ul>
+	{% for category, articles in categories %}
+		<li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a>{{ " " }}({% set n = articles | count %}{{ n }}{{ " article" }}{% if n > 1 %}s{% endif %})</li>
+	{% endfor %}
+</ul>
+{% endblock content -%}
