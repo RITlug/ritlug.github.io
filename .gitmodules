@@ -4,9 +4,3 @@
 [submodule "pelican-plugins"]
 	path = pelican-plugins
 	url = https://github.com/getpelican/pelican-plugins.git
-[submodule "htmlmin"]
-	path = htmlmin
-	url = https://github.com/mankyd/htmlmin.git
-[submodule "pelican-minify"]
-	path = pelican-minify
-	url = https://github.com/rdegges/pelican-minify.git

@@ -1,0 +1,5 @@
+pelican
+pelican-minify
+jinja2
+markdown
+webassets

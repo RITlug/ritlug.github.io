@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-import sys
+import os, sys
 sys.path.append('htmlmin')
 PLUGIN_PATHS = ['pelican-plugins', 'pelican-minify']
 PLUGINS = ['assets', 'minify']
@@ -15,13 +15,16 @@ FEED_DOMAIN = 'https://ritlug.github.io'
 AUTHOR = 'Anonymous'
 SITENAME = 'RIT Linux Users Group'
 
-LINKS = (
-)
-
 DISPLAY_PAGES_ON_MENU = True
 
 DEFAULT_CATEGORY = 'announcements'
-MENUITEMS = (
+
+BIN = os.getcwd() + '/bin/'
+ASSET_CONFIG = (
+	('scss_bin',         BIN + 'scss'),
+	('cleancss_bin',     BIN + 'cleancss'),
+	('autoprefixer_bin', BIN + 'autoprefixer'),
+	('cleancss_extra_args', ['--skip-rebase']),
 )
 
 SOCIAL = (
