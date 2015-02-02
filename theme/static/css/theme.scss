@@ -94,6 +94,14 @@ body {
 	height: 100%;
 }
 
+.forkme {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 99;
+	@media screen and (max-width: 999px) { display: none; }
+}
+
 main {
 	h1 {
 		@include desktop {
@@ -138,7 +146,7 @@ a {
 	#head & { color: inherit; }
 }
 #head {
-	z-index: 99;
+	z-index: 49;
 	position: absolute;
 	top: 0;
 	width: 100%;

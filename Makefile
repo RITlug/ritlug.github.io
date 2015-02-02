@@ -38,7 +38,7 @@ deps:
 	npm update
 	npm install autoprefixer clean-css
 	virtualenv3 pyenv
-	pyenv/bin/pip install -r requirements.txt
+	pyenv/bin/pip install -r requirements.txt --upgrade
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
