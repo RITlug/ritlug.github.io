@@ -2,4 +2,4 @@ pelican
 pelican-minify
 jinja2
 markdown
-webassets
+https://github.com/miracle2k/webassets/tarball/master#egg=webassets-dev
