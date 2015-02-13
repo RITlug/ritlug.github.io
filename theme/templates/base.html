@@ -35,6 +35,7 @@
 						{% if DISPLAY_PAGES_ON_MENU %}{% for p in pages %}
 							<li><a href="{{ SITEURL }}/{{ p.url }}"{% if p == page %}{{ " class=\"active\" "}}{% endif %}>{{ p.short or p.title }}</a></li>
 						{% endfor %}{% endif %}
+						<li><a href="{{ SITEURL }}/slides/">Slides</a></li>
 						<li><a href="{{ SITEURL }}/archives.htm">Archives</a></li>
 						<li><a href="{{ SITEURL }}/categories.htm">Categories</a></li>
 						<li><a href="{{ SITEURL }}/tags.htm">Tags</a></li>

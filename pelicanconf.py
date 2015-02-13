@@ -20,6 +20,10 @@ DISPLAY_PAGES_ON_MENU = True
 
 DEFAULT_CATEGORY = 'announcements'
 
+DIRECT_TEMPLATES = ('index', 'authors', 'categories', 'tags', 'archives', 'slides')
+SLIDES_SAVE_AS = 'slides/index.htm'
+SLIDES = os.listdir('content/slides')
+
 BIN = os.getcwd() + '/bin/'
 ASSET_CONFIG = (
 	('scss_bin',         BIN + 'scss'),
