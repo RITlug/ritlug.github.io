@@ -32,13 +32,20 @@ help:
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '
 
-deps:
+bundle:
 	bundle update
 	bundle install --path=./gems/ --binstubs=./gembin/
+
+npm:
+	mkdir -p node_modules
 	npm update
 	npm install autoprefixer clean-css
-	virtualenv3 pyenv
+
+virtualenv:
+	virtualenv -p python3 pyenv
 	pyenv/bin/pip install -r requirements.txt --upgrade
+
+deps: bundle npm virtualenv
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
