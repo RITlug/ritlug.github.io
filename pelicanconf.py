@@ -9,6 +9,7 @@ PLUGINS = ['assets', 'minify']
 THEME = './theme'
 PATH = 'content'
 ASSET_SOURCE_PATHS = ['static']
+STATIC_PATHS = ['static', 'slides']
 SITEURL = 'http://localhost:8000'
 FEED_DOMAIN = 'https://ritlug.github.io'
 
