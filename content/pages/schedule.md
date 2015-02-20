@@ -8,7 +8,7 @@ date: 2014-11-14 16:30
  1. (Fri, Jan/31): open meeting; install Linux on your laptop!
  2. (Fri, Feb/07): open meeting; linux gaming
  3. (Fri, Feb/14): presentation: i3 (Mark Repka)
- 4. (Fri, Feb/21): open slot
+ 4. (Fri, Feb/21): presentation: Gentoo (Gabriel Marcano)
  5. (Fri, Feb/28): open slot
  6. (Fri, Mar/07): open slot
  7. (Fri, Mar/14): open slot
