@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RIT Linux Users Group</title>
+    <description>RIT Linux Users Group Announcements</description>
+    <link>http://ritlug.github.io/</link>
+    <atom:link href="http://ritlug.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 03 Oct 2015 15:50:10 -0400</pubDate>
+    <lastBuildDate>Sat, 03 Oct 2015 15:50:10 -0400</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>New Look!</title>
+        <description>&lt;p&gt;We redesigned our website to use Material Design and a simplified Jekyll setup, in hopes of making the website more accessible to anyone interested in contributing. This is part of our efforts to streamline RITlug’s administrative processes to make it easier to contribute and easier to pass off Eboard responsibilities between years.&lt;/p&gt;
+
+&lt;p&gt;Upgrading our website has been an ongoing project, hence the lack of regular website updates. Now that things are up and running again we’ll resume our regularly scheduled website updates which should also revive our mailing list. As an aside, if you’re currently on our public mailing list on Google Groups and you have an RIT computer account, we suggest joining our roster on TheLink @ RIT instead. TheLink is the official source of information and mailings for RIT-affiliated individuals and allows us to keep better statistics about our membership.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 03 Oct 2015 00:00:00 -0400</pubDate>
+        <link>http://ritlug.github.io/announcements/2015/10/03/new-website.html</link>
+        <guid isPermaLink="true">http://ritlug.github.io/announcements/2015/10/03/new-website.html</guid>
+        
+        
+        <category>announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Week 14 Meeting (Last One!)</title>
+        <description>&lt;p&gt;Hi, everyone! As usual, this week’s meeting is Friday from 4–6 in GOL/70-2520, the small database lab on the second floor. If you can only attend part of the meeting, don’t be afraid to show up halfway through! This is our last (official) meeting for the academic year, and we’re not going to be meeting over the summer.&lt;/p&gt;
+
+&lt;p&gt;This meeting, we’re going to discuss a few logistical things like elections, plans for next year, and a potential get-together before the year actually ends. Other than that, we have nothing planned; just time to sit around and talk.&lt;/p&gt;
+
+&lt;p&gt;We hope to see you at this week’s meeting! If you can’t make it this time, have a good summer! If you’re still a student next year, or an incoming freshman, look out for us at the club fair during New Student Orientation!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 08 May 2015 00:00:00 -0400</pubDate>
+        <link>http://ritlug.github.io/announcements/2015/05/08/week-14-meeting-last-one.html</link>
+        <guid isPermaLink="true">http://ritlug.github.io/announcements/2015/05/08/week-14-meeting-last-one.html</guid>
+        
+        <category>imagine</category>
+        
+        
+        <category>announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Imagine RIT Today!</title>
+        <description>&lt;p&gt;Hi, everyone! Like every year, we have a table set up for Imagine RIT filled to the brim with computers running Linux. If you’re wandering around the GOL/70 atrium outside the SSE, be sure to say hi!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 02 May 2015 00:00:00 -0400</pubDate>
+        <link>http://ritlug.github.io/announcements/2015/05/02/imagine-rit-today.html</link>
+        <guid isPermaLink="true">http://ritlug.github.io/announcements/2015/05/02/imagine-rit-today.html</guid>
+        
+        <category>imagine</category>
+        
+        
+        <category>announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Week 8 Meeting (Imagine RIT)</title>
+        <description>&lt;p&gt;Hi, everyone! As usual, this week’s meeting is Friday from 4–6 in GOL/70-2520, the small database lab on the second floor. If you can only attend part of the meeting, don’t be afraid to show up halfway through!&lt;/p&gt;
+
+&lt;p&gt;Imagine RIT is just around the corner on May 2nd! We’re going to set up an exhibit this year as we always do, and we’re going to be showing off another tableful of computers which all run Linux. This week, we’re going to spend the time to talk more about some of the things that we want to show off at this year’s exhibit.&lt;/p&gt;
+
+&lt;p&gt;If you’re a current student who’s either active with RITlug or wants to be, let us know before April 1st and you can officially help out with the event, which gets you a free T-shirt and either Dinosaur BBQ or 7$ of food debit for lunch. If you don’t tell us before the 1st of April, or if you’re not a current student, you can still help out, but you won’t get any of the cool free stuff.&lt;/p&gt;
+
+&lt;p&gt;We hope to see you at this week’s meeting! We won’t be having a meeting next week, so, if you can’t come this week, have a good break!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Mar 2015 00:00:00 -0400</pubDate>
+        <link>http://ritlug.github.io/announcements/2015/03/20/week-8-meeting-imagine-rit.html</link>
+        <guid isPermaLink="true">http://ritlug.github.io/announcements/2015/03/20/week-8-meeting-imagine-rit.html</guid>
+        
+        <category>imagine</category>
+        
+        
+        <category>announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Week 4 Meeting (Gentoo)</title>
+        <description>&lt;p&gt;Hi, everyone! As usual, this week’s meeting is Friday from 4–6 in GOL/70-2520, the small database lab on the second floor. If you can only attend part of the meeting, don’t be afraid to show up halfway through!&lt;/p&gt;
+
+&lt;p&gt;This week’s meeting will be a presentation/workshop on Gentoo by Gabriel Marcano. He’ll be giving us a tour of what it’s like to install and work with Gentoo, and how it’s not as scary (or as scary) as people think.&lt;/p&gt;
+
+&lt;p&gt;The presentation will be about an hour long, and the remaining hour of the meeting will be left open to socialise. If you’re looking to install Linux on your laptop, or install Gentoo, we’re here to help!&lt;/p&gt;
+
+&lt;p&gt;We hope to see you at this week’s meeting!&lt;/p&gt;
+
+&lt;p&gt;(NOTE: “Gentoo” is a trademark of Gentoo Foundation, Inc.)&lt;/p&gt;
+
+&lt;p&gt;(UPDATE: You can view this meeting’s slides at &lt;a href=&quot;/slides/spring-2015-week-4.pdf&quot;&gt;slides&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Feb 2015 00:00:00 -0500</pubDate>
+        <link>http://ritlug.github.io/announcements/2015/02/20/week-4-meeting-gentoo.html</link>
+        <guid isPermaLink="true">http://ritlug.github.io/announcements/2015/02/20/week-4-meeting-gentoo.html</guid>
+        
+        <category>gentoo</category>
+        
+        
+        <category>announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Week 3 Meeting (i3)</title>
+        <description>&lt;p&gt;Hi, everyone! As usual, this week’s meeting is Friday from 4–6 in GOL/70-2520, the small database lab on the second floor. If you can only attend part of the meeting, don’t be afraid to show up halfway through!&lt;/p&gt;
+
+&lt;p&gt;I hope that you all had fun at the meeting last week! This week’s meeting will be our first presentation of the semester, where Mark Repka will discuss some of the cool things about &lt;a href=&quot;https://i3wm.org&quot;&gt;i3&lt;/a&gt;, a tiling window manager.&lt;/p&gt;
+
+&lt;p&gt;Most of us are used to stacking window managers, where windows on a screen are moved around, resized, and stacked with the mouse. Tiling window managers rearrange windows that we open on a grid-like layout, making sure that windows don’t overlap. You’d think that the former would be more powerful, but maybe this presentation will change your mind!&lt;/p&gt;
+
+&lt;p&gt;The presentation will be about an hour long, and the remaining hour of the meeting will be left open to socialise. If you’re looking to install Linux on your laptop, or start using i3, we’re here to help!&lt;/p&gt;
+
+&lt;p&gt;We hope to see you at this week’s meeting!&lt;/p&gt;
+
+&lt;p&gt;UPDATE: You can view this meeting’s slides at &lt;a href=&quot;/slides/spring-2015-week-3.pdf&quot;&gt;slides&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Feb 2015 00:00:00 -0500</pubDate>
+        <link>http://ritlug.github.io/announcements/2015/02/13/week-3-meeting-i3.html</link>
+        <guid isPermaLink="true">http://ritlug.github.io/announcements/2015/02/13/week-3-meeting-i3.html</guid>
+        
+        <category>i3,</category>
+        
+        <category>desktop</category>
+        
+        
+        <category>announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Week 1 Meeting</title>
+        <description>&lt;p&gt;Hi, everyone! Our first meeting of the semester is this Friday from 4–6 in GOL/70-2520, the small database lab on the second floor. If you can only attend part of the meeting, don’t be afraid to show up halfway through!&lt;/p&gt;
+
+&lt;p&gt;First off, we’re trying something new this spring: all of the semester’s events will be kept on a public schedule, which you can find &lt;a href=&quot;/schedule.htm&quot;&gt;here&lt;/a&gt;. If you’re interested in doing a presentation this semester, check out what weeks are free and talk to one of the members of Eboard!&lt;/p&gt;
+
+&lt;p&gt;For the first week, we’re having an open meeting where people can show up, meet people, hang out, and ask questions about installing Linux. If you aren’t sure where to start, bring your laptop and we’ll help you install Linux before the meeting ends. Be sure to tell your friends; everyone’s invited!&lt;/p&gt;
+
+&lt;p&gt;We hope to see you at this week’s meeting!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 28 Jan 2015 00:00:00 -0500</pubDate>
+        <link>http://ritlug.github.io/announcements/2015/01/28/week-1-meeting.html</link>
+        <guid isPermaLink="true">http://ritlug.github.io/announcements/2015/01/28/week-1-meeting.html</guid>
+        
+        <category>open</category>
+        
+        <category>meeting</category>
+        
+        
+        <category>announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Week 15 Meeting</title>
+        <description>&lt;p&gt;Hello, everyone! This Friday, to celebrate our members of RITlug who will be done with classes after this semester, we’re going to spend the meeting time to go out and get dinner together at a location off-campus.&lt;/p&gt;
+
+&lt;p&gt;Instead of holding the regular meeting, we’re going to meet up in GOL/70-2520 at 4 PM, figure out where we want to go for food, then head out around 4:15–4:30. If you don’t have a car, a few members have already offered to provide transportation to and from campus. We’ll probably try to be back on campus by 6, but if you have other plans for later, be sure to let us know!&lt;/p&gt;
+
+&lt;p&gt;This will be our last meeting for the semester, because on next Friday, some of us will be taking finals. For those of us who still have classes next semester, meetings will be at the same time in the same place every week.&lt;/p&gt;
+
+&lt;p&gt;We hope to see you this week, and if not, good luck on finals and have a wonderful break!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 05 Dec 2014 00:00:00 -0500</pubDate>
+        <link>http://ritlug.github.io/announcements/2014/12/05/week-15-meeting.html</link>
+        <guid isPermaLink="true">http://ritlug.github.io/announcements/2014/12/05/week-15-meeting.html</guid>
+        
+        <category>food</category>
+        
+        
+        <category>announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Week 13 Meeting</title>
+        <description>&lt;p&gt;Hello, everyone! As usual, this week’s meeting is going to be this Friday from 4–6 in GOL/70-2520, the small database lab on the second floor of GCCIS. If you can only attend part of the meeting, don’t be afraid to show up halfway through!&lt;/p&gt;
+
+&lt;p&gt;Like the previous weeks, we don’t have a major topic set for this meeting. Next week, we’re not having a meeting because of thanksgiving, and the next week, plan to show up to the room on time because we’re going to meet up and drive somewhere to have food and congratulate our graduating members.&lt;/p&gt;
+
+&lt;p&gt;We hope to see you at this week’s meeting!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 21 Nov 2014 00:00:00 -0500</pubDate>
+        <link>http://ritlug.github.io/announcements/2014/11/21/week-13-meeting.html</link>
+        <guid isPermaLink="true">http://ritlug.github.io/announcements/2014/11/21/week-13-meeting.html</guid>
+        
+        <category>open</category>
+        
+        <category>meeting</category>
+        
+        
+        <category>announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Week 12 Meeting</title>
+        <description>&lt;p&gt;Hello, everyone! As usual, this week’s meeting is going to be this Friday from 4–6 in GOL/70-2520, the small database lab on the second floor of GCCIS. If you can only attend part of the meeting, don’t be afraid to show up halfway through!&lt;/p&gt;
+
+&lt;p&gt;Continuing off of the stuff from last week, we’re going to spend this week’s meeting talking about the topics of the weeks for next semester, what’s in store for the club, and a potential end-of-semester celebration for our members that are done with classes after this fall. As usual, the second hour of the meeting will be reserved for open discussion.&lt;/p&gt;
+
+&lt;p&gt;We hope to see you at this week’s meeting!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 14 Nov 2014 00:00:00 -0500</pubDate>
+        <link>http://ritlug.github.io/announcements/2014/11/14/week-12-meeting.html</link>
+        <guid isPermaLink="true">http://ritlug.github.io/announcements/2014/11/14/week-12-meeting.html</guid>
+        
+        <category>open</category>
+        
+        <category>meeting</category>
+        
+        
+        <category>announcements</category>
+        
+      </item>
+    
+  </channel>
+</rss>

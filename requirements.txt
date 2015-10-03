@@ -1,5 +1,0 @@
-pelican
-pelican-minify
-jinja2
-markdown
-https://github.com/miracle2k/webassets/tarball/master#egg=webassets-dev

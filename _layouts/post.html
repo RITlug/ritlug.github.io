@@ -1,0 +1,25 @@
+  {% include head.html %}
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+    {% include header.html %}
+
+    <main class="mdl-layout__content">
+      <div class="mdl-layout__tab-panel is-active" id="content">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+               <h4>{{ page.title }}</h4>
+               <h6>{{ page.date | date_to_long_string }}</h6>
+               {{ content }}
+               <hr />
+               <h6><em>{{ page.author }}</em></h6>
+            </div>
+          </section>
+        <br />
+      </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
