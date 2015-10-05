@@ -10,3 +10,4 @@ Gemfile.lock
 .bundle/
 node_modules/
 pyenv/
+_site/
