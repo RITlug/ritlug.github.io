@@ -11,4 +11,4 @@ The RIT Linux Users Group is an RIT-sponsored club for new and experienced users
 
 Except in rare occasions, the first hour of every meeting will be reserved for presentations and workshops, and the rest of the meeting will be used for discussions and socialisation. Meeting topics and summaries will be posted here every week.
 
-We're always open to suggestions for future meetings, and if you'd like to contact us, send an email to <a href="#" id="our-email" data-mail="ritlug">(needs JavaScript)</a><script>(function(){var e=document.getElementById('our-email');e.innerHTML=e.dataset.mail+'@rit.edu';e.href='mailto:'+e.innerHTML})()</script>.
+We're always open to suggestions for future meetings, and if you'd like to contact us, send an email to <a href="#" id="our-email" data-mail="ngl3477">(needs JavaScript)</a><script>(function(){var e=document.getElementById('our-email');e.innerHTML=e.dataset.mail+'@rit.edu';e.href='mailto:'+e.innerHTML})()</script>.
