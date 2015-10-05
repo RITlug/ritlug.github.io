@@ -1,0 +1,22 @@
+---
+layout: default
+title: Home
+---
+{% for post in site.categories.announcements limit: 1 %}
+
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+  <div class="mdl-card mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__supporting-text">
+      <h4>{{ post.title }}</h4>
+      <h6>{{ post.date | date_to_long_string }}</h6>
+        {{ post.content }}
+        <hr />
+        <em>{{ post.author }}</em>
+      </div>
+    </div>
+  <div class="mdl-card__actions">
+    <a class="mdl-button" href="/announcements">Previous Announcements</a>
+  </div>
+</section>
+{% endfor %}
+<br />
