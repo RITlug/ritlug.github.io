@@ -11,5 +11,3 @@ Packaging Applications for ArchLinux
 * What packages are
 * How to package for ArchLinux (writing the PKGBUILD)
 * Submitting a package to the AUR
-
-<a href="{{ page.slides }}">Download the slides</a>
