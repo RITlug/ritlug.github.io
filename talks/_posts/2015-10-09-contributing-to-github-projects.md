@@ -13,4 +13,3 @@ date: 2015-10-09
 * Typical Github Workflow
 * How to contribute to a project on Github
 
-<a href="{{ page.slides }}">Download the slides</a>
