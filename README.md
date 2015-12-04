@@ -1,6 +1,6 @@
 ritlug.github.io
 ============
-RITlug's upcoming website.
+RITlug's current website.
 
 Test it by installing jekyll:
 
