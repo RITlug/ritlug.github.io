@@ -5,7 +5,7 @@ date: 2016-02-03
 layout: post
 ---
 
-Hey RITluggers! Welcome to week 2!
+Hey RITluggers!
 
 This week we will be having a talk about the IRC bouncer ZNC.
 
