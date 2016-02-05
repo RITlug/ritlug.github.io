@@ -8,3 +8,11 @@ description: > # this means to ignore newlines until "baseurl:"
 url: 'http://ritlug.github.io'
 # Build settings
 markdown: kramdown
+
+# These allow RITlug's schedule to be updated site-wide from one
+# location. They will appear in pages as they are typed, so it
+# is recommended that you follow the format already here when
+# updating them.
+ritlug-time: 4-6PM
+ritlug-place: GOL/70-2520
+ritlug-day: Friday
