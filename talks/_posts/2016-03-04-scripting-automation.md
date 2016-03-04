@@ -2,7 +2,7 @@
 title: Scripting and Automation
 author: Nate Levesque
 layout: post
-slides: /talks/2016-scripting-automation.pdf
+slides: /talks/2016-spring-scripting-automation.pdf
 date: 2016-03-04
 ---
 
