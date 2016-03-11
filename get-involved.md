@@ -7,10 +7,11 @@ Meetings are open to anyone interested, new members and old. RITlug meets {{ sit
 
 Looking for more information? Email us at rit.edu, our name is ritlug.
 
-##### News and Announcements
-* [The Link @ RIT](https://thelink.rit.edu/organization/Linux) (requires an RIT account)
-* [Announcement feed](/feeds/latest.xml) (same info as The Link, but public)
-* [Public announcement mailing list](https://groups.google.com/d/forum/ritlug-announce) (emails from our announcement feed)
+##### Stay Updated
+* [The Link @ RIT](https://thelink.rit.edu/organization/Linux) (Join this one if you have an RIT account. You'll get the other feeds by email for free!)
+* [Announcement feed](/feeds/latest.xml) (RSS feed for RITlug announcements)
+* [Public announcement mailing list](https://groups.google.com/d/forum/ritlug-announce) (Public mailing list for RITlug announcements)
+* [RITlug talks feed](/feeds/talks.xml) (RSS feed for RITlug talks)
 
 ##### Discussion
 * Come to meetings!
