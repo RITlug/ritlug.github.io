@@ -1,6 +1,6 @@
 ---
 author: Nate Levesque
-title: Spring Week 11: Breaking Linux
+title: "Spring Week 11: Breaking Linux"
 layout: post
 ---
 
