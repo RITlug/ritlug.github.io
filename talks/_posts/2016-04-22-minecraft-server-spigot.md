@@ -2,7 +2,7 @@
 title: Run a Minecraft server using Spigot
 author: Justin W. Flory
 layout: post
-slides: /talks/2016-minecraft-server-spigot.pdf
+slides: /talks/2016-spring-minecraft-server-spigot.pdf
 date: 2016-04-22
 ---
 
