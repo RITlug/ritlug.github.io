@@ -6,7 +6,13 @@ layout: post
 
 Welcome to Week 14, RITluggers! Hope everyone's week is going well so far.
 
-In case you missed it at the last meeting, our new Eboard was officially elected at our last meeting. The 2016-2017 President is Justin W. Flory and Vice President is Solomon Rubin. For this week and the next, we'll be getting a headstart into running the club.
+In case you missed it, our new Eboard was officially elected at our last meeting. The 2016-2017 President is Justin W. Flory and Vice President is Solomon Rubin. For this week and the next, we'll be getting a headstart into running the club.
+
+As of this week, we also have a few more ways that you can get involved with RITlug! We set up a bridge between our IRC channel and our new Telegram group. Here's the links for all of them if you want to join us!
+
+* Facebook: https://www.facebook.com/groups/RITLUG/
+* Telegram: https://telegram.me/joinchat/BVxlKADKpMbhHtgxKkdjSQ
+* IRC:      https://webchat.freenode.net/?channels=ritlug
 
 This week's topic covers a hot topic in the system administration world (and even more than just sysadmin): LetsEncrypt! If you haven't heard about LetsEncrypt, it is free and open source software that runs as a free Certificate Authority. What does that mean in English? It lets anyone get free SSL certificates for your domains. In our talk, we're going to introduce it, how it works, and most importantly, how to get your own certificate!
 
