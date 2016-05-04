@@ -19,6 +19,7 @@ Looking for more information? Email us at rit.edu, our name is ritlug.
 * [IRC Channel](ircs://irc.freenode.net/ritlug)
 * [Twitter](https://twitter.com/RITlug)
 * [Reddit](https://www.reddit.com/r/RITlug)
+* [Telegram](https://telegram.me/joinchat/BVxlKADKpMbhHtgxKkdjSQ)
 
 ##### Open Source Code and Governance
 * [Github Organization](https://github.com/RITlug) (club governing documents, website, and projects)
