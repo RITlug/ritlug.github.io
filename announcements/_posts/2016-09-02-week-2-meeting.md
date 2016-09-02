@@ -26,11 +26,17 @@ Apologies on the late announcement for the first meeting. Due to unforeseen circ
 
 Whether you're joining us for the first time or the fifth time, there's multiple ways for you to participate with RITlug! Last year, we set up a bridge between our IRC channel and our Telegram group. Here's the links for all of them if you want to join us! You can also find us on Facebook too.
 
+* Website:  http://ritlug.com
+* The Link: https://thelink.rit.edu/organization/Linux
 * Telegram: https://telegram.me/ritlugclub
 * IRC:      https://webchat.freenode.net/?channels=ritlug
 * Facebook: https://www.facebook.com/groups/RITLUG/
 
 If you join, make sure to say hello and let us know you're here!
+
+Also, to ensure you receive the latest news from RITlug, make sure you're a member of our group on The Link. This is the best way to ensure you receive future updates from the club!
+
+https://thelink.rit.edu/organization/Linux
 
 
 === Member services ===
