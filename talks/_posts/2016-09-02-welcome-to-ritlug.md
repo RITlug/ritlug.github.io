@@ -1,5 +1,5 @@
 ---
-title: Fall 2016: Welcome to RITlug!
+title: Fall 2016 - Welcome to RITlug!
 author: Justin W. Flory
 layout: post
 slides: /talks/2016-w02-fall-welcome-to-ritlug.pdf
