@@ -1,6 +1,6 @@
 # Site settings
 title: RIT Linux Users Group
-email: ngl3477@rit.edu
+email: ritlug@rit.edu
 description: > # this means to ignore newlines until "baseurl:"
   Official site of the RIT Linux Users Group (RITlug). Find all
   our talks and announcements here.
@@ -13,6 +13,6 @@ markdown: kramdown
 # location. They will appear in pages as they are typed, so it
 # is recommended that you follow the format already here when
 # updating them.
-ritlug-time: 4-6PM
-ritlug-place: GOL/70-2520
-ritlug-day: Friday
+ritlug-time: 4:00PM - 6:00PM
+ritlug-place: GOL/70-2620
+ritlug-day: other Friday
