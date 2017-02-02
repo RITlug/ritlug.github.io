@@ -6,8 +6,6 @@ layout: post
 
 Hi hi hi RITlugites!
 
-I want apologize for my brevity in this weeks email.
-
 We have a fun, scary, and somewhat amusing talk for this week: The Importance of Backups, and what happens when they fail. As we all know, backups are extremely important if you care about your data. We've all been in the awkward and potentially devastating situation of losing our data. We'll be looking at ways to keep our data safe and also at stories of what happens when all goes wrong.
 
 Additionally, we have a lot of exciting thigns coming up quick! I teased about several projects and upcoming events. This week we'll have the chance to talk more in depth about ImagineRIT, *Hack, and other events coming up. 
