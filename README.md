@@ -12,13 +12,11 @@ There's a couple of patches to the Javascript and CSS. They are:
 
 ### Header Height
 The default header in Material Design Lite is too large on desktop so we've
-shrank it. If you replace the CSS file or otherwise want to change the header
-height, do the following:
+shrank it. If you want to change the header height, do the following:
 
-1. Open `css/material-brown-orange.css` (adjust as necessary if using a
-different color scheme)
-2. Search for `.mdl-layout__header-row`. It should be the second result.
-3. Find and change the height. Default is 64px. We're currently using 32px.
+1. Open `css/styles.css`
+2. Search for `.mdl-demo .mdl-layout__header-row {`.
+3. Find and change the height. Default is 64px. We're currently using 25px.
 
 ### Make header links open pages
 The default Javascript in MDL <1.0.6 expects the links at the top of the page
