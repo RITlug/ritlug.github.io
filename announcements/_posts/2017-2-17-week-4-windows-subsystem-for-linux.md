@@ -1,6 +1,6 @@
 ---
 author: Solomon Rubin
-title: "Week 3 - Projects, BrickHack, and Net Neutrality"
+title: "Week 4 - Windows Subsystem for Linux"
 layout: post
 ---
 
