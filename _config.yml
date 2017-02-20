@@ -1,5 +1,7 @@
 # Site settings
 title: RIT Linux Users Group
+title-abbrev: RITlug
+
 email: ritlug@rit.edu
 description: > # this means to ignore newlines until "baseurl:"
   Official site of the RIT Linux Users Group (RITlug). Find all
