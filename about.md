@@ -1,6 +1,6 @@
 ---
 short: About
-title: About RITlug
+title: About
 slug: about
 date: 2014-08-21 14:06
 layout: page
