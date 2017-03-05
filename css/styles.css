@@ -54,7 +54,8 @@ html, body {
   line-height: 64px;
 }
 .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
-  background-color: white;
+  /* Orange A200 https://material.io/guidelines/style/color.html#color-color-palette */
+  background-color: #ffab40;
   height: 4px;
 }
 .mdl-demo main > .mdl-layout__tab-panel {
