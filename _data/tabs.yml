@@ -1,11 +1,14 @@
 - name: Home
   link: /
   
-- name: About
-  link: /about.html
+- name: Announcements
+  link: /announcements/
   
 - name: Talks
   link: /talks/
+  
+- name: About
+  link: /about.html
   
 - name: Get Involved
   link: /get-involved.html
