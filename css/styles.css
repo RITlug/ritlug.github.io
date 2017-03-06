@@ -256,3 +256,14 @@ html, body {
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
+
+/* disable tab flicker animation */
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  transition: none !important;
+}
+
