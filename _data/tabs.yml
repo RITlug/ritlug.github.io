@@ -1,0 +1,17 @@
+- name: Home
+  link: /
+  
+- name: Announcements
+  link: /announcements/
+  
+- name: Talks
+  link: /talks/
+  
+- name: About
+  link: /about.html
+  
+- name: Get Involved
+  link: /get-involved.html
+
+- name: The Link
+  link: http://link.ritlug.com/
