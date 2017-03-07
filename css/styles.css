@@ -19,8 +19,12 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
+  
+  /* custom header height */
+  height: 25px;
 }
 .mdl-demo .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
   font-size: inherit;
@@ -50,7 +54,8 @@ html, body {
   line-height: 64px;
 }
 .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
-  background-color: white;
+  /* Orange A200 https://material.io/guidelines/style/color.html#color-color-palette */
+  background-color: #ffab40;
   height: 4px;
 }
 .mdl-demo main > .mdl-layout__tab-panel {
@@ -251,3 +256,14 @@ html, body {
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
+
+/* disable tab flicker animation */
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  transition: none !important;
+}
+

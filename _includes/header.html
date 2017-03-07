@@ -3,22 +3,18 @@
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-                <h3><img src="/img/ritlug.png"/>RIT Linux Users Group</h3>
+                <h3><img src="/img/ritlug.png"/>{{title}}</h3>
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="/" class="mdl-layout__tab">Home</a>
-          <a href="/about.html" class="mdl-layout__tab">About</a>
-          <a href="/talks" class="mdl-layout__tab">Talks</a>
-          <a href="/get-involved.html" class="mdl-layout__tab">Get Involved</a>
-
-          <!-- This is the Material floating button
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
-            <i class="material-icons" role="presentation">add</i>
-            <span class="visuallyhidden">Add</span>
-          </button>
-          -->
+          {% for tab in site.data.tabs %}
+            {% if page.url == tab.link %}
+              <a href="{{ tab.link }}" class="mdl-layout__tab is-active">{{ tab.name }}</a>
+            {% else %}
+              <a href="{{ tab.link }}" class="mdl-layout__tab">{{ tab.name }}</a>
+            {% endif %}
+          {% endfor %}
         </div>
       </header>
  
