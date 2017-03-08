@@ -11,6 +11,7 @@
           {% for tab in site.data.tabs %}
             {% if page.url == tab.link %}
               <a href="{{ tab.link }}" class="mdl-layout__tab is-active">{{ tab.name }}</a>
+              {% if tab.confirm == true %} <a target="_blank">
             {% else %}
               <a href="{{ tab.link }}" class="mdl-layout__tab">{{ tab.name }}</a>
             {% endif %}
