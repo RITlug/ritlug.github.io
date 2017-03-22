@@ -1,6 +1,6 @@
 ---
 author: Solomon Rubin
-title: "Week 6 - Installing Arch!"
+title: "Week 7 - The RITlug Cloud Infrastructure!"
 layout: post
 ---
 
