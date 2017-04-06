@@ -1,6 +1,6 @@
 ---
 author: Solomon Rubin
-title: "Week 7 - The RITlug Cloud Infrastructure!"
+title: "Week 8 - The RITlug Cloud Infrastructure!"
 layout: post
 ---
 
