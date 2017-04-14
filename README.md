@@ -20,7 +20,7 @@ shrank it. If you want to change the header height, do the following:
 
 ### Make header links open pages
 The default Javascript in MDL <1.0.6 expects the links at the top of the page
-to open different tabs. This website is built with pages, not tabs. There's
+to open different tabs. This website is built with pages, not tabs. There&apos;s
 a patch in the event handler that enables opening separate pages. Modern
 versions of MDL do not require this as they already have the patch implemented.
 
