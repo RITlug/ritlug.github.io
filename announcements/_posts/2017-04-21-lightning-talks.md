@@ -6,7 +6,7 @@ layout: post
 
 Hi everyone!
 
-As the semester begins to warp up I am pleased and saddened to announce a number of things taking place in the very near future!
+As the semester begins to warp up I am pleased to announce a number of things taking place in the very near future!
 
 
 ###### Lightning Talks
