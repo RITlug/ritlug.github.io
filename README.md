@@ -36,5 +36,5 @@ Then running
 
 in the cloned repository. The site will be available on localhost:4000.
 
-See [https://github.com/RITlug/runbook/blob/master/the-website.md](the runbook)
+See [the runbook](https://github.com/RITlug/runbook/blob/master/the-website.md)
 for more details.
