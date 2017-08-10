@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4.1-node
+    steps:
+      - checkout
+
+      # Restore bundle cache
+      - type: cache-restore
+        key: rails-demo-{{ checksum "Gemfile.lock" }}
+
+      # Bundle install dependencies
+      - run: bundle install --path vendor/bundle
+
+      # Store bundle cache
+      - type: cache-save
+        key: rails-demo-{{ checksum "Gemfile.lock" }}
+        paths:
+          - vendor/bundle
+
+      # Build
+      - run: bundle exec jekyll build

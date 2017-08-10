@@ -11,3 +11,4 @@ Gemfile.lock
 node_modules/
 pyenv/
 _site/
+vendor/
