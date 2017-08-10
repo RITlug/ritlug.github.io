@@ -1,4 +1,7 @@
 # ritlug.github.io
+
+[![Circle CI](https://circleci.com/gh/patkub/ritlug.github.io.svg?style=shield&circle-token=750a96e7410a2300c741356993092a6d066d7ee6)](https://circleci.com/gh/patkub/ritlug.github.io)
+
 RITlug's current website.
 
 ## Updating Meeting Times/Places
