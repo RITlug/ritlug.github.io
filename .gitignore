@@ -6,7 +6,6 @@ output/
 
 gems/
 gembin/
-Gemfile.lock
 .bundle/
 node_modules/
 pyenv/
