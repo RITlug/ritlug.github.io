@@ -6,7 +6,7 @@
 
 ### Table of Contents
 * [Updating meeting times / places](#updating-meeting-times--places)
-* [Javascript and CSS patches](#javascript-and-css-patches)
+* [Patches](#patches)
 * [Development and Testing](#developing-and-testing)
 
 
@@ -18,9 +18,7 @@ the meeting time and place are referenced so that they can be updated in
 one place.
 
 
-## Javascript and CSS patches
-
-There's a couple of patches to the Javascript and CSS. They are:
+## Patches
 
 ### Header Height
 
@@ -30,13 +28,6 @@ shrank it. If you want to change the header height, do the following:
 1. Open `css/styles.css`
 2. Search for `.mdl-demo .mdl-layout__header-row {`.
 3. Find and change the height. Default is 64px. We're currently using 25px.
-
-### Make header links open pages
-
-The default Javascript in MDL <1.0.6 expects the links at the top of the page
-to open different tabs. This website is built with pages, not tabs. There&apos;s
-a patch in the event handler that enables opening separate pages. Modern
-versions of MDL do not require this as they already have the patch implemented.
 
 
 ## Developing and testing
@@ -67,7 +58,15 @@ bundle install
 This command serves the site at http://localhost:4000.
 
 ```sh
-jekyll serve
+bundle exec jekyll serve
+```
+
+### Run tests
+
+This command runs [RSpec](http://rspec.info/) to test the site.
+
+```sh
+bundle exec rspec
 ```
 
 See [the runbook](https://github.com/RITlug/runbook/blob/master/the-website.md)
