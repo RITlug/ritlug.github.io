@@ -4,20 +4,36 @@ jobs:
     docker:
       - image: circleci/ruby:2.4.1-node
     steps:
+      # Checkout source code
       - checkout
 
-      # Restore bundle cache
-      - type: cache-restore
-        key: ritlug-site-{{ checksum "Gemfile.lock" }}
-
+      # Restore cache
+      - restore_cache:
+          keys:
+            # Find a cache corresponding to this specific Gemfile.lock checksum
+            # when this file is changed, this key will fail
+            - cache-build-{{ checksum "Gemfile.lock" }}
+            # Fallback cache
+            - cache-build
+            
       # Bundle install dependencies
-      - run: bundle install --path vendor/bundle
-
-      # Store bundle cache
-      - type: cache-save
-        key: ritlug-site-{{ checksum "Gemfile.lock" }}
-        paths:
-          - vendor/bundle
-
+      - run:
+          name: bundle-install
+          command: 'bundle install --path vendor/bundle'
+      
       # Build
-      - run: bundle exec jekyll build
+      - run:
+          name: jekyll-build
+          command: 'bundle exec jekyll build'
+      
+      # Save cache
+      - save_cache:
+          # Gemfile.lock cache
+          key: cache-build-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - save_cache:
+          # Fallback cache
+          key: cache-build
+          paths:
+            - vendor/bundle
