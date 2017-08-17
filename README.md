@@ -64,7 +64,7 @@ bundle install
 
 ### Start the development server
 
-This command serves the site at http://localhost:4000
+This command serves the site at http://localhost:4000.
 
 ```sh
 jekyll serve
