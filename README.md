@@ -4,6 +4,11 @@
 
 RITlug's current website.
 
+### Table of Contents
+* [Updating meeting times / places](#updating-meeting-times--places)
+* [Javascript and CSS patches](#javascript-and-css-patches)
+* [Development and Testing](#developing-and-testing)
+
 
 ## Updating meeting times / places
 
@@ -36,16 +41,33 @@ versions of MDL do not require this as they already have the patch implemented.
 
 ## Developing and testing
 
-Test the site by installing Jekyll:
 
-    sudo (apt-get install|pacman -S|...) ruby
-    sudo gem install jekyll
+### Setup
 
-Then running…
+1) Install Ruby:
+`sh
+sudo (apt-get install|pacman -S|...) ruby
+`
 
-    jekyll serve
+2) Install bundler using gem.
 
-…in the cloned repository. The site will be available on localhost:4000.
+`sh
+sudo gem install bundler
+`
+
+3) Install dependencies with bundler.
+
+`sh
+bundle install
+`
+
+### Start the development server
+
+This command serves the site at http://localhost:4000
+
+`sh
+jekyll serve
+`
 
 See [the runbook](https://github.com/RITlug/runbook/blob/master/the-website.md)
 for more details.
