@@ -6,7 +6,7 @@
 
 ### Table of Contents
 * [Updating meeting times / places](#updating-meeting-times--places)
-* [Javascript and CSS patches](#javascript-and-css-patches)
+* [Patches](#patches)
 * [Development and Testing](#developing-and-testing)
 
 
@@ -18,9 +18,7 @@ the meeting time and place are referenced so that they can be updated in
 one place.
 
 
-## Javascript and CSS patches
-
-There's a couple of patches to the Javascript and CSS. They are:
+## Patches
 
 ### Header Height
 
