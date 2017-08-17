@@ -44,18 +44,18 @@ versions of MDL do not require this as they already have the patch implemented.
 
 ### Setup
 
-1) Install Ruby:
+First, install Ruby:
 `sh
 sudo (apt-get install|pacman -S|...) ruby
 `
 
-2) Install bundler using gem.
+Then, install bundler using gem.
 
 `sh
 sudo gem install bundler
 `
 
-3) Install dependencies with bundler.
+Lastly, install dependencies with bundler.
 
 `sh
 bundle install
