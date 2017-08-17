@@ -46,29 +46,29 @@ versions of MDL do not require this as they already have the patch implemented.
 
 First, install Ruby:
 
-`sh
+```sh
 sudo (apt-get install|pacman -S|...) ruby
-`
+```
 
 Then, install bundler using gem.
 
-`sh
+```sh
 sudo gem install bundler
-`
+```
 
 Lastly, install dependencies with bundler.
 
-`sh
+```sh
 bundle install
-`
+```
 
 ### Start the development server
 
 This command serves the site at http://localhost:4000
 
-`sh
+```sh
 jekyll serve
-`
+```
 
 See [the runbook](https://github.com/RITlug/runbook/blob/master/the-website.md)
 for more details.
