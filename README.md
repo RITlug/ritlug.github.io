@@ -23,7 +23,7 @@ one place.
 ### Header Height
 
 The default header in Material Design Lite is too large on desktop so we've
-shrank it. If you want to change the header height, do the following:
+shrunk it. If you want to change the header height, do the following:
 
 1. Open `css/styles.css`
 2. Search for `.mdl-demo .mdl-layout__header-row {`.
