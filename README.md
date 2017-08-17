@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/RITlug/ritlug.github.io.svg?style=svg&circle-token=b80b9ee3852aa0b52f578b434c6224971fc73d97)](https://circleci.com/gh/RITlug/ritlug.github.io)
 
-RITlug's current website.
+> RITlug's current website.
 
 ### Table of Contents
 * [Updating meeting times / places](#updating-meeting-times--places)
