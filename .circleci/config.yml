@@ -49,7 +49,7 @@ jobs:
             - vendor/bundle
   test:
     docker:
-      - image: circleci/ruby:2.4.1-node
+      - image: circleci/ruby:2.4.1-node-browsers
     steps:
       # Checkout source code
       - checkout
