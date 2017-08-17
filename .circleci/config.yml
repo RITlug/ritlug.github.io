@@ -15,11 +15,21 @@ jobs:
             - cache-build-{{ checksum "Gemfile.lock" }}
             # Fallback cache
             - cache-build
-            
+      
+      # Print bundle version
+      - run:
+          name: bundle-version
+          command: 'bundle --version'
+      
       # Bundle install dependencies
       - run:
           name: bundle-install
-          command: 'bundle install --path vendor/bundle'
+          command: 'bundle install --path vendor/bundle --without test'
+          
+      # Print jekyll version
+      - run:
+          name: jekyll-version
+          command: 'jekyll --version'
       
       # Build
       - run:
@@ -37,3 +47,57 @@ jobs:
           key: cache-build
           paths:
             - vendor/bundle
+  test:
+    docker:
+      - image: circleci/ruby:2.4.1-node
+    steps:
+      # Checkout source code
+      - checkout
+
+      # Restore cache
+      - restore_cache:
+          keys:
+            # Find a cache corresponding to this specific Gemfile.lock checksum
+            # when this file is changed, this key will fail
+            - cache-test-{{ checksum "Gemfile.lock" }}
+            # Fallback cache
+            - cache-test
+      
+      # Print bundle version
+      - run:
+          name: bundle-version
+          command: 'bundle --version'
+      
+      # Bundle install dependencies
+      - run:
+          name: bundle-install
+          command: 'bundle install --path vendor/bundle'
+      
+      # Print rspec version
+      - run:
+          name: rspec-version
+          command: 'rspec --version'
+      
+      # Test
+      - run:
+          name: rspec-test
+          command: 'bundle exec rspec'
+      
+      # Save cache
+      - save_cache:
+          # Gemfile.lock cache
+          key: cache-test-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - save_cache:
+          # Fallback cache
+          key: cache-test
+          paths:
+            - vendor/bundle
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      # Configure jobs to run in workflow
+      - build
+      - test
