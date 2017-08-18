@@ -8,7 +8,7 @@ describe "Footer links", type: :feature, js: true do
     @footerLinks = all('.mdl-mega-footer--link-list')
   end
   
-  describe "navigate links" do
+  describe "Navigate links" do
     before(:each) do
       @links = @footerLinks[0].all('li > a')
     end
