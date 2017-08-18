@@ -21,9 +21,11 @@
             <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
             <h1 class="mdl-mega-footer--heading">RIT</h1>
             <ul class="mdl-mega-footer--link-list">
-              <li><a href="http://www.rit.edu">www.rit.edu</a></li>
-              <li><a href="http://www.rit.edu/gccis">RIT School of Computing</a></li>
-              <li><a href="http://thelink.rit.edu/organization/Linux">RIT Club Page</a></li>
+              {% for item in site.data.footer.rit %}
+                <li>
+                  <a href="{{ item.link }}">{{ item.name }}</a>
+                </li>
+              {% endfor %}
             </ul>
           </div>
           <div class="mdl-mega-footer--drop-down-section">
