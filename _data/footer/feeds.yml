@@ -1,0 +1,5 @@
+- name: Announcements
+  link: /feeds/latest.xml
+  
+- name: Talks
+  link: /feeds/talks.xml
