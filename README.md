@@ -1,6 +1,8 @@
 # ritlug.github.io
 
 [![CircleCI](https://circleci.com/gh/RITlug/ritlug.github.io.svg?style=svg&circle-token=b80b9ee3852aa0b52f578b434c6224971fc73d97)](https://circleci.com/gh/RITlug/ritlug.github.io)
+[![Code Climate](https://codeclimate.com/github/patkub/ritlug.github.io/badges/gpa.svg)](https://codeclimate.com/github/patkub/ritlug.github.io)
+[![Issue Count](https://codeclimate.com/github/patkub/ritlug.github.io/badges/issue_count.svg)](https://codeclimate.com/github/patkub/ritlug.github.io)
 
 > RITlug's current website.
 
