@@ -1,32 +1,25 @@
 describe "Navigation tabs", type: :feature, js: true do
+
   describe "has tabs" do
     before(:each) do
       # Navigate to home page before each test
       visit '/'
+      
+      # Find all tabs
+      @tabs = all('.mdl-layout__tab-bar > a');
     end
     
-    it "first tab is Home" do
-      expect(find('.mdl-layout__tab-bar > a:nth-child(1)').text).to eq('HOME')
+    it "has 6 total tabs" do
+      expect(@tabs.length).to eq(6)
     end
     
-    it "second tab is Announcements" do
-      expect(find('.mdl-layout__tab-bar > a:nth-child(2)').text).to eq('ANNOUNCEMENTS')
-    end
-    
-    it "third tab is Talks" do
-      expect(find('.mdl-layout__tab-bar > a:nth-child(3)').text).to eq('TALKS')
-    end
-    
-    it "fourth tab is About" do
-      expect(find('.mdl-layout__tab-bar > a:nth-child(4)').text).to eq('ABOUT')
-    end
-    
-    it "fifth tab is Get Involved" do
-      expect(find('.mdl-layout__tab-bar > a:nth-child(5)').text).to eq('GET INVOLVED')
-    end
-    
-    it "sixth tab is The Link" do
-      expect(find('.mdl-layout__tab-bar > a:nth-child(6)').text).to eq('THE LINK')
+    it "renders the tabs" do
+      expect(@tabs[0].text).to eq('HOME')
+      expect(@tabs[1].text).to eq('ANNOUNCEMENTS')
+      expect(@tabs[2].text).to eq('TALKS')
+      expect(@tabs[3].text).to eq('ABOUT')
+      expect(@tabs[4].text).to eq('GET INVOLVED')
+      expect(@tabs[5].text).to eq('THE LINK')
     end
   end
   
@@ -34,30 +27,33 @@ describe "Navigation tabs", type: :feature, js: true do
     before(:each) do
       # Navigate to home page before each test
       visit '/'
+      
+      # Find all tabs
+      @tabs = all('.mdl-layout__tab-bar > a');
     end
     
     it "redirects to / after clicking Home tab" do
-      find('.mdl-layout__tab-bar > a:nth-child(1)').click
+      @tabs[0].click
       expect(page).to have_current_path('/')
     end
     
     it "redirects to /announcements/ after clicking Announcements tab" do
-      find('.mdl-layout__tab-bar > a:nth-child(2)').click
+      @tabs[1].click
       expect(page).to have_current_path('/announcements/')
     end
     
     it "redirects to /talks/ after clicking Talks tab" do
-      find('.mdl-layout__tab-bar > a:nth-child(3)').click
+      @tabs[2].click
       expect(page).to have_current_path('/talks/')
     end
     
     it "redirects to /about/ after clicking About tab" do
-      find('.mdl-layout__tab-bar > a:nth-child(4)').click
+      @tabs[3].click
       expect(page).to have_current_path('/about.html')
     end
     
     it "redirects to /get-involved.html after clicking Get Involved tab" do
-      find('.mdl-layout__tab-bar > a:nth-child(5)').click
+      @tabs[4].click
       expect(page).to have_current_path('/get-involved.html')
     end
   end
@@ -88,4 +84,5 @@ describe "Navigation tabs", type: :feature, js: true do
       expect(find('.mdl-layout__tab.is-active').text).to eq('GET INVOLVED')
     end
   end
+  
 end
