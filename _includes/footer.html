@@ -21,6 +21,7 @@
             <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
             <h1 class="mdl-mega-footer--heading">RIT</h1>
             <ul class="mdl-mega-footer--link-list">
+              <!-- RIT footer links -->
               {% for item in site.data.footer.rit %}
                 <li>
                   <a href="{{ item.link }}">{{ item.name }}</a>
@@ -32,11 +33,12 @@
             <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
             <h1 class="mdl-mega-footer--heading">Linux Resources</h1>
             <ul class="mdl-mega-footer--link-list">
-              <li><a href="http://wiki.archlinux.org">ArchWiki</a></li>
-              <li><a href="http://kernelnewbies.org">Kernel Newbies</a></li>
-              <li><a href="http://reddit.com/r/linux">Linux Subreddit</a></li>
-              <li><a href="http://distrowatch.org">DistroWatch</a></li>
-              <li><a href="http://mirrors.rit.edu">RIT Mirror</a></li>
+              <!-- linux resources -->
+              {% for item in site.data.footer.linux_resources %}
+                <li>
+                  <a href="{{ item.link }}">{{ item.name }}</a>
+                </li>
+              {% endfor %}
             </ul>
           </div>
         </div>
