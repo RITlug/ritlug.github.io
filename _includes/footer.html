@@ -41,6 +41,18 @@
               {% endfor %}
             </ul>
           </div>
+          <div class="mdl-mega-footer--drop-down-section">
+            <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer--heading">Feeds</h1>
+            <ul class="mdl-mega-footer--link-list">
+              <!-- feeds -->
+              {% for item in site.data.footer.feeds %}
+                <li>
+                  <a href="{{ item.link }}">{{ item.name }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
         <div class="mdl-mega-footer--bottom-section">
           <div class="mdl-logo">
