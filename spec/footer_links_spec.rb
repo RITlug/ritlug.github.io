@@ -61,4 +61,19 @@ describe "Footer links", type: :feature, js: true do
     end
   end
   
+  describe "Feeds" do
+    before(:each) do
+      @links = @footerLinks[3].all('li > a')
+    end
+    
+    it "has 2 total links" do
+      expect(@links.length).to eq(2)
+    end
+    
+    it "renders the links" do
+      expect(@links[0].text).to eq('Announcements')
+      expect(@links[1].text).to eq('Talks')
+    end
+  end
+  
 end
