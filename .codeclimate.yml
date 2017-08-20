@@ -1,3 +1,5 @@
 engines:
-  css-lint: true
-  fixme: true
+  css-lint:
+    enabled: true
+  fixme:
+    enabled: true
