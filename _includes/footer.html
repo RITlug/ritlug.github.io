@@ -5,30 +5,52 @@
             <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
             <h1 class="mdl-mega-footer--heading">Navigate</h1>
             <ul class="mdl-mega-footer--link-list">
-              <li><a href="/about.html">About</a></li>
-              <li><a href="/talks">Talks</a></li>
-              <li><a href="/get-involved.html">Get Involved</a></li>
-              <li><a href="/announcements">Announcements</a></li>
+              <!-- site navigation tabs -->
+              {% for tab in site.data.tabs %}
+                <!-- ignore "The Link" which is in the RIT section -->
+                {% if tab.name == 'The Link' %}
+                  {% continue %}
+                {% endif %}
+                <li>
+                  <a href="{{ tab.link }}">{{ tab.name }}</a>
+                </li>
+              {% endfor %}
             </ul>
           </div>
           <div class="mdl-mega-footer--drop-down-section">
             <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
             <h1 class="mdl-mega-footer--heading">RIT</h1>
             <ul class="mdl-mega-footer--link-list">
-              <li><a href="http://www.rit.edu">www.rit.edu</a></li>
-              <li><a href="http://www.rit.edu/gccis">RIT School of Computing</a></li>
-              <li><a href="http://thelink.rit.edu/organization/Linux">RIT Club Page</a></li>
+              <!-- RIT footer links -->
+              {% for item in site.data.footer.rit %}
+                <li>
+                  <a href="{{ item.link }}">{{ item.name }}</a>
+                </li>
+              {% endfor %}
             </ul>
           </div>
           <div class="mdl-mega-footer--drop-down-section">
             <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
             <h1 class="mdl-mega-footer--heading">Linux Resources</h1>
             <ul class="mdl-mega-footer--link-list">
-              <li><a href="http://wiki.archlinux.org">ArchWiki</a></li>
-              <li><a href="http://kernelnewbies.org">Kernel Newbies</a></li>
-              <li><a href="http://reddit.com/r/linux">Linux Subreddit</a></li>
-              <li><a href="http://distrowatch.org">DistroWatch</a></li>
-              <li><a href="http://mirrors.rit.edu">RIT Mirror</a></li>
+              <!-- linux resources -->
+              {% for item in site.data.footer.linux_resources %}
+                <li>
+                  <a href="{{ item.link }}">{{ item.name }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="mdl-mega-footer--drop-down-section">
+            <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer--heading">Feeds</h1>
+            <ul class="mdl-mega-footer--link-list">
+              <!-- feeds -->
+              {% for item in site.data.footer.feeds %}
+                <li>
+                  <a href="{{ item.link }}">{{ item.name }}</a>
+                </li>
+              {% endfor %}
             </ul>
           </div>
         </div>
