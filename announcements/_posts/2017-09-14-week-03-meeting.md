@@ -13,7 +13,7 @@ RITlug is back this week, and this time, we're talking all about open source. Na
 
 ### Open Source 101
 
-Our next meeting is **Friday, September 15th, 2017** from **4:00pm to 6:00pm**. This week's topic is _Open Source 101_. In this session, you'll learn about the background and history of the open source movement and a bit about "why we FOSS". Then, we'll explore a version control system called **git**, why it's helpful, and a little bit on how to use it. Finally, we'll talk about how to join an open source community and signs to look out for when choosing a project.
+Our next meeting is **Friday, September 15th, 2017** from **4:00pm to 6:00pm**. This week's topic is _Open Source 101_. In this session, you'll learn about the background and history of the open source movement and a bit about "why we FOSS". Then, we'll explore a version control system called **git**, why it's helpful, and a little bit on how to use it. Finally, we'll talk about how to join an open source community and things to look out for when choosing a project.
 
 We hope to see you there for an exciting introduction to open source!
 
