@@ -8,7 +8,7 @@ Meetings are open to anyone interested, new members and old. RITlug meets on eve
 Looking for more information? Email us at ritlug@rit.edu.
 
 ##### Stay Updated
-* [The Link @ RIT](https://thelink.rit.edu/organization/Linux) (Join this one if you have an RIT account. You'll get the other feeds by email for free!)
+* [RIT CampusGroups](https://campusgroups.rit.edu/student_community?club_id=16071) (Join this one if you have an RIT account. You'll get the other feeds by email for free!)
 * [Announcement feed](/feeds/latest.xml) (RSS feed for RITlug announcements)
 * [Public announcement mailing list](https://groups.google.com/d/forum/ritlug-announce) (Public mailing list for RITlug announcements)
 * [RITlug talks feed](/feeds/talks.xml) (RSS feed for RITlug talks)
