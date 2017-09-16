@@ -19,7 +19,7 @@ describe "Navigation tabs", type: :feature, js: true do
       expect(@tabs[2].text).to eq('TALKS')
       expect(@tabs[3].text).to eq('ABOUT')
       expect(@tabs[4].text).to eq('GET INVOLVED')
-      expect(@tabs[5].text).to eq('THE LINK')
+      expect(@tabs[5].text).to eq('CAMPUSGROUPS')
     end
   end
   
