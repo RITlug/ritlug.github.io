@@ -34,7 +34,6 @@ shrunk it. If you want to change the header height, do the following:
 
 ## Developing and testing
 
-
 ### Setup
 
 First, install Ruby:
