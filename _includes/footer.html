@@ -5,12 +5,7 @@
             <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
             <h1 class="mdl-mega-footer--heading">Navigate</h1>
             <ul class="mdl-mega-footer--link-list">
-              <!-- site navigation tabs -->
               {% for tab in site.data.tabs %}
-                <!-- ignore "The Link" which is in the RIT section -->
-                {% if tab.name == 'The Link' %}
-                  {% continue %}
-                {% endif %}
                 <li>
                   <a href="{{ tab.link }}">{{ tab.name }}</a>
                 </li>
