@@ -34,7 +34,6 @@ shrunk it. If you want to change the header height, do the following:
 
 ## Developing and testing
 
-
 ### Setup
 
 First, install Ruby:
@@ -60,7 +59,15 @@ bundle install
 This command serves the site at http://localhost:4000.
 
 ```sh
-jekyll serve
+bundle exec jekyll serve
+```
+
+### Run tests
+
+This command runs [RSpec](http://rspec.info/) to test the site.
+
+```sh
+bundle exec rspec
 ```
 
 See [the runbook](https://github.com/RITlug/runbook/blob/master/the-website.md)
