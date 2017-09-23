@@ -13,8 +13,8 @@ describe "Footer links", type: :feature, js: true do
       @links = @footerLinks[0].all('li > a')
     end
     
-    it "has 5 total links" do
-      expect(@links.length).to eq(5)
+    it "has 6 total links" do
+      expect(@links.length).to eq(6)
     end
     
     it "renders the links" do
@@ -23,6 +23,7 @@ describe "Footer links", type: :feature, js: true do
       expect(@links[2].text).to eq('Talks')
       expect(@links[3].text).to eq('About')
       expect(@links[4].text).to eq('Get Involved')
+      expect(@links[5].text).to eq('CampusGroups')
     end
   end
   
