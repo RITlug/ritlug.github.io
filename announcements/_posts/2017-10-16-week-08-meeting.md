@@ -16,7 +16,7 @@ RITlug is back again this week: this time, our secretary Allison Fox is our spea
 
 Last May, Red Hat and the open source community honored two exceptional women, Avni Khatri and Jigyasa Grover for the "Women in Open Source" award. This week, the RIT Linux User's Group (RITlug) looks into the history behind the role of women in open source and tech communities. We examine the invaluable and extraordinary accomplishments of pioneering women that changed the foundations of open source and are paving the way for future generations of women to do the same.
 
-Our meeting starts at **4:00pm on Friday, October 20th, in GOL-2650** (large DB lab). We're in the process of confirming a reservation in the Simone Center for Student Innovation (a.k.a. the MAGIC Center or the dome building attached to Golisano). We may relocate during the meeting, but we will start in GOL-2650!
+Our meeting starts at **4:00pm on Friday, October 20th, in GOL-2650** (large DB lab).
 
 
 ### tl;dr details
@@ -25,7 +25,6 @@ Our meeting starts at **4:00pm on Friday, October 20th, in GOL-2650** (large DB 
 * **Time**: 4:00pm - 6:00pm
     * Women start changing the world (a.k.a. the talk begins) at 4:30pm
 * **Where**: GOL-2650 (large DB lab, 2nd floor of GCCIS)
-    * May relocate to the Simone Center at 4:30pm if reservation confirms!
 
 
 ### Come hang out with us!
