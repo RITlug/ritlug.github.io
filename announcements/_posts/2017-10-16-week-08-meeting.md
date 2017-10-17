@@ -1,6 +1,6 @@
 ---
 author: Justin W. Flory
-title: "Women in Open Source - Oct. 20th, 4:30pm"
+title: "Women in Open Source - Oct. 20th, 4pm"
 layout: post
 date: 2017-10-16
 ---
