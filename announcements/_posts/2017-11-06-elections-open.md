@@ -35,7 +35,7 @@ RITlug organization in CampusGroups, you must join first before voting.
 A final reminder will be sent this Friday.
 
 Good luck to both candidates. I look forward to announcing next semester's vice
-president at our meeting this Friday!
+president at our meeting this Friday! As always, keep the FOSS flag high.
 
 
 Cheers,
