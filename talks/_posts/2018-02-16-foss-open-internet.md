@@ -2,7 +2,7 @@
 title: FOSS and an open internet
 author: Nate Levesque
 layout: post
-slides: /talks/2018-w5-spring-foss-open-internet.pdf
+slides: /talks/2018-w05-spring-foss-open-internet.pdf
 date: 2018-02-16
 ---
 
