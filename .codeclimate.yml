@@ -1,4 +1,4 @@
-engines:
+plugins:
   css-lint:
     enabled: true
   fixme:
