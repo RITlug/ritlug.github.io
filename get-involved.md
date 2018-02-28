@@ -15,6 +15,7 @@ Looking for more information? Email us at ritlug@rit.edu.
 
 ##### Discussion
 * Come to meetings!
+* [Slack (for RIT Students)](https://rit-lug.slack.com/)
 * [Telegram](https://telegram.me/ritlugclub)
 * [IRC Channel](ircs://irc.freenode.net/ritlug) ([webchat](https://webchat.freenode.net/?channels=ritlug))
 * [Facebook page](https://facebook.com/groups/RITlug) (restricted to past and present RIT students and staff only, sorry!)
