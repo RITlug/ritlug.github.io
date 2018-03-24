@@ -30,7 +30,7 @@ this week:
 
 ### Presentation / topic title goes here
 
-Join RITlug on **Friday, month, day** at **time in GOL-2650** (large DB lab)
+Join RITlug on **Friday, month, day** at **time in GOL-2620** (large DB lab)
 for…
 
 <!--
@@ -44,9 +44,9 @@ for…
 
 ### tl;dr details
 
-* **Day**: Friday, month day, 2017
+* **Day**: Friday, month day, 2018
 * **Time**: 4:00pm - 6:00pm
-* **Where**: GOL-2650 (large DB lab, 2nd floor of GCCIS)
+* **Where**: GOL-2620 (large DB lab, 2nd floor of GCCIS)
 * **What to bring**: <!-- Optional, remove line if not needed -->
 
 
@@ -66,7 +66,7 @@ If you join, make sure to say hello!
 
 The **mailing list** is the most important way to stay informed about RITlug.
 Make sure you're a member of our [mailing
-list](https://groups.google.com/forum/#!forum/ritlug-announce "RITlug  mailing
+list](https://groups.google.com/forum/#!forum/ritlug-announce "RITlug mailing
 list - Google Groups").
 
 **[groups.google.com/forum/#!forum/ritlug-announce](https://groups.google.com/forum/#!forum/ritlug-announce "RITlug mailing list - Google Groups")**
