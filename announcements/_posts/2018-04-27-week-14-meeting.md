@@ -1,20 +1,3 @@
-<!--
-
-    This file is a template for writing meeting announcements each week. Copy
-    this template into the `_posts` directory with a correct file name and edit
-    the details as needed.
-
-    NOTE: The file name should follow this naming convention:
-
-        YYYY-MM-DD-week-XX-meeting.md
-
-    Where YYYY is year, MM is month, DD is day, and XX is what week of the
-    semester the announcement is for. The date MUST be formatted correctly since
-    the site uses that as a timestamp!
-
- -->
-
-
 ---
 author: Tim Zabel
 title: "Final RITlug Meeting! - April 27, 4:00pm"
@@ -34,15 +17,6 @@ Join RITlug on **Friday, April, 27** at **4:00pm in GOL-2620** (medium DB lab)
 for a sendoff of our graduating seniors, Aidan Kahrs and Taylor Bowling! This
 week's meeting is a fun activity and casual hangout before diving head-first 
 into finals week. 
-
-<!--
-
-    Presentation / topic abstract goes here. Whatever the topic is, add 2-3
-    sentences to excite people and build interest. This is 90% of the work of
-    this email.
-
- -->
-
 
 ### tl;dr details
 
