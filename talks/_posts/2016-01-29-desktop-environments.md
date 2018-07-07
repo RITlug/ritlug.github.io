@@ -2,7 +2,7 @@
 title: Overview of Desktop Environments
 author: Nate Levesque
 layout: post
-slides: /talks/2016-spring-desktop-environments.pdf
+slides: 2016-spring-desktop-environments.pdf
 date: 2016-01-29
 ---
 

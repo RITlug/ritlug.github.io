@@ -2,7 +2,7 @@
 title: Linux April Fools Pranks
 author: Nate Levesque
 layout: post
-slides: /talks/2016-spring-linux-pranks.pdf
+slides: 2016-spring-linux-pranks.pdf
 date: 2016-04-01
 ---
 

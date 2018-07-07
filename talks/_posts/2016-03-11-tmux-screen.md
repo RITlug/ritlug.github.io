@@ -2,7 +2,7 @@
 title: Tmux and Screen
 author: Nate Levesque
 layout: post
-slides: /talks/2016-spring-tmux-screen.pdf
+slides: 2016-spring-tmux-screen.pdf
 date: 2016-03-11
 ---
 

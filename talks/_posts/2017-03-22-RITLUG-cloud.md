@@ -1,6 +1,6 @@
 ---
 title: The RITLUG Cloud Infrastructure
-slides: /talks/2017-w08-spring-RITLUG-cloud.pdf
+slides: 2017-w08-spring-RITLUG-cloud.pdf
 date: 2017-03-22
 layout: post
 ---

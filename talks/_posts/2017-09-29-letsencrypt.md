@@ -2,7 +2,7 @@
 title: Save the world with LetsEncrypt and free encryption
 author: Justin W. Flory
 layout: post
-slides: /talks/2017-w05-fall-letsencrypt.pdf
+slides: 2017-w05-fall-letsencrypt.pdf
 date: 2017-09-29
 ---
 

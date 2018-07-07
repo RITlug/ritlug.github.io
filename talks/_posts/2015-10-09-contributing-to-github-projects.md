@@ -2,7 +2,7 @@
 title: Contributing to Github Projects
 author: Nate Levesque
 layout: post
-slides: /talks/2015-fall-contributing-to-github-projects.pdf
+slides: 2015-fall-contributing-to-github-projects.pdf
 date: 2015-10-09
 ---
 

@@ -2,7 +2,7 @@
 title: Pimp Your Shell
 author: Nate Levesque
 layout: post
-slides: /talks/2015-fall-pimp-your-shell.pdf
+slides: 2015-fall-pimp-your-shell.pdf
 date: 2015-10-23
 ---
 

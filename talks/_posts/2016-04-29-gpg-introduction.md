@@ -2,7 +2,7 @@
 title: GPG (GNU Privacy Guard)
 author: Nate Levesque
 layout: post
-slides: /talks/2016-spring-gpg-introduction.pdf
+slides: 2016-spring-gpg-introduction.pdf
 date: 2016-04-29
 ---
 

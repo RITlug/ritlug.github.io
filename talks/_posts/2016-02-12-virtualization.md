@@ -2,7 +2,7 @@
 title: Virtualization and Containerization
 author: Nate Levesque
 layout: post
-slides: /talks/2016-spring-virtualization-containerization.pdf
+slides: 2016-spring-virtualization-containerization.pdf
 date: 2016-02-12
 ---
 

@@ -2,7 +2,7 @@
 title: LiveCD Customization
 author: Mark Repka
 layout: post
-slides: /talks/2015-fall-livecd-customization.pdf
+slides: 2015-fall-livecd-customization.pdf
 date: 2015-11-20
 ---
 
