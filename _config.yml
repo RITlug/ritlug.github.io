@@ -10,6 +10,7 @@ description: > # this means to ignore newlines until "baseurl:"
 url: 'http://ritlug.com'
 # Build settings
 markdown: kramdown
+permalink: pretty # no .html extension needed/wanted
 
 # These allow RITlug's schedule to be updated site-wide from one
 # location. They will appear in pages as they are typed, so it
