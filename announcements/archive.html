@@ -4,8 +4,7 @@ title: Announcements
 ---
 <div class="container">
     <h1>Announcements</h1>
-    {% comment %} 30 is roughly 2 semesters {% endcomment %}
-    {% for post in site.categories.announcements limit:30 %}
+    {% for post in site.categories.announcements %}
     <article class="card">
         <div class="card-body">
             <h2>{{ post.title }}</h2>
@@ -21,5 +20,4 @@ title: Announcements
         </div>
     </article>
     {% endfor %}
-    <a class="btn btn-primary btn-block" href="/announcements/archive">View Older</a>
 </div>
