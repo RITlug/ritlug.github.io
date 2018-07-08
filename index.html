@@ -2,21 +2,55 @@
 layout: default
 title: Home
 ---
-{% for post in site.categories.announcements limit: 1 %}
 
-<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-  <div class="mdl-card mdl-cell mdl-cell--12-col">
-    <div class="mdl-card__supporting-text">
-      <h4>{{ post.title }}</h4>
-      <h6>{{ post.date | date_to_long_string }}</h6>
-        {{ post.content }}
-        <hr />
-        <em>{{ post.author }}</em>
-      </div>
+<section id="home-about" class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Hello, (RIT|World)!</h1>
+        <p class="lead">RITlug is a student-led organization which aims to promote and teach students about Linux & open source.</p>
+        <hr class="lead-4" />
+        <p>RITlug has weekly meetings and events where we work on projects and discuss interesting topics in the Linux & open source communities.</p>
     </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/announcements">Previous Announcements</a>
-  </div>
 </section>
-{% endfor %}
-<br />
+
+<section id="do-stuff" class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h2>Discuss</h2>
+            <p>Meetings {{ site.ritlug-day }}, {{ site.ritlug-time }} in {{ site.ritlug-place }}</p>
+            <ul class="list-group">
+                <li class="list-group-item">Foo</li>
+                <li class="list-group-item">Bar</li>
+                <li class="list-group-item">ABC</li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-6">
+            <h2>Do</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Projects</li>
+                <li class="list-group-item">Talks</li>
+                <li class="list-group-item">Get Involved</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="container">
+    <h1>Latest News</h1>
+    {% for post in site.categories.announcements limit: 1 %}
+    <article class="card">
+        <div class="card-body">
+            <h2>{{ post.title }}</h2>
+            <p><em>{{ post.date | date_to_long_string }}</em></p>
+            {% comment %} http://briankhuu.com/blog/self/jekyll/2014/12/03/post-truncation-in-jekyll.html {% endcomment %}
+            {% assign truncatedContent = '' %}
+            {% assign paragraphs = post.content | split:'</p>' %}
+            {% for paragraph in paragraphs limit:2 %}
+                {{ truncatedContent | append: paragraph }}
+                {{ truncatedContent | append: '</p>' }}
+            {% endfor %}
+            <a class="btn btn-primary btn-block" href="{{ post.url }}">Continue Reading</a>
+        </div>
+    </article>
+    {% endfor %}
+</section>

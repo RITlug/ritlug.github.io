@@ -1,15 +1,13 @@
 ---
 layout: default
 ---
-<section class="announcements-page">
-  <div>
-    <h4>{{ page.title }}</h4>
-    <h6>{{ page.date | date_to_long_string }}</h6>
-      {{ content }}
-    {% if page.slides %}
-      <a href="{{ page.slides }}">View the slides</a>
-    {% endif %}
-    <hr />
-    <h6><em>{{ page.author }}</em></h6>
-  </div>
-</section>
+<article class="container card">
+    <div class="card-body">
+        <h1 class="card-title">{{ page.title }}</h1>
+        <p><em>{{ page.author }} - {{ page.date | date_to_long_string }}</em></p>
+        {{ content }}
+        {% if page.slides %}
+            <a class="btn btn-primary" href="/talks/slides/{{ page.slides }}">View the slides</a>
+        {% endif %}
+    </div>
+</article>
