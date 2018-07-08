@@ -1,0 +1,65 @@
+---
+layout: default
+title: TigerOS
+permalink: /tigeros
+authors:
+- Christian Martin (@ctmartin)
+- Tim Zabel (@tjzabel)
+- Aidan Kahrs (@axk4545)
+images:
+- /projects/assets/tigeros/tigeros_orange_background.png
+- /projects/assets/tigeros/tigeros_postinstall.png
+- /projects/assets/tigeros/tigeros_tweaks.png
+- /projects/assets/tigeros/tigeros_website.png
+- /projects/assets/tigeros/tigeros_dark.png
+---
+<h1 class="sr-only">TigerOS</h1>
+<img src="/projects/assets/tigeros/tigeros_banner.png" class="w-100" alt="banner with mascot" style="margin-bottom:1.2em;" />
+<article class="container">
+    <section id="about" class="container row">
+        <div class="col-12 col-md-9" style="margin-bottom:1.2em;">
+            <h2>What is TigerOS?</h2>
+            <p>TigerOS is a Fedora Remix that beautifully utilizes Linux to meet the demands of RIT students and faculty.</p>
+            <p>Join the conversation! Find us in <a href="https://webchat.freenode.net/?channels=rit-tigeros"><code>#rit-tigeros</code></a> on IRC for development discussions and support.</p>
+            <a href="https://github.com/RITlug/TigerOS" class="btn btn-lg btn-primary">Find on GitHub</a>
+        </div>
+        <div class="col-12 col-md-3" style="margin-bottom:1.2em;">
+            <h2>Download</h2>
+            <p>A fast and free alternative to macOS and Windows.</p>
+            <a href="https://mirrors.ritlug.com/TigerOS/" class="btn btn-lg btn-primary">Download</a>
+        </div>
+    </section>
+    <section id="screenshots" class="container row">
+        <div id="carouselIndicators" class="col-12 carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                {% assign slideNum = 0 %}
+                {% for image in page.images %}
+                    {% if image == page.images.first %}
+                    <li data-target="#carouselIndicators" data-slide-to="{% increment slideNum %}" class="active"></li>
+                    {% else %}
+                    <li data-target="#carouselIndicators" data-slide-to="{% increment slideNum %}"></li>
+                    {% endif %}
+                {% endfor %}
+            </ol>
+            <div class="carousel-inner">
+                {% for image in page.images %}
+                    {% if image == page.images.first %}
+                    <div class="carousel-item active">
+                    {% else %}
+                    <div class="carousel-item">
+                    {% endif %}
+                        <img class="d-block w-100" src="{{ image }}" />
+                    </div>
+                {% endfor %}
+            </div>
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+</article>
