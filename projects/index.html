@@ -1,0 +1,24 @@
+---
+layout: default
+title: Projects
+---
+<div class="container">
+    <h1>Projects</h1>
+    <h2>Current</h2>
+    {% capture currentYear %}{{ site.time | truncate: 4, "" }}{% endcapture %}
+    {% for post in site.categories.projects %}
+        {% capture postYear %}{{ post.date | truncate: 4, "" }}{% endcapture %}
+        {% if currentYear != postYear %}
+            {% assign currentYear = postYear %}
+            <h2>{{ currentYear }}</h2>
+        {% endif %}
+        <article class="card">
+            <div class="card-body">
+                <h3 class="card-title">{{ post.title }}</h3>
+                <p><em>{{ post.authors | join: ", " }}</em></p>
+                {{ post.excerpt }}
+                <a class="btn btn-primary btn-block" href="{{ post.url }}">Learn More</a>
+            </div>
+        </article>
+    {% endfor %}
+</div>
