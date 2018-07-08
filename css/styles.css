@@ -1,0 +1,66 @@
+/* RIT COLORS:
+ORANGE: #F36E21
+BROWN:  #513127 */
+
+/* Structural Changes */
+main article, main section {
+    margin-bottom: 1.2em;
+}
+main {
+    padding-top: 0.6em;
+    padding-bottom: 0.1em;
+}
+
+footer {
+    padding: 1em;
+}
+
+/* sticky footer - https://css-tricks.com/couple-takes-sticky-footer/ */
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
+footer {
+    flex-shrink: 0;
+}
+
+/* Add some RIT Orange */
+.btn-primary {
+    background-color: #F36E21;
+    border-color: #F35E21;
+}
+.btn-primary:hover {
+    background-color: black;
+}
+/*a:link, a:hover, a:visited, a:active {
+    color: #F36E21;
+}*/
+#home-about {
+    background-color: #F36E21;
+    color: white;
+}
+#home-about hr {
+    border-top: 1px solid rgba(255,255,255,.3);
+}
+
+/* Custom fonts: Roboto w/ Overpass on headings */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Overpass', sans-serif;
+}
+
+/* footer tweaks */
+footer ul {
+    padding-left: 0;
+}
+footer li {
+    list-style: none;
+}
