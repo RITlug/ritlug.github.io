@@ -1,14 +1,14 @@
 - name: ArchWiki
-  link: http://wiki.archlinux.org
-  
-- name: Kernel Newbies
-  link: http://kernelnewbies.org
-  
-- name: Linux Subreddit
-  link: http://reddit.com/r/linux
-  
-- name: DistroWatch
-  link: http://distrowatch.org
+  link: https://wiki.archlinux.org
 
-- name: RIT Mirror
-  link: http://mirrors.rit.edu
+- name: Kernel Newbies
+  link: https://kernelnewbies.org
+
+- name: Linux Subreddit
+  link: https://reddit.com/r/linux
+
+- name: DistroWatch
+  link: https://distrowatch.org
+
+- name: RIT Linux Mirror
+  link: https://mirrors.rit.edu

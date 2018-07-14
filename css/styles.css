@@ -12,7 +12,7 @@ main {
 }
 
 footer {
-    padding: 1em;
+    padding-top: 1.2em;
 }
 
 /* sticky footer - https://css-tricks.com/couple-takes-sticky-footer/ */
@@ -58,6 +58,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* footer tweaks */
+footer {
+    color: white;
+}
 footer ul {
     padding-left: 0;
 }

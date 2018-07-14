@@ -1,8 +1,8 @@
-- name: www.rit.edu
-  link: http://www.rit.edu
-  
-- name: RIT School of Computing
-  link: http://www.rit.edu/gccis
-  
-- name: RIT Club Page
+- name: University Website
+  link: https://www.rit.edu
+
+- name: GCCIS College of Computing
+  link: https://www.rit.edu/gccis
+
+- name: CampusGroups
   link: https://campusgroups.rit.edu/student_community?club_id=16071
