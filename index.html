@@ -2,21 +2,57 @@
 layout: default
 title: Home
 ---
-{% for post in site.categories.announcements limit: 1 %}
 
-<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-  <div class="mdl-card mdl-cell mdl-cell--12-col">
-    <div class="mdl-card__supporting-text">
-      <h4>{{ post.title }}</h4>
-      <h6>{{ post.date | date_to_long_string }}</h6>
-        {{ post.content }}
-        <hr />
-        <em>{{ post.author }}</em>
-      </div>
+<section id="home-about" class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">RIT Linux Users Group</h1>
+        <p class="lead">We are a student-led organization to promote and teach students about Linux &amp; open source.</p>
+        <hr class="lead-4" />
+        <p>Work on projects and discuss interesting topics in the Linux &amp; open source communities.</p>
+        <p>Weekly meetings every {{ site.ritlug-day }}, {{ site.ritlug-time }} in {{ site.ritlug-place }}, Fall &amp; Spring.</p>
     </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/announcements">Previous Announcements</a>
-  </div>
 </section>
-{% endfor %}
-<br />
+
+<section id="do-stuff" class="container">
+    <div class="row" style="margin-bottom:-1.2em;">
+        <div class="col-12 col-md-6" style="margin-bottom:1.2em;">
+            <h2>Discuss</h2>
+            <div class="list-group">
+                <a href="https://rit-lug.slack.com/" class="list-group-item list-group-item-action">Slack (needs <code>@rit.edu</code> email)</a>
+                <a href="https://groups.google.com/forum/#!forum/ritlug-announce" class="list-group-item list-group-item-action">Mailing List (Google Group)</a>
+                <a href="https://webchat.freenode.net/?channels=ritlug" class="list-group-item list-group-item-action"><code>#ritlug</code> on IRC</a>
+                <a href="https://twitter.com/RITlug" class="list-group-item list-group-item-action">Twitter</a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6" style="margin-bottom:1.2em;">
+            <h2>Do</h2>
+            <div class="list-group">
+            <a href="/get-involved" class="list-group-item list-group-item-action">Get Involved</a>
+            <a href="/talks" class="list-group-item list-group-item-action">Talks</a>
+            <a href="/projects" class="list-group-item list-group-item-action">Projects</a>
+            <a href="https://github.com/RITlug" class="list-group-item list-group-item-action">GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="container">
+    <h1>Latest News</h1>
+    {% for post in site.categories.announcements limit: 1 %}
+    <article class="card">
+        <div class="card-body">
+            <h2>{{ post.title }}</h2>
+            <p><em>{{ post.date | date_to_long_string }}</em></p>
+            {% comment %} http://briankhuu.com/blog/self/jekyll/2014/12/03/post-truncation-in-jekyll.html {% endcomment %}
+            {% assign truncatedContent = '' %}
+            {% assign paragraphs = post.content | split:'</p>' %}
+            {% for paragraph in paragraphs limit:2 %}
+                {{ truncatedContent | append: paragraph }}
+                {{ truncatedContent | append: '</p>' }}
+            {% endfor %}
+            <a class="btn btn-primary btn-block" href="{{ post.url }}">Continue Reading</a>
+        </div>
+    </article>
+    {% endfor %}
+</section>

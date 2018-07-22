@@ -2,7 +2,7 @@
 title: Package Managers
 author: Nate Levesque
 layout: post
-slides: /talks/2016-spring-package-managers.pdf
+slides: 2016-spring-package-managers.pdf
 date: 2016-02-19
 ---
 

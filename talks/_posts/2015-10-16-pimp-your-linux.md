@@ -2,7 +2,7 @@
 title: Pimp Your Linux
 author: Mark Repka
 layout: post
-slides: /talks/2015-fall-pimp-your-linux.pdf
+slides: 2015-fall-pimp-your-linux.pdf
 date: 2015-10-16
 ---
 

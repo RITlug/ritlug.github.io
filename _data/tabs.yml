@@ -1,17 +1,20 @@
 - name: Home
   link: /
-  
+
 - name: Announcements
   link: /announcements/
-  
+
 - name: Talks
   link: /talks/
-  
-- name: About
-  link: /about.html
-  
-- name: Get Involved
-  link: /get-involved.html
 
-- name: CampusGroups
-  link: https://campusgroups.rit.edu/student_community?club_id=16071
+- name: Projects
+  link: /projects/
+
+#- name: About
+#  link: /about/
+
+- name: Get Involved
+  link: /get-involved/
+
+#- name: CampusGroups
+#  link: https://campusgroups.rit.edu/student_community?club_id=16071

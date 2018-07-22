@@ -2,7 +2,7 @@
 title: How Linux is Organized
 author: Nate Levesque
 layout: post
-slides: /talks/2016-spring-linux-organization.pdf
+slides: 2016-spring-linux-organization.pdf
 date: 2016-03-18
 ---
 

@@ -2,7 +2,7 @@
 title: Freedom From State - An Intro to Haskell
 author: Josh Bicking
 layout: post
-slides: /talks/2017-w11-fall-intro-to-haskell.pdf
+slides: 2017-w11-fall-intro-to-haskell.pdf
 date: 2017-11-10
 ---
 

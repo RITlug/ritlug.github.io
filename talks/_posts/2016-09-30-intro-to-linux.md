@@ -2,7 +2,7 @@
 title: Fall 2016 - Introduction to Linux
 author: Justin W. Flory
 layout: post
-slides: /talks/2016-w06-fall-intro-to-linux.pdf
+slides: 2016-w06-fall-intro-to-linux.pdf
 date: 2016-09-30
 ---
 

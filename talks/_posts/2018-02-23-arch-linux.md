@@ -2,7 +2,7 @@
 title: Intro to Arch Linux 
 author: Kyle Suero
 layout: post
-slides: /talks/2018-w06-spring-arch-linux.pdf
+slides: 2018-w06-spring-arch-linux.pdf
 date: 2018-02-23
 ---
 

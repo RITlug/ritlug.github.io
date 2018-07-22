@@ -2,7 +2,7 @@
 title: Encrypt ALL the things with LetsEncrypt
 author: Justin W. Flory, Solomon Rubin
 layout: post
-slides: /talks/2016-spring-letsencrypt.pdf
+slides: 2016-spring-letsencrypt.pdf
 date: 2016-05-06
 ---
 

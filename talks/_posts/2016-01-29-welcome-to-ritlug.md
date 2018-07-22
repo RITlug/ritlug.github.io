@@ -2,7 +2,7 @@
 title: Spring 2016 Welcome to RITlug
 author: Nate Levesque
 layout: post
-slides: /talks/2016-spring-welcome-to-ritlug.pdf
+slides: 2016-spring-welcome-to-ritlug.pdf
 date: 2016-01-29
 ---
 

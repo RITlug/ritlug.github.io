@@ -4,7 +4,7 @@ layout: default
 <article class="container card">
     <div class="card-body">
         <h1 class="card-title">{{ page.title }}</h1>
-        <p><em>{{ page.author }} - {{ page.date | date_to_long_string }}</em></p>
+        <p><em>{{ page.date | truncate: 4, "" }}, {{ page.authors | join: ", " }}</em></p>
         {{ content }}
         {% if page.slides %}
             <a class="btn btn-primary" href="/talks/slides/{{ page.slides }}">View the slides</a>
