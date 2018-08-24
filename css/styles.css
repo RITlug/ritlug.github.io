@@ -33,7 +33,7 @@ footer {
 /* Add some RIT Orange */
 .btn-primary {
     background-color: #F36E21;
-    border-color: #F35E21;
+    border-color: #F36E21;
 }
 .btn-primary:hover {
     background-color: black;
@@ -41,6 +41,12 @@ footer {
 /*a:link, a:hover, a:visited, a:active {
     color: #F36E21;
 }*/
+.icon-orange {
+    color: #F36E21;
+}
+a .icon-orange:hover {
+    color: black;
+}
 #home-about {
     background-color: #F36E21;
     color: white;
