@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Official site of the RIT Linux Users Group (RITlug). Find all
   our talks and announcements here.
 
-url: 'http://ritlug.com'
+url: 'https://ritlug.com'
 # Build settings
 markdown: kramdown
 permalink: pretty # no .html extension needed/wanted
