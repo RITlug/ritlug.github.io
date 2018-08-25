@@ -4,10 +4,7 @@ layout: default
 <article class="container card">
     <div class="card-body">
         <h1 class="card-title">{{ page.title }}</h1>
-        <p><em>{{ page.date | truncate: 4, "" }}, {{ page.authors | join: ", " }}</em></p>
+        <p><em>Active {{ page.date | truncate: 4, "" }} - Contributors: {{ page.authors | join: ", " }}</em></p>
         {{ content }}
-        {% if page.slides %}
-            <a class="btn btn-primary" href="/talks/slides/{{ page.slides }}">View the slides</a>
-        {% endif %}
     </div>
 </article>

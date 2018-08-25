@@ -3,7 +3,7 @@ layout: default
 title: Announcements
 ---
 <div class="container">
-    <h1>Announcements</h1>
+    <h1>Announcements <a href="https://groups.google.com/forum/#!forum/ritlug-announce"><i class="fas fa-envelope icon-orange"></i></a> <a href="/feeds/latest.xml"><i class="fas fa-rss-square icon-orange"></i></a></h1>
     {% comment %} 30 is roughly 2 semesters {% endcomment %}
     {% for post in site.categories.announcements limit:30 %}
     <article class="card">
@@ -21,5 +21,5 @@ title: Announcements
         </div>
     </article>
     {% endfor %}
-    <a class="btn btn-primary btn-block" href="/announcements/archive">View Older</a>
+    <a class="btn btn-primary btn-block" href="/announcements/archive" style="margin-bottom:1.2em;">View Older</a>
 </div>

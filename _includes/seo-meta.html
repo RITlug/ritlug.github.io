@@ -1,0 +1,75 @@
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta name="application-name" content="{{ site.title }}" />
+    <meta name="twitter:site" content="@RITlug" />
+    <meta name="twitter:card" content="summary_large_image" />
+    {% if page.excerpt %}
+        <meta name="description" content="{{ page.excerpt | strip_html | truncate: 155 }}" />
+        <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
+        <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 200 }}" />
+    {% else %}
+        <meta name="description" content="{{ site.description }}">
+        <meta property="og:description" content="{{ site.description }}">
+    {% endif %}
+    {% if page.date %}
+        <meta property="og:type" content="article" />
+        {% if page.categories.first == "projects" %}
+            {% capture currentYear %}{{ site.time | truncate: 4, "" }}{% endcapture %}
+            {% capture postYear %}{{ page.date | truncate: 4, "" }}{% endcapture %}
+            {% if currentYear == postYear %}
+                <meta property="og:article:published_date" content="{{ page.date | date: "%F" | truncate: 4, "" }}" />
+            {% else %}
+                <meta property="og:article:published_date" content="{{ page.date | date: "%F" }}" />
+            {% endif %}
+        {% else %}
+            <meta property="og:article:published_date" content="{{ page.date | date: "%F" }}" />
+        {% endif %}
+        {% if page.author %}
+            <meta name="author" content="{{ page.author }}" />
+            <meta property="og:article:author" content="{{ page.author }}" />
+        {% endif %}
+        {% if page.categories %}
+            <meta property="og:article:section" content="{{ page.categories | join: " - " }}" />
+        {% endif %}
+        {% if page.tags %}
+            {% for tag in page.tags %}
+                <meta property="og:article:tag" content="{{ tag }}" />
+            {% endfor %}
+        {% endif %}
+    {% else %}
+        <meta property="og:type" content="website" />
+    {% endif %}
+    {% if page.images %}
+        <meta property="og:image" content="{{ site.url }}{{ page.images.first }}" />
+        <meta name="twitter:image" content="{{ site.url }}{{ page.images.first }}" />
+    {% else %}
+        <meta property="og:image" content="{{ site.url }}/img/ritlug-large.png" />
+    {% endif %}
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "RIT Linux Users Group",
+        "alternateName": "RITlug",
+        "logo": "{{ site.url }}/img/ritlug-large.png",
+        "url": "{{ site.url }}",
+        "sameAs": [
+            "https://twitter.com/RITlug"
+        ],
+        "knowsAbout": [
+            "Linux",
+            "Open source"
+        ],
+        "location": {
+            "@type": "Place",
+            "name": "Rochester Institute of Technology",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Henrietta",
+                "addressRegion": "NY"
+            }
+        }
+    }
+    </script>

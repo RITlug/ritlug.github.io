@@ -17,6 +17,9 @@ title: Projects
                 <h3 class="card-title">{{ post.title }}</h3>
                 <p><em>{{ post.authors | join: ", " }}</em></p>
                 {{ post.excerpt }}
+                {% if post.images %}
+                    <img src="{{ post.images.first }}" class="w-100" alt="image of {{ post.title }}" style="margin-bottom:1.2em;" />
+                {% endif %}
                 <a class="btn btn-primary btn-block" href="{{ post.url }}">Learn More</a>
             </div>
         </article>
