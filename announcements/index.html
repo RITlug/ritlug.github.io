@@ -3,9 +3,9 @@ layout: default
 title: Announcements
 ---
 <div class="container">
-    <h1>Announcements <a href="https://groups.google.com/forum/#!forum/ritlug-announce"><i class="fas fa-envelope icon-orange"></i></a> <a href="/feeds/latest.xml"><i class="fas fa-rss-square icon-orange"></i></a></h1>
-    {% comment %} 30 is roughly 2 semesters {% endcomment %}
-    {% for post in site.categories.announcements limit:30 %}
+    <h1>Announcements (Archive) <a href="https://groups.google.com/forum/#!forum/ritlug-announce"><i class="fas fa-envelope icon-orange"></i></a> <a href="/feeds/latest.xml"><i class="fas fa-rss-square icon-orange"></i></a></h1>
+    <p><em>Due to our email being caught in spam filters we've migrated from using this. New location TBA.</em></p>
+    {% for post in site.categories.announcements %}
     <article class="card">
         <div class="card-body">
             <h2>{{ post.title }}</h2>

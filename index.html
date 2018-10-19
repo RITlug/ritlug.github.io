@@ -38,7 +38,10 @@ title: Home
 
 
 <section class="container">
-    <h1>Latest News <a href="https://groups.google.com/forum/#!forum/ritlug-announce"><i class="fas fa-envelope icon-orange"></i></a> <a href="/feeds/latest.xml"><i class="fas fa-rss-square icon-orange"></i></a></h1>
+    <h1>Latest News{% comment %} <a href="https://groups.google.com/forum/#!forum/ritlug-announce"><i class="fas fa-envelope icon-orange"></i></a> <a href="/feeds/latest.xml"><i class="fas fa-rss-square icon-orange"></i></a>{% endcomment %}</h1>
+
+    <p><em>Announcements can now be found on our <a href="https://campusgroups.rit.edu/student_community?club_id=16071" target="_blank">CampusGroups</a>. New public location TBA.</em></p>
+    {% comment %}
     {% for post in site.categories.announcements limit: 1 %}
     <article class="card">
         <div class="card-body">
@@ -55,4 +58,5 @@ title: Home
         </div>
     </article>
     {% endfor %}
+    {% endcomment %}
 </section>
