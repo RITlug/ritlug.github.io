@@ -1,0 +1,26 @@
+---
+layout: default
+title: Events
+---
+<div class="container">
+    <h1>Events</h1>
+    {% capture currentYear %}UNSET{% endcapture %}
+    {% for post in site.categories.events %}
+        {% capture postYear %}{{ post.date | truncate: 4, "" }}{% endcapture %}
+        {% if currentYear != postYear %}
+            {% assign currentYear = postYear %}
+            <h2>{{ currentYear }}</h2>
+        {% endif %}
+        <article class="card">
+            <div class="card-body">
+                <h3 class="card-title">{{ post.title }}</h3>
+                <p><em>{{ post.authors | join: ", " }}</em></p>
+                {{ post.excerpt }}
+                {% if post.images %}
+                    <img src="{{ post.images.first }}" class="w-100" alt="image of {{ post.title }}" style="margin-bottom:1.2em;" />
+                {% endif %}
+                <a class="btn btn-primary btn-block" href="{{ post.url }}">Learn More</a>
+            </div>
+        </article>
+    {% endfor %}
+</div>

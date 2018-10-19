@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="container card">
+    <div class="card-body">
+        <h1 class="card-title">{{ page.title }}</h1>
+        <p><em>{{ page.date | date_to_long_string }} - {{ page.authors | join: ", " }}</em></p>
+        {{ content }}
+
+        {% if page.slides %}
+            <div class="embed-responsive embed-responsive-16by9">
+                {% capture slideEmbedUrl %}https://mozilla.github.io/pdf.js/web/viewer.html?file={{ site.url }}/talks/slides/{{ page.slides }}{% endcapture %}
+                <iframe class="embed-responsive-item" src="{{ slideEmbedUrl }}"></iframe>
+            </div>
+            <br />
+            <a class="btn btn-primary d-block w-100" href="/talks/slides/{{ page.slides }}">Download the slides</a>
+        {% endif %}
+    </div>
+</article>
