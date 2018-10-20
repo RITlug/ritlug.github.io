@@ -70,5 +70,5 @@ This command runs [RSpec](http://rspec.info/) to test the site.
 bundle exec rspec
 ```
 
-See [the runbook](https://github.com/RITlug/runbook/blob/master/the-website.md)
+See [the runbook](http://runbook.ritlug.com/infrastructure/website/)
 for more details.
