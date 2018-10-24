@@ -2,7 +2,7 @@
 title: RIT Linux Users Group
 title-abbrev: RITlug
 
-email: ritlug@rit.edu
+email: eboard@ritlug.com
 description: > # this means to ignore newlines until "baseurl:"
   Official site of the RIT Linux Users Group (RITlug). Find all
   our talks and announcements here.
@@ -12,6 +12,9 @@ url: 'https://ritlug.com'
 markdown: kramdown
 permalink: pretty # no .html extension needed/wanted
 excerpt_separator: <!--more-->
+
+# Allow events in the future (for calendar feed)
+future: true
 
 # These allow RITlug's schedule to be updated site-wide from one
 # location. They will appear in pages as they are typed, so it
