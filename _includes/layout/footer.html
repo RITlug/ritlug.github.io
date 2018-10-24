@@ -1,0 +1,58 @@
+<footer class="container-fluid bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+                <p><strong>Navigate</strong></p>
+                <ul>
+                    <!-- site navigation tabs -->
+                    {% for tab in site.data.tabs %}
+                    <li>
+                        <a href="{{ tab.link }}">{{ tab.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <p><strong>RIT</strong></p>
+                <ul>
+                    <!-- RIT footer links -->
+                    {% for item in site.data.footer.rit %}
+                    <li>
+                        <a href="{{ item.link }}">{{ item.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <p><strong>Linux Resources</strong></p>
+                <ul>
+                    <!-- linux resources -->
+                    {% for item in site.data.footer.linux_resources %}
+                    <li>
+                        <a href="{{ item.link }}">{{ item.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <p><strong>Feeds</strong></p>
+                <ul>
+                    <!-- feeds -->
+                    {% for item in site.data.footer.feeds %}
+                    <li>
+                        <a href="{{ item.link }}">{{ item.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    <strong>Site Information:</strong><br />
+                    With the exception of posts and talks (whose copyrights are held by their creators and not RITlug), site content is under a CC0 1.0 Universal license.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
