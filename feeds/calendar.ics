@@ -1,0 +1,27 @@
+---
+layout: none
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//{{site.title}}//{{site.url}}//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH{% for post in site.posts %}{% if post.categories.last == "meetings-meetups" or post.categories.first == "events" or post.categories.first == "talks" %}
+BEGIN:VEVENT
+UID:{{site.url}}{{site.baseurl}}{{post.url}}
+DTSTAMP:{{ post.date | date: "%Y%m%dT000000Z" }}{% if post.date-start %}
+DTSTART;TZID=America/New_York:{{ post.date-start | date: "%Y%m%dT%H%M00" }}{% else %}
+DTSTART:{{ post.date | date: "%Y%m%d" }}{% endif %}{% if post.date-end %}
+DTEND;TZID=America/New_York:{{ post.date-end | date: "%Y%m%dT%H%M00" }}{% else %}
+DTEND:{{ post.date | date: "%Y%m%d" }}{% endif %}
+ORGANIZER;CN="{{site.title}}":MAILTO:{{site.email}}
+SUMMARY:{{post.title}}
+DESCRIPTION:{{post.excerpt | strip_html | newline_to_br | replace: "<br />", " " | strip_newlines | strip}}
+CLASS:PUBLIC{% if post.location %}
+LOCATION:{{post.location}}{% endif %}{% if post.redirect %}
+URL:{{post.redirect}}{% elsif post.categories.last != "meetings-meetups" %}
+URL:{{site.url}}{{site.baseurl}}{{post.url}}{% else %}
+URL:{{site.url}}{{site.baseurl}}/get-involved{% endif %}{% if post.categories.last == "meetings-meetups" %}
+CATEGORIES:{{site.title-abbrev}},{{site.title}},{{post.categories.last | upcase}}{% else %}
+CATEGORIES:{{site.title-abbrev}},{{site.title}},{{post.categories.first | upcase}}{% endif %}
+END:VEVENT{% endif %}{% endfor %}
+END:VCALENDAR

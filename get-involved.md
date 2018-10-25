@@ -3,9 +3,14 @@ layout: page
 title: Get Involved
 ---
 
-Meetings are open to anyone interested, new members and old. RITlug meets on every {{ site.ritlug-day }}, {{ site.ritlug-time }} in {{ site.ritlug-place }}. If you can't make the whole time, that's fine! Meetings typically have a presentation first, then we open the floor to discussion and technical help. Interested? Just show up!
+Meetings are open to anyone interested, new members and old.
+RITlug meets on every {{ site.ritlug-day }}, {{ site.ritlug-time }} in {{ site.ritlug-place }}.
+If you can't make the whole time, that's fine!
+Meetings typically have a presentation first, then we open the floor to discussion and technical help.
+We also hold "Project Collaboration" sessions where you can come and work on projects, homework, or just hang out.
+**_Interested? Just show up!_**
 
-Looking for more information? Email us at ritlug@rit.edu.
+Looking for more information? Email us at {{ site.email }}.
 
 ##### Stay Updated
 * [RIT CampusGroups](https://campusgroups.rit.edu/student_community?club_id=16071) (Join this one if you have an RIT account. You'll get the other feeds by email for free!)
