@@ -1,6 +1,12 @@
 - name: Home
   link: /
 
+- name: About
+  link: /about/
+
+- name: Get Involved
+  link: /get-involved/
+
 #- name: Announcements
 #  link: /announcements/
 
@@ -12,12 +18,6 @@
 
 - name: Events
   link: /events/
-
-#- name: About
-#  link: /about/
-
-- name: Get Involved
-  link: /get-involved/
 
 - name: CampusGroups
   link: https://campusgroups.rit.edu/student_community?club_id=16071
