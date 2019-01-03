@@ -1,6 +1,11 @@
 /* RIT COLORS:
-ORANGE: #F36E21
-BROWN:  #513127 */
+https://www.rit.edu/marketing/brandportal/brand-elements/colors
+ORANGE: #D95E00
+
+OLD:
+* ORANGE: #F36E21
+* BROWN:  #513127
+*/
 
 /* Structural Changes */
 main article, main section {
@@ -32,23 +37,23 @@ footer {
 
 /* Add some RIT Orange */
 .btn-primary {
-    background-color: #F36E21;
-    border-color: #F36E21;
+    background-color: #D95E00;
+    border-color: #D95E00;
 }
 .btn-primary:hover {
     background-color: black;
 }
 /*a:link, a:hover, a:visited, a:active {
-    color: #F36E21;
+    color: #D95E00;
 }*/
 .icon-orange {
-    color: #F36E21;
+    color: #D95E00;
 }
 a .icon-orange:hover {
     color: black;
 }
 #home-about {
-    background-color: #F36E21;
+    background-color: #D95E00;
     color: white;
 }
 #home-about hr {
