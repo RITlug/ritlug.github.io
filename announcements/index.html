@@ -11,20 +11,7 @@ title: Announcements
       or email {{ site.email }} to be added on CampusGroups if you have an RIT email but are not a student.
     </em></p>
     {% for post in site.categories.announcements limit:30 %}
-    <article class="card">
-        <div class="card-body">
-            <h2>{{ post.title }}</h2>
-            <p><em>{{ post.date | date_to_long_string }}</em></p>
-            {% comment %} http://briankhuu.com/blog/self/jekyll/2014/12/03/post-truncation-in-jekyll.html {% endcomment %}
-            {% assign truncatedContent = '' %}
-            {% assign paragraphs = post.content | split:'</p>' %}
-            {% for paragraph in paragraphs limit:2 %}
-                {{ truncatedContent | append: paragraph }}
-                {{ truncatedContent | append: '</p>' }}
-            {% endfor %}
-            <a class="btn btn-primary btn-block" href="{{ post.url }}">Continue Reading</a>
-        </div>
-    </article>
+      {% include content-blocks/post-preview.html %}
     {% endfor %}
     <a class="btn btn-primary btn-block" href="/announcements/archive" style="margin-bottom:1.2em;">View Older</a>
 </div>
