@@ -4,13 +4,7 @@ title: Announcements
 ---
 <div class="container">
     <h1>Announcements <a href="https://groups.google.com/forum/#!forum/ritlug-announce"><i class="fas fa-envelope icon-orange"></i></a> <a href="/feeds/latest.xml"><i class="fas fa-rss-square icon-orange"></i></a></h1>
-    {% comment %} 30 is roughly 2 semesters {% endcomment %}
-    <p><em>
-      RIT's email does not like the public list.
-      Please subscribe on <a href="https://campusgroups.rit.edu/student_community?club_id=16071" target="_blank">CampusGroups</a> if you're an RIT student,
-      or email {{ site.email }} to be added on CampusGroups if you have an RIT email but are not a student.
-    </em></p>
-    {% for post in site.categories.announcements limit:30 %}
+    {% for post in site.categories.announcements %}
     <article class="card">
         <div class="card-body">
             <h2>{{ post.title }}</h2>
@@ -26,5 +20,4 @@ title: Announcements
         </div>
     </article>
     {% endfor %}
-    <a class="btn btn-primary btn-block" href="/announcements/archive" style="margin-bottom:1.2em;">View Older</a>
 </div>
