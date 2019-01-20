@@ -8,7 +8,7 @@
 
 ## Table of Contents
 * [About](#about)
-* [Adding Content](#adding-content)
+* [Adding Content & Contributing](#adding-content-contributing)
 * [Updating meeting times / places](#updating-meeting-times--places)
 
 ## About
@@ -22,7 +22,7 @@ The `github-pages` Gem is used to simplify dependencies.
 The live site is updated by committing changes to the `master` branch.
 _The site uses an undocumented feature of Jekyll where categories are defined using `category/_posts/` instead of `_posts/category/`._
 
-## Adding Content
+## Adding Content & Contributing
 
 Add a new `.md` file to one of the `_posts/` folders for a category.
 Assets should be stored in a folder within that category, for example, `talks/slides/` or `projects/assets/`.
@@ -35,7 +35,7 @@ Current categories:
 * Projects (`projects/`)
 * Talks (`talks/`)
 
-Please see [this runbook page](http://runbook.ritlug.com/infrastructure/website/) for more info.
+Please see [this runbook page](http://runbook.ritlug.com/infrastructure/website/) and [CONTRIBUTING.md](https://github.com/RITlug/ritlug.github.io/tree/master/CONTRIBUTING.md) for more info.
 
 ## Updating meeting times / places
 
