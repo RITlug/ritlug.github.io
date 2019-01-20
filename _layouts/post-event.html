@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<article class="container">
+  <div class="row">
+    <div class="col-12 col-md-9">
+      <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">{{ page.title }}</h1>
+            <p><em>{{ page.author }} - {{ page.date | date_to_long_string }}</em></p>
+            {{ content }}
+            {% if page.slides %}
+                <div class="embed-responsive embed-responsive-16by9">
+                    {% capture slideEmbedUrl %}https://mozilla.github.io/pdf.js/web/viewer.html?file={{ site.url }}/talks/slides/{{ page.slides }}{% endcapture %}
+                    <iframe class="embed-responsive-item" src="{{ slideEmbedUrl }}"></iframe>
+                </div>
+                <br />
+                <a class="btn btn-primary d-block w-100" href="/talks/slides/{{ page.slides }}">Download the slides</a>
+            {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <div class="card-body" style="padding-bottom:.25rem">
+          <h3>Event Details</h3>
+          {% assign post = page %}
+          {% include content-blocks/post-event-details.html %}
+          <hr />
+          <h3>Keep up to date:</h3>
+        </div>
+        <div class="list-group list-group-flush">
+          <a href="https://rit-lug.slack.com/" class="list-group-item list-group-item-action">Slack (needs <code>@rit.edu</code> email)</a>
+          <a href="https://campusgroups.rit.edu/student_community?club_id=16071" class="list-group-item list-group-item-action">CampusGroups</a>
+          <a href="https://webchat.freenode.net/?channels=ritlug" class="list-group-item list-group-item-action"><code>#ritlug</code> on IRC</a>
+          <a href="https://twitter.com/RITlug" class="list-group-item list-group-item-action">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

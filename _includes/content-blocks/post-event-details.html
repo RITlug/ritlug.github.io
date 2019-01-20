@@ -1,0 +1,13 @@
+{% assign post-evt-start = post.date-start | date: "%Y-%m-%d" %}
+{% assign post-evt-end = post.date-end | date: "%Y-%m-%d" %}
+<p>
+  {% if post-evt-start == post-evt-end %}
+    {{ post.date-start | date: "%a, %b. %d, %Y" }}
+    <br />
+    {{ post.date-start | date: "%I:%M%P" }} - {{ post.date-end | date: "%I:%M%P" }}
+  {% else %}
+    {{ post.date-start | date: "%a, %b. %d, %Y @ %I:%M%P" }} - {{ post.date-end | date: "%a, %b. %d, %Y @ %I:%M%P" }}
+  {% endif %}
+  <br />
+  {{ post.location }}
+</p>
