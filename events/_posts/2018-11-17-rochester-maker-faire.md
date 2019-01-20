@@ -1,6 +1,8 @@
 ---
 layout: event
 title: Rochester Maker Faire 2018
+authors:
+- Jeffery Russell (@Jrtechs)
 excerpt: RITlug presents club projects at the Rochester Maker Faire.
 images:
 - /events/assets/2018/11/RITlugBooth.jpg
