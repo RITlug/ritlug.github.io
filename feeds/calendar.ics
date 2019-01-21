@@ -14,7 +14,7 @@ DTSTART:{{ post.date | date: "%Y%m%d" }}{% endif %}{% if post.date-end %}
 DTEND;TZID=America/New_York:{{ post.date-end | date: "%Y%m%dT%H%M00" }}{% else %}
 DTEND:{{ post.date | date: "%Y%m%d" }}{% endif %}
 ORGANIZER;CN="{{site.title}}":MAILTO:{{site.email}}
-SUMMARY:{{post.title}}
+SUMMARY:RITlug: {{post.title}}
 DESCRIPTION:{{post.excerpt | strip_html | newline_to_br | replace: "<br />", " " | strip_newlines | strip}}
 CLASS:PUBLIC{% if post.location %}
 LOCATION:{{post.location}}{% endif %}{% if post.redirect %}

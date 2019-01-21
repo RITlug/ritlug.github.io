@@ -1,7 +1,7 @@
 ---
 layout: redirect
 redirect: https://ritlug.com/get-involved
-date-start: "2019-04-27 14:00"
+date-start: "2019-04-27 8:00"
 date-end: "2019-04-27 18:00"
 location: "TBD"
 title: "ImagineRIT"
