@@ -38,27 +38,19 @@ title: Home
 
 
 <section class="container">
-    <h1>Latest News{% comment %} <a href="https://groups.google.com/forum/#!forum/ritlug-announce"><i class="fas fa-envelope icon-orange"></i></a> <a href="/feeds/latest.xml"><i class="fas fa-rss-square icon-orange"></i></a>{% endcomment %}</h1>
+    <h1>Latest News <a href="https://groups.google.com/forum/#!forum/ritlug-announce"><i class="fas fa-envelope icon-orange"></i></a> <a href="/feeds/latest.xml"><i class="fas fa-rss-square icon-orange"></i></a></h1>
 
-    <p><em>Announcements can now be found on our <a href="https://campusgroups.rit.edu/student_community?club_id=16071" target="_blank">CampusGroups</a>. New public location TBA.</em></p>
-    {% comment %}
+    <p><em>
+      RIT students, please subscribe on <a href="https://campusgroups.rit.edu/student_community?club_id=16071" target="_blank">CampusGroups</a>;
+      RIT's filters don't like the public list.
+      RIT non-students, please email {{ site.email }} to be added on CampusGroups.
+    </em></p>
+
     {% for post in site.categories.announcements limit: 1 %}
-    <article class="card">
-        <div class="card-body">
-            <h2>{{ post.title }}</h2>
-            <p><em>{{ post.date | date_to_long_string }}</em></p>
-            {% comment %} http://briankhuu.com/blog/self/jekyll/2014/12/03/post-truncation-in-jekyll.html {% endcomment %}
-            {% assign truncatedContent = '' %}
-            {% assign paragraphs = post.content | split:'</p>' %}
-            {% for paragraph in paragraphs limit:2 %}
-                {{ truncatedContent | append: paragraph }}
-                {{ truncatedContent | append: '</p>' }}
-            {% endfor %}
-            <a class="btn btn-primary btn-block" href="{{ post.url }}">Continue Reading</a>
-        </div>
-    </article>
+      {% include content-blocks/post-preview.html %}
     {% endfor %}
-    {% endcomment %}
+    
+    <a class="btn btn-primary btn-block" href="/announcements" style="margin-bottom:1.2em;">View More</a>
 </section>
 
 <section class="container">
