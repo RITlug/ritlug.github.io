@@ -6,69 +6,42 @@
 
 > RITlug's current website.
 
-### Table of Contents
+## Table of Contents
+* [About](#about)
+* [Adding Content & Contributing](#adding-content-contributing)
 * [Updating meeting times / places](#updating-meeting-times--places)
-* [Patches](#patches)
-* [Development and Testing](#developing-and-testing)
 
+## About
+
+The website's last major update was Summer 2018, but content dates back to 2015.
+
+The site is built using [Jekyll](https://jekyllrb.com/), [Bootstrap](https://getbootstrap.com/) (via CDN), [Font Awesome](https://fontawesome.com/) (via CDN), & [GitHub Pages](https://help.github.com/categories/github-pages-basics/).
+[PDF.js](https://mozilla.github.io/pdf.js/) is used for embedding PDFs in pages (via CDN).
+"Pretty links" is turned on in the Jekyll configuration.
+The `github-pages` Gem is used to simplify dependencies.
+The live site is updated by committing changes to the `master` branch.
+_The site uses an undocumented feature of Jekyll where categories are defined using `category/_posts/` instead of `_posts/category/`._
+
+## Adding Content & Contributing
+
+Add a new `.md` file to one of the `_posts/` folders for a category.
+Assets should be stored in a folder within that category, for example, `talks/slides/` or `projects/assets/`.
+Asset file names should have enough info in the file name to know what references it (such as the associated talk date for slides) or be in a subfolder for things with a lot of assets (such as the TigerOS project).
+
+Current categories:
+* ~Announcements (`announcements/`)~ (deprecated)
+* Events (`events/`)
+* Meetings & Meetups (`meetings-meetups/`) (note that these pages aren't linked from anywhere other than feeds, they are more for the metadata)
+* Projects (`projects/`)
+* Talks (`talks/`)
+
+Please see [this runbook page](http://runbook.ritlug.com/infrastructure/website/) and [CONTRIBUTING.md](https://github.com/RITlug/ritlug.github.io/tree/master/CONTRIBUTING.md) for more info.
 
 ## Updating meeting times / places
 
 Edit `_config.yml` and update the settings "ritlug-time", "ritlug-place", and
-"ritlug-day". These are used (and should be used) everywhere on the website
+"ritlug-day".
+These are used (and should be used) everywhere on the website
 the meeting time and place are referenced so that they can be updated in
 one place.
-
-
-## Patches
-
-### Header Height
-
-The default header in Material Design Lite is too large on desktop so we've
-shrunk it. If you want to change the header height, do the following:
-
-1. Open `css/styles.css`
-2. Search for `.mdl-demo .mdl-layout__header-row {`.
-3. Find and change the height. Default is 64px. We're currently using 25px.
-
-
-## Developing and testing
-
-### Setup
-
-First, install Ruby:
-
-```sh
-sudo (apt-get install|pacman -S|...) ruby
-```
-
-Then, install bundler using gem.
-
-```sh
-sudo gem install bundler
-```
-
-Lastly, install dependencies with bundler.
-
-```sh
-bundle install
-```
-
-### Start the development server
-
-This command serves the site at http://localhost:4000.
-
-```sh
-bundle exec jekyll serve
-```
-
-### Run tests
-
-This command runs [RSpec](http://rspec.info/) to test the site.
-
-```sh
-bundle exec rspec
-```
-
-See [the runbook](http://runbook.ritlug.com/infrastructure/website/)
-for more details.
+Please note that this does NOT update events in the iCal feed.
