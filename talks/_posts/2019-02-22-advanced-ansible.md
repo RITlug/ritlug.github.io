@@ -2,7 +2,7 @@
 title: "Advanced Ansible: better infrastructure"
 author: Justin W. Flory
 layout: post
-slides: 2019-spring-w07-advanced-ansible.pdf
+slides: 2019-spring-w06-advanced-ansible.pdf
 ---
 
 Maybe you heard of [Ansible](https://www.ansible.com/) before or maybe you already use it.
