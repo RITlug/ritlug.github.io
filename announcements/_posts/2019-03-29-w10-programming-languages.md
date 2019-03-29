@@ -13,7 +13,7 @@ This week we have a mash-up of a few different programming language presentation
 We will be talking about everything from Haskell to R so be sure to swing by.
 
 Nominations for next year's eboard are now open.
-We currently need to fill positions for treasurer and secretary since Josh and Ian are graduating this year.
+We currently need to fill positions for Treasurer and Secretary since Josh and Ian are graduating this year.
 In addition to those positions, we are looking for more people to join our eboard as officers so we can do more stuff with projects and outreach.
 If you are interested in running, you can fill out this [form](http://cglink.me/s17020) to enter the race.
 Feel free to ask Tim or myself about any questions you may have regarding elections and running.
