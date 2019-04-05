@@ -18,8 +18,7 @@ Jekyll is great at turning markdown and other plain text into appealing websites
 Our Project Coordinator, Christian Martin, will be taking over this week's talk to give a presentation and workshop on how to quickly bring up a Jekyll site. 
 As this workshop will be interactive, feel free to bring your own laptop and follow along!
 
-Additionally, this is the final call for RITlug jackets! We currently have 10
-interested members, and we need 12 to fill our order. 
+Additionally, this is the final call for RITlug jackets! We currently have 10 interested members, and we need 12 to fill our order. 
 Jackets are priced at $60.
 If you would like a jacket, please fill out the poll in #announcements, or talk to one of our eboard members.
 Our deadline for accepting interest in jackets is next Wednesday, April 10th so we have enough time to fill our order before the end of the semester.
@@ -39,8 +38,8 @@ This semester's dinner will be taking place on the last Wednesday of the month, 
 Please follow [this link](https://www.eventbrite.co.uk/e/foss-family-dinner-sticky-lips-tickets-59863140264) to RSVP.
 
 
-This Friday is our last call for ImagineRIT exhibitors! If you would like to
-help man RITlug's table at this year's festival, please contact either Tim Zabel or Jeffery Russell by the end of this Friday's meeting!
+This Friday is our last call for ImagineRIT exhibitors! 
+If you would like to help man RITlug's table at this year's festival, please contact either Tim Zabel or Jeffery Russell by the end of this Friday's meeting!
 
 As a last announcement, RITlug eboard nominations are now taking place! 
 If you would like to run for next year's eboard, [sign up here.](http://cglink.me/s17020)
