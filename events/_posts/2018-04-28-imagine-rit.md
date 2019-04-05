@@ -14,11 +14,11 @@ RITlug Presents at Imagine RIT 2018.
 
 {% include content-blocks/gallery.html %}
 
-> This year at RIT we presented [Tiger OS](https://ritlug.com/tigeros), [Musical Floppy Drives](https://jrtechs.net/projects/musical-floppy-drive-build-log), a home made 3D printer, [Magic Mirrors](https://www.raspberrypi.org/magpi/easy-retro-gaming-lakka/), and a [RetroPi](https://retropie.org.uk/) costume. 
+> This year at Imagine RIT we presented [Tiger OS](https://ritlug.com/tigeros), [Musical Floppy Drives](https://jrtechs.net/projects/musical-floppy-drive-build-log), a home made 3D printer, [Magic Mirrors](https://www.raspberrypi.org/magpi/easy-retro-gaming-lakka/), and a [RetroPi](https://retropie.org.uk/) costume. 
 > TigerOS is our custom linux distribution based on Fedora which is tailored for RIT students. 
-> The musical floppy drives are 10 floppy drives connected to an Arduino board to play music. 
+> The musical floppy drive project is 10 floppy drives connected to an Arduino board to play music. 
 > The Magic Mirror is an open source smart mirror which runs on the Raspberry Pi.
-> The Retro Pi gaming costume is the pet project of [Taylor Bowling](https://github.com/TaylorBowling) where he mounted a fully functioning Retro Pi in a costume with working controls. 
+> The Retro Pi gaming costume is the pet project of [Taylor Bowling](https://github.com/TaylorBowling) where he mounted a fully functioning Retro Pi in a neat costume with working controls. 
 >
 > RITlug is looking forward to next year's Imagine RIT.
 
