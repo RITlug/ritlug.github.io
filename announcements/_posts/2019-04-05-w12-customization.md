@@ -1,6 +1,6 @@
 --
 author: Jeffery Russell (@Jrtechs)
-title: "Week #11: Workflow Customization"
+title: "Week #12: Customization Galore"
 layout: post-event
 date-start: "2019-04-12 16:00"                               
 date-end: "2019-04-12 18:00"
@@ -32,7 +32,6 @@ Jeffery Russell @Jrtechs
 #### News
 
 * [Red Hat will be working to bring Fedora to arm64 laptops](https://fossbytes.com/red-hat-fedora-bring-linux-arm-laptops/)
-* [EU's new copyright rule, Article 13](https://www.cnn.com/2019/03/26/tech/eu-copyright-article-13/index.html)
 * [Chinese Developers Are Using GitHub As A Mouthpiece For Protest](https://fossbytes.com/chinese-developers-are-using-github-as-a-mouthpiece-for-protest/)
-* [Elementary OS Shifting twords Flatpak](https://medium.com/elementaryos/elementary-appcenter-flatpak-b1f970a33861)
-
+* [Elementary OS Shifting towards Flatpak](https://medium.com/elementaryos/elementary-appcenter-flatpak-b1f970a33861)
+* [EU's new copyright rule, Article 13](https://www.cnn.com/2019/03/26/tech/eu-copyright-article-13/index.html)
