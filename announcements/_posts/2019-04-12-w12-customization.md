@@ -1,8 +1,8 @@
---
+---
 author: Jeffery Russell (@Jrtechs)
 title: "Week #12: Customization Galore"
 layout: post-event
-date-start: "2019-04-12 16:00"                               
+date-start: "2019-04-12 16:00"
 date-end: "2019-04-12 18:00"
 location: "GOL-2650 (Lg. DB Lab)"
 ---
