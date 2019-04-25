@@ -25,4 +25,6 @@ See you all soon,
 ---
 
 #### News
-
+* [Debian has a new Project Leader!](https://itsfoss.com/debian-project-leader-election/)
+* [Scientific Linux is being discontinued](https://itsfoss.com/scientific-linux-discontinued/)
+* [How to sync GNOME Shell Extensions between desktops](https://www.omgubuntu.co.uk/2019/04/sync-gnome-shell-extensions)
