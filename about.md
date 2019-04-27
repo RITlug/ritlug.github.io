@@ -5,7 +5,7 @@ slug: about
 date: 2014-08-21 14:06
 layout: page
 ---
-The RIT Linux Users Group is a student-led organization to promote and teach students about [Linux](https://en.wikipedia.org/wiki/Linux) &amp; [open source](https://en.wikipedia.org/wiki/Free_and_open-source_software). We are an RIT-sponsored club for new and experienced users alike. Although our main focus is Linux, we also discuss other topics such as digital privacy and alternative operating systems like [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution).
+The RIT Linux Users Group is a student-led organization to contribute to and engage students in [Linux](https://en.wikipedia.org/wiki/Linux) &amp; [open source](https://en.wikipedia.org/wiki/Free_and_open-source_software). We are an RIT-sponsored club for new and experienced users alike. Although our main focus is Linux, we also discuss other topics such as digital privacy and alternative operating systems like [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution).
 
 Our meeting format is typically a presentation or workshop followed by open discussion. Meeting topics and summaries will be posted on the website weekly.
 
