@@ -1,6 +1,6 @@
 /* RIT COLORS:
 https://www.rit.edu/marketing/brandportal/brand-elements/colors
-ORANGE: #D95E00
+ORANGE: #F76902
 
 OLD:
 * ORANGE: #F36E21
@@ -37,8 +37,8 @@ footer {
 
 /* Add some RIT Orange */
 .btn-primary {
-    background-color: #D95E00;
-    border-color: #D95E00;
+    background-color: #F76902;
+    border-color: #F76902;
 }
 .btn-primary:hover {
     background-color: black;
@@ -53,7 +53,7 @@ a .icon-orange:hover {
     color: black;
 }
 #home-about {
-    background-color: #D95E00;
+    background-color: #F76902;
     color: white;
 }
 #home-about hr {
