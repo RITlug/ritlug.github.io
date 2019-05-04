@@ -1,0 +1,90 @@
+---
+layout: page
+title: Calendar
+---
+<div class="media-group">
+{% for post in site.posts %}
+  {% if post.categories.last == "meetings-meetups" or post.categories.first == "events" or post.categories.first == "talks" %}
+    {% if post.redirect %}
+      <a href="{{post.redirect}}" class="list-group-item list-group-item-action">
+    {% elsif post.categories.last != "meetings-meetups" %}
+      <a href="{{site.baseurl}}{{post.url}}" class="list-group-item list-group-item-action">
+    {% else %}
+      <div class="list-group-item">
+    {% endif %}
+      <h5 clas="mb-1">{{ post.title }}</h5>
+    <small>
+        {% if post.categories.last == "meetings-meetups" %}
+          {{post.categories.last | upcase}}
+        {% else %}
+          {{post.categories.first | upcase}}
+        {% endif %}
+        -
+        {% if post.date-start %}
+          {% assign post-evt-start = post.date-start | date: "%Y-%m-%d" %}
+          {% assign post-evt-end = post.date-end | date: "%Y-%m-%d" %}
+          {% if post-evt-start == post-evt-end %}
+            {{ post.date-start | date: "%a, %b. %d, %Y" }}:
+            {{ post.date-start | date: "%I:%M%P" }} - {{ post.date-end | date: "%I:%M%P" }}
+          {% else %}
+            {{ post.date-start | date: "%a, %b. %d, %Y @ %I:%M%P" }} - {{ post.date-end | date: "%a, %b. %d, %Y @ %I:%M%P" }}
+          {% endif %}
+        {% else %}
+          {{ post.date | date: "%a, %b. %d, %Y"}}
+        {% endif %}
+      </small>
+    {% if post.redirect %}
+      </a>
+    {% elsif post.categories.last != "meetings-meetups" %}
+      </a>
+    {% else %}
+      </div>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</div>
+{% comment %}
+<table class="table table-striped">
+{% for post in site.posts %}
+  {% if post.categories.last == "meetings-meetups" or post.categories.first == "events" or post.categories.first == "talks" %}
+    <tr>
+      <td>
+        {% if post.date-start %}
+          {% assign post-evt-start = post.date-start | date: "%Y-%m-%d" %}
+          {% assign post-evt-end = post.date-end | date: "%Y-%m-%d" %}
+          {% if post-evt-start == post-evt-end %}
+            {{ post.date-start | date: "%a, %b. %d, %Y" }}
+            <br />
+            {{ post.date-start | date: "%I:%M%P" }} - {{ post.date-end | date: "%I:%M%P" }}
+          {% else %}
+            {{ post.date-start | date: "%a, %b. %d, %Y @ %I:%M%P" }} - {{ post.date-end | date: "%a, %b. %d, %Y @ %I:%M%P" }}
+          {% endif %}
+        {% else %}
+          {{ post.date | date: "%a, %b. %d, %Y"}}
+        {% endif %}
+      </td>
+      <td>
+        {% if post.redirect %}
+          <a href="{{post.redirect}}">
+            {{ post.title }}
+          </a>
+        {% elsif post.categories.last != "meetings-meetups" %}
+          <a href="{{site.baseurl}}{{post.url}}">
+            {{ post.title }}
+          </a>
+        {% else %}
+          {{ post.title }}
+        {% endif %}
+      </td>
+      <td>
+        {% if post.categories.last == "meetings-meetups" %}
+          {{post.categories.last | upcase}}
+        {% else %}
+          {{post.categories.first | upcase}}
+        {% endif %}
+      </td>
+    </tr>
+  {% endif %}
+{% endfor %}
+</table>
+{% endcomment %}
