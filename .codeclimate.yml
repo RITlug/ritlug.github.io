@@ -1,5 +1,0 @@
-plugins:
-  css-lint:
-    enabled: true
-  fixme:
-    enabled: true
