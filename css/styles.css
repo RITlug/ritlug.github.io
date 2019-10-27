@@ -79,5 +79,10 @@ footer li {
     list-style: none;
 }
 footer a {
-    color: #17a2b8;
+    color: white;
+    text-decoration: underline;
+}
+footer a:hover {
+    color: white;
+    text-decoration: none;
 }
