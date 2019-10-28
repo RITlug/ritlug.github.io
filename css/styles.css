@@ -78,3 +78,11 @@ footer ul {
 footer li {
     list-style: none;
 }
+footer a {
+    color: #B3B3FF;
+    text-decoration: underline;
+}
+footer a:hover {
+    color: #B3B3FF;
+    text-decoration: none;
+}
