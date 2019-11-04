@@ -11,10 +11,5 @@ We discussed how gaming on Linux works, as well as the technology behind it.
 
 ## Resources
 
-- [Official Website](https://www.raspberrypi.org/)
-- [Pi 4 Performance Comparison](https://www.tomshardware.com/reviews/raspberry-pi-4-b,6193.html)
-- [Kodi - Open Source Home Theatre](https://kodi.tv/)
-
 - [Protondb] (https://www.protondb.com/)
 - [Wine] (https://www.winehq.org/)
-- [
