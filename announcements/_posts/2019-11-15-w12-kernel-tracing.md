@@ -14,7 +14,7 @@ If you have no clue what kernel tracing is (like me), or, you want to learn all 
 
 On November 21st, we are doing a get-together at Bar Louie with the larger FOSS community at RIT.
 We plan to arrive at the restaurant around 5:30 PM, we will be carpooling over from the Magic Center around 5:15.
-Please fill out [this form]() so we can book a spot at the restaurant and know how many people need a ride.
+Please fill out [this form](https://forms.gle/Tyrdu1U53Wyay1QeA) so we can book a spot at the restaurant and know how many people need a ride.
 
 T-shirt sales are live!
 If you are interested in a t-shirt, please follow [this link](https://campusgroups.rit.edu/store?store_id=954) to purchase a t-shirt online.
@@ -33,6 +33,6 @@ Fellow RITlugger, best friend, and your reindeer to guide the sleigh
 
 **Upcoming Events:**
 
-* [FOSS Family Dinner at Bar Louie](): November 21st
+* [FOSS Family Dinner at Bar Louie](https://forms.gle/Tyrdu1U53Wyay1QeA): November 21st
 * [Rochester Maker Faire](https://rochester.makerfaire.com/): November 23rd
 * FOSS Hours: Tuesdays 5:00-7:00pm Magic Center 3190
