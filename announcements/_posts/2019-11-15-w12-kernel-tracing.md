@@ -10,7 +10,7 @@ location: "GOL-2620 (Med. DB Lab)
 Hey RITluggers,
 
 This week we have Anthony Critelli visiting our club to give a special presentation on kernel tracing.
-If you have no clue what kernel tracing is (like me), or, you want to learn all the Linux kungfu this is a can't-miss meeting. 
+Anthony Critelli is a Linux systems engineer with interests in automation, containerization, tracing, and performance. He started his professional career as a network engineer and eventually made the switch to the Linux systems side of IT. He holds a B.S. and an M.S. from RIT. If you have no clue what kernel tracing is (like me), or you want to learn all the Linux kungfu, this is a can't-miss meeting.
 
 On November 21st, we are doing a get-together at Bar Louie with the larger FOSS community at RIT.
 We plan to arrive at the restaurant around 5:30 PM, we will be carpooling over from the Magic Center around 5:15.
@@ -35,4 +35,4 @@ Fellow RITlugger, best friend, and your reindeer to guide the sleigh
 
 * [FOSS Family Dinner at Bar Louie](https://forms.gle/Tyrdu1U53Wyay1QeA): November 21st
 * [Rochester Maker Faire](https://rochester.makerfaire.com/): November 23rd
-* FOSS Hours: Tuesdays 5:00-7:00pm Magic Center 3190
+* FOSS Hours: Thursdays 5:00-7:00pm Magic Center 3190
