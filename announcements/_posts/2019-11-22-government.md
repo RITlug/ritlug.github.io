@@ -1,6 +1,6 @@
 ---
 author: Tim Zabel (@Tjzabel)
-title: "GitLab in Government"
+title: "Open Source in the Federal Government"
 layout: post-event
 date-start: "2019-11-22 16:30"
 date-end: "2019-11-22 18:00"
@@ -10,7 +10,7 @@ location: "GOL-2620 (Med. DB Lab)"
 Hey RITluggers,
 
 
-This week we have Solomon Rubin, a former RIT alum, and former RITlug President! In this talk, former-Mitre Solomon Rubin offers a brief look into how the federal government tackles these challenges on a daily basis including how it's evolving: how it contributes to and develops open-source, how it utilizes Innersource within and across individual agencies, and of course, how Gitlab sits at the middle of all of this.
+This week we have Solomon Rubin, an RIT alum, and former RITlug President! In this talk, former-Mitre Solomon Rubin offers a brief look into how the federal government tackles these challenges on a daily basis including how it's evolving: how it contributes to and develops open-source, how it utilizes Innersource within and across individual agencies, and of course, how Gitlab sits at the middle of all of this.
 
 
 In other news, on November 21st (tonight!), we are doing a get-together at Bar Louie with the larger FOSS community at RIT.
