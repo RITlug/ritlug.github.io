@@ -27,7 +27,7 @@ Asset file names should have enough info in the file name to know what reference
 Current categories:
 * Announcements (`announcements/`)
 * Events (`events/`)
-* Meetings & Meetups (`meetings-meetups/`) (Note:  these are not pages; they are metadata for the calendar feed)
+* Meetings & Meetups (`meetings-meetups/`) (Note:  these are not pages; they are placeholder metadata for the calendar feed and should be deleted when creating the announcement post)
 * Projects (`projects/`)
 * Talks (`talks/`)
 
