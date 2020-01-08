@@ -2,8 +2,8 @@
 author: Jeffery Russell (@jrtechs)
 title: "Final Meeting"
 layout: post-event
-date-start: "2019-12-6 16:30"
-date-end: "2019-10-18 18:00"
+date-start: "2019-12-06 16:30"
+date-end: "2019-12-06 18:00"
 location: "GOL-2620 (Med. DB Lab)"
 ---
 
