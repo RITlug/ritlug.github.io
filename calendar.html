@@ -64,12 +64,14 @@ fetch('/feeds/calendar.ics').then((res) => {
             let evtArr = parsed[2].map((i, no) => {
                 let obj = {
                     bgColor: 'black',
+                    body: '',
                     category: 'time',
                     color: 'white',
                     id: `${no}`,
                     isReadOnly: true,
                     isVisible: true
                 };
+                let url = '';
                 i[1].forEach((j) => {
                     switch (j[0]) {
                         //case 'uid':
@@ -93,8 +95,17 @@ fetch('/feeds/calendar.ics').then((res) => {
                         case 'dtend':
                             obj.end = j[3].replace('T::','');
                             break;
+                        case 'location':
+                            obj.location = j[3];
+                            break;
+                        case 'url':
+                            url = j[3];
+                            break;
                     }
                 });
+                if(url !== '') {
+                    obj.body += `<br><a href="${url}">${url}</a>`;
+                }
                 return obj;
             });
             calendar.createSchedules(evtArr);
