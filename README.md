@@ -31,6 +31,8 @@ Current categories:
 * Projects (`projects/`)
 * Talks (`talks/`)
 
+_Note on timezones: assume times are `America_New_York` and that DST is accounted for_
+
 Please see [this runbook page](http://runbook.ritlug.com/infrastructure/website/) and [CONTRIBUTING.md](https://github.com/RITlug/ritlug.github.io/tree/master/CONTRIBUTING.md) for more info.
 
 ## Updating meeting times / places
