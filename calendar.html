@@ -1,0 +1,110 @@
+---
+layout: default
+title: Calendar
+---
+<article class="container card">
+    <div class="card-body">
+        <h1 class="card-title">Calendar <a href="/feeds/calendar.ics" target="_blank"><span class="far fa-calendar-alt icon-orange"></span></a></h1>
+        <div id="menu">
+            <span id="menu-navi">
+                <button type="button" class="btn btn-default btn-sm move-today" data-action="move-today">Today</button>
+                <button type="button" class="btn btn-default btn-sm move-day" data-action="move-prev">
+                <i class="fas fa-chevron-left" data-action="move-prev"></i>
+                </button>
+                <button type="button" class="btn btn-default btn-sm move-day" data-action="move-next">
+                <i class="fas fa-chevron-right" data-action="move-next"></i>
+                </button>
+            </span>
+            <span id="renderRange" class="render-range"></span>
+        </div>
+        <br>
+        
+        <div id="calendar"></div>
+        <br>
+    </div>
+</article>
+
+<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" />
+<script src="https://uicdn.toast.com/tui.code-snippet/latest/tui-code-snippet.js"></script>
+<script src="https://uicdn.toast.com/tui.dom/v3.0.0/tui-dom.js"></script>
+<script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ical.js/1.3.0/ical.min.js" integrity="sha256-1oaCObP6yNz1ouAW50FOpNBBSNqZtpINrbL8B4W+kmM=" crossorigin="anonymous"></script>
+<script>
+fetch('/feeds/calendar.ics').then((res) => {
+    if(!res.ok) {
+        document.querySelector('#calendar').innerText = 'Could not load feed (res)';
+        return;
+    }
+
+    res.text().then((str) => {
+        //let ctr = document.createElement('pre');
+        //ctr.innerText = str;
+        //document.querySelector('#calendar').appendChild(ctr);
+
+        try {
+            let parsed = ICAL.parse(str);
+
+            const monthText = document.querySelector('.render-range');
+            const updateMonthText = () => {
+                monthText.innerText = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric' }).format(calendar.getDate().toDate());
+            }
+
+            let calendar = new tui.Calendar('#calendar', {
+                defaultView: 'month',
+                isReadOnly: true,
+                usageStatistics: false,
+                useCreationPopup: false,
+                useDetailPopup: true
+            });
+            document.querySelector('[data-action="move-today"]').addEventListener('click', () => { calendar.today(); updateMonthText(); });
+            document.querySelector('[data-action="move-next"]').addEventListener('click', () => { calendar.next(); updateMonthText(); });
+            document.querySelector('[data-action="move-prev"]').addEventListener('click', () => { calendar.prev(); updateMonthText(); });
+            updateMonthText();
+
+            let evtArr = parsed[2].map((i, no) => {
+                let obj = {
+                    bgColor: 'black',
+                    category: 'time',
+                    color: 'white',
+                    id: `${no}`,
+                    isReadOnly: true,
+                    isVisible: true
+                };
+                i[1].forEach((j) => {
+                    switch (j[0]) {
+                        //case 'uid':
+                        //    obj.id = j[3];
+                        //    break;
+                        case 'summary':
+                            obj.title = (j[3].startsWith('RITlug: ') ? j[3].substring(8) : j[3]);
+                            break;
+                        case 'description':
+                            obj.body = j[3];
+                            break;
+                        case 'dtstart':
+                            if(j[3].endsWith('T::')) {
+                                obj.category = 'allday';
+                                obj.isAllDay = true;
+                                obj.start = j[3].replace('T::','');
+                            } else {
+                                obj.start = j[3];
+                            }
+                            break;
+                        case 'dtend':
+                            obj.end = j[3].replace('T::','');
+                            break;
+                    }
+                });
+                return obj;
+            });
+            calendar.createSchedules(evtArr);
+        } catch(err) {
+            document.querySelector('#calendar').innerText = `Could not parse: ${err}`;
+            return;
+        }
+    }).catch(() => {
+        document.querySelector('#calendar').innerText = 'Could not load feed (toStr)';
+        return;
+    });
+});
+</script>
