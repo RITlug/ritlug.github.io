@@ -2,8 +2,8 @@
 author: Jeffery Russell (@jrtechs)
 title: "Kernel Tracing"
 layout: post-event
-date-start: "2019-11-18 16:30"
-date-end: "2019-11-18 18:00"
+date-start: "2019-11-15 16:30"
+date-end: "2019-11-15 18:00"
 location: "GOL-2620 (Med. DB Lab)"
 ---
 
