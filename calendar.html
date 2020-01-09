@@ -104,7 +104,7 @@ fetch('/feeds/calendar.ics').then((res) => {
                     }
                 });
                 if(url !== '') {
-                    obj.body += `<br><a href="${url}">${url}</a>`;
+                    obj.body += `${(obj.body === '' ? '' : '<br>')}<a href="${url}">${url}</a>`;
                 }
                 return obj;
             });
