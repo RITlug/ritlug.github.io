@@ -61,7 +61,8 @@ fetch('/feeds/calendar.ics').then((res) => {
             document.querySelector('[data-action="move-prev"]').addEventListener('click', () => { calendar.prev(); updateMonthText(); });
             updateMonthText();
 
-            let evtArr = parsed[2].map((i, no) => {
+            let evtArr = [];
+            parsed[2].forEach((i, no) => {
                 let obj = {
                     bgColor: 'black',
                     body: '',
@@ -71,6 +72,7 @@ fetch('/feeds/calendar.ics').then((res) => {
                     isReadOnly: true,
                     isVisible: true
                 };
+                let rrule = '';
                 let url = '';
                 i[1].forEach((j) => {
                     switch (j[0]) {
@@ -98,6 +100,9 @@ fetch('/feeds/calendar.ics').then((res) => {
                         case 'location':
                             obj.location = j[3];
                             break;
+                        case 'rrule':
+                            rrule = (new ICAL.Recur(j[3])).toString();
+                            break;
                         case 'url':
                             url = j[3];
                             break;
@@ -106,7 +111,32 @@ fetch('/feeds/calendar.ics').then((res) => {
                 if(url !== '') {
                     obj.body += `${(obj.body === '' ? '' : '<br>')}<a href="${url}">${url}</a>`;
                 }
-                return obj;
+                if(rrule) {
+                    let comp = new ICAL.Component(i);
+
+                    let objArr = [];
+                    let duration = ICAL.Time.fromString(obj.end).subtractDate(ICAL.Time.fromString(obj.start));
+
+                    let expand = new ICAL.RecurExpansion({
+                        component: comp,
+                        dtstart: comp.getFirstPropertyValue('dtstart')
+                    });
+                    let count = 0;
+                    let next;
+                    while(count < 25 && (next = expand.next())) {
+                        count++;
+                        let o = {};
+                        Object.assign(o, obj);
+                        o.id += `::RRULE-n${count}`;
+                        o.start = next.toString();
+                        let end = ICAL.Time.fromJSDate(next.toJSDate());
+                        end.addDuration(duration);
+                        o.end = end.toString();
+                        evtArr.push(o);
+                    }
+                } else {
+                    evtArr.push(obj);
+                }
             });
             calendar.createSchedules(evtArr);
         } catch(err) {

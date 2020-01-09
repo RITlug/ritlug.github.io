@@ -12,7 +12,8 @@ DTSTAMP:{{ post.date | date: "%Y%m%dT000000Z" }}{% if post.date-start %}
 DTSTART;TZID=America/New_York:{{ post.date-start | date: "%Y%m%dT%H%M00" }}{% else %}
 DTSTART:{{ post.date | date: "%Y%m%d" }}{% endif %}{% if post.date-end %}
 DTEND;TZID=America/New_York:{{ post.date-end | date: "%Y%m%dT%H%M00" }}{% else %}
-DTEND:{{ post.date | date: "%Y%m%d" }}{% endif %}
+DTEND:{{ post.date | date: "%Y%m%d" }}{% endif %}{% if post.rrule %}
+RRULE:{{post.rrule}}{% endif %}
 ORGANIZER;CN="{{site.title}}":MAILTO:{{site.email}}
 SUMMARY:RITlug: {{post.title}}
 DESCRIPTION:{{post.excerpt | strip_html | newline_to_br | replace: "<br />", " " | strip_newlines | strip}}
