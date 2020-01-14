@@ -252,7 +252,12 @@ Help or visit RITlug at ImagineRIT!
 Stay tuned for more info closer to the event.
 ```
 
-Placeholders can also take an `rrule` frontmatter for recurring events, written to the iCal spec.
+Placeholders can also take an `rrule` frontmatter for recurring events, written [to the iCal spec](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html).
+
+Of particular note,
+> The UNTIL rule part defines a DATE or DATE-TIME value that bounds the recurrence rule in an inclusive manner.
+> If the value specified by UNTIL is synchronized with the specified recurrence, this DATE or DATE-TIME becomes the last instance of the recurrence.
+> The value of the UNTIL rule part MUST have the same value type as the "DTSTART" property.
 
 For example:
 ```
