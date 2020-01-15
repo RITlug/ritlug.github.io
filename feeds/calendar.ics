@@ -5,14 +5,15 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//{{site.title}}//{{site.url}}//EN
 CALSCALE:GREGORIAN
-METHOD:PUBLISH{% for post in site.posts %}{% if post.categories.last == "meetings-meetups" or post.categories.first == "events" or post.categories.first == "talks" %}
+METHOD:PUBLISH{% for post in site.posts %}{% if post.categories.last == "meetings-meetups" or post.categories.first == "events" or post.categories.first == "talks" or post.categories.first == "announcements" and post.layout == "post-event" %}
 BEGIN:VEVENT
 UID:{{site.url}}{{site.baseurl}}{{post.url}}
 DTSTAMP:{{ post.date | date: "%Y%m%dT000000Z" }}{% if post.date-start %}
 DTSTART;TZID=America/New_York:{{ post.date-start | date: "%Y%m%dT%H%M00" }}{% else %}
 DTSTART:{{ post.date | date: "%Y%m%d" }}{% endif %}{% if post.date-end %}
 DTEND;TZID=America/New_York:{{ post.date-end | date: "%Y%m%dT%H%M00" }}{% else %}
-DTEND:{{ post.date | date: "%Y%m%d" }}{% endif %}
+DTEND:{{ post.date | date: "%Y%m%d" }}{% endif %}{% if post.rrule %}
+RRULE:{{post.rrule}}{% endif %}
 ORGANIZER;CN="{{site.title}}":MAILTO:{{site.email}}
 SUMMARY:RITlug: {{post.title}}
 DESCRIPTION:{{post.excerpt | strip_html | newline_to_br | replace: "<br />", " " | strip_newlines | strip}}

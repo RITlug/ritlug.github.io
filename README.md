@@ -25,11 +25,13 @@ Assets should be stored in a folder within that category, for example, `talks/sl
 Asset file names should have enough info in the file name to know what references it (such as the associated talk date for slides) or be in a subfolder for things with a lot of assets (such as the TigerOS project).
 
 Current categories:
-* ~Announcements (`announcements/`)~ (deprecated)
+* Announcements (`announcements/`)
 * Events (`events/`)
-* Meetings & Meetups (`meetings-meetups/`) (note that these pages aren't linked from anywhere other than feeds, they are more for the metadata)
+* Meetings & Meetups (`meetings-meetups/`) (Note:  these are not pages; they are placeholder metadata for the calendar feed and should be deleted when creating the announcement post)
 * Projects (`projects/`)
 * Talks (`talks/`)
+
+_Note on timezones: assume times are `America_New_York` and that DST is accounted for_
 
 Please see [this runbook page](http://runbook.ritlug.com/infrastructure/website/) and [CONTRIBUTING.md](https://github.com/RITlug/ritlug.github.io/tree/master/CONTRIBUTING.md) for more info.
 
