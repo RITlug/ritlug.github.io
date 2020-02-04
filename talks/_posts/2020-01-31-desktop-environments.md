@@ -1,5 +1,5 @@
 ---
-title: Sprint 2020 - Desktop Environments
+title: Spring 2020 - Desktop Environments
 author: Jeffery Russell
 layout: post
 slides: 2020-spring-w03-desktop-environments.pdf
