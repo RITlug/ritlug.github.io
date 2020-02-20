@@ -11,11 +11,8 @@ Hey RITluggers!
 
 This week Dev is giving a talk on the exciting developments in Linux gaming. 
 
-After years of anticipation, 
-Linux finally has some traction in the game dev industry. 
 Since 2013, things have only gotten exponentially better for gaming on Linux.
-So what does Linux gaming look like now, 
-and what developments are on the horizon?
+So what does Linux gaming look like now, and what developments are on the horizon?
 Come to this week's meeting to become an Ebic LINUX Gaimer!
 
 - Jeffery Russell ([@jrtechs](https://jrtechs.net))
