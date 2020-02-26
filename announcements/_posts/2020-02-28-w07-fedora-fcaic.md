@@ -9,7 +9,7 @@ location: "GOL-2620 (Med. DB Lab)"
 
 Hey RITlug!
 
-This week is a special meeting. The Fedora Community Action & Impact Coordinator, Marie Nordin, will be coming to give a talk to RITlug this Friday.
+This week is a special meeting. The Fedora Community Action & Impact Coordinator (FCAIC), Marie Nordin, will be coming to give a talk to RITlug this Friday.
 Marie is an active member of the [Fedora Design](https://fedoraproject.org/wiki/Design) and [Fedora Badges](https://badges.fedoraproject.org/) teams.
 One of her most recent contributions is the Fedora 31 wallpaper in conjunction with Máirín Duffy.
 
