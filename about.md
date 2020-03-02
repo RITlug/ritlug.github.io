@@ -24,20 +24,16 @@ RITlug also has a largely open-source governance process. Most of RITlug's gover
 ## Affiliates
 
 <div class="row" style="padding:1.2em;">
-    <div class="col-12 col-md-6 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-6">
         <img src="/img/affiliate-sponsor/ossn.svg" class="embed-responsive" alt="Mozilla Open Source Student Network" />
         <br />
         <p><i>"We’re a network of university students and clubs who share the belief that open source software – technology built with code that is open for view, use, and modification – is the engine that powers innovation."</i></p>
         <a href="https://opensource.mozilla.community/" target="_blank" class="btn btn-primary w-100 d-block">Learn More</a>
     </div>
-    <div class="col-12 col-md-6 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-6">
         <img src="/img/affiliate-sponsor/foss-magic-logo-official.png" class="embed-responsive" alt="Free and Open Source Software @ MAGIC"/>
         <br />
         <p>Free and open source software at the Rochester Institute of Technology.</p>
         <a href="https://fossrit.github.io/" target="_blank" class="btn btn-primary w-100 d-block">Learn More</a>
-    </div>
-    <div class="col-12 col-md-6 col-lg-4">
-        <img src="/img/affiliate-sponsor/sticker-mule-logo-light-bg-stacked.svg" class="embed-responsive" alt="StickerMule" />
-        <a href="https://www.stickermule.com/supports/you" target="_blank" class="btn btn-primary w-100 d-block">Visit</a>
     </div>
 </div>
