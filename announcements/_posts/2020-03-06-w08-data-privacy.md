@@ -15,6 +15,8 @@ If you are interested in learning about how companies track and use your informa
 We are in the process of booting up a project for Imagine RIT where we are implementing the IP stack over semaphore flags.
 If that sounds interesting to you, talk to an eboard member during the meeting or drop in the #semaphore channel on slack.
 
+If you are interested in some RITlug swag, please fill out [this](http://cglink.me/s27055) interest survey.
+
 Hope to see you all this week,
 
 - Jeffery Russell ([@jrtechs](https://jrtechs.net))
