@@ -2,6 +2,9 @@
 author: Henry Keena (@hkeena98)
 title: "Week #1: Welcome Back!!!"
 layout: post
+date-start: "2020-8-21 16:30"
+date-end: "2020-8-21 18:00"
+location: "Discord"
 ---
 
 Hello RITlug,
