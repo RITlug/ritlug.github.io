@@ -9,8 +9,9 @@ location: "Discord"
 
 Hey RITlug!
 
-For this week's meeting, we will have a recent RIT graduate, Nathaniel Larrimore, who will be giving a presention on Linux networking!
-Nathaniel graduated from RIT this past spring from the Networking and Systems Administration program, and is also a prior RITlug eboard member! He currently works at Arista Networks as a Technical Solutions Engineer.
+For this week's meeting, we will have a recent RIT graduate, Nathaniel Larrimore, who will be giving a presentation on Linux networking!
+Nathaniel graduated from RIT this past spring from the Networking and Systems Administration program, and is also a prior RITlug eboard member!
+He currently works at Arista Networks as a Technical Solutions Engineer.
 
 For this talk, Nathaniel will be giving an overview of his personal infrastructure, general networking basics, as well as giving plenty of Linux networking tips. 
 
