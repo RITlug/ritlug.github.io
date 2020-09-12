@@ -3,7 +3,7 @@ title: Fall 2020 - Personal Infrastructure
 author: Jeffery Russell
 layout: post
 slides: 2020-fall-w04-personal-infrastructure.pdf
-date: 2020-08-28
+date: 2020-09-11
 ---
 
 This week several eboard members presented on personal infrastructure.
