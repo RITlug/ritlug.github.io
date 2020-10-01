@@ -14,7 +14,7 @@
   * [Calendar & Placeholders](#calendar--placeholders)
 * [Updating meeting times / places](#updating-meeting-times--places)
 
-## About
+## About Us
 
 The website's last major update was Summer 2018, but content dates back to 2015.
 
@@ -150,7 +150,7 @@ Events _are_ added to the Calendar iCal, but are not added to an RSS Feed, auto-
 
 Events & Projects pages tend to use image gallery functionality.
 This can be done using the `images` frontmatter with an array of photos and including the `gallery`.
-The `images` parameter takes relative links to the RITlug site or absolute links for images hosted on other sites.
+The `images` parameter takes relative links to the RITlug sites or absolute links for images hosted on other sites.
 
 Example event page:
 ```
