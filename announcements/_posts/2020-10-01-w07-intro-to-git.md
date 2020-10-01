@@ -4,7 +4,7 @@ title: "Week #7: Intro to Git"
 layout: post-event
 date-start: "2020-10-01 16:30"
 date-end: "2020-10-01 18:00"
-location: "[Discord](https://discord.gg/xev2W62)"
+location: "Discord"
 ---
 
 Hey RITlug,
