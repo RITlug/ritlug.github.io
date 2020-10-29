@@ -1,6 +1,6 @@
 ---
 author: Jeffery Russell
-title: "Week #11: Linux Security"
+title: "Week #11: Dynamic Library Interception"
 layout: post-event
 date-start: "2020-10-30 16:30"
 date-end: "2020-10-30 18:00"
@@ -9,7 +9,7 @@ location: "Discord"
 
 Hey RITluggers,
 
-This week, we are diving into Linux security. Michael will discuss dynamic linking basics and how to intercept function calls on Linux for various beneficial, nefarious, and hilarious purposes.
+This week, we are diving into Linux security with the various uses and abuses of dynamic libraries on Linux. Michael will be discussing how dynamic libraries work and how to intercept function calls on Linux for various beneficial, nefarious, and hilarious purposes.
 
 Next week is RIT’s 1st Virtual and 10th Annual [Election Day Hackathon](https://ritelectionhackathon10.eventbrite.com/). The event will kick-off at 6:00 P.M. with a panel followed by breakout rooms where people will be working on civic projects. This is a great chance to relax, meet new people, and work on some fantastic projects.
 
