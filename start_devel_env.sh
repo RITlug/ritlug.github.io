@@ -14,5 +14,6 @@ fi
 docker run --rm \
     -p 4000:4000 \
     -v "$PWD:/srv/jekyll:Z" \
-    -it jekyll/jekyll:$JEKYLL_VERSION \
+    -v "$PWD/.bundle-cache:/usr/local/bundle" \
+    -it "jekyll/jekyll:$JEKYLL_VERSION" \
     sh -c "jekyll serve --watch"
