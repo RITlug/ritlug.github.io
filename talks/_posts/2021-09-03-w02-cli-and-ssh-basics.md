@@ -2,7 +2,7 @@
 title: Fall 2021 - CLI & SSH Basics
 author: Ben Goldberg
 layout: post
-slides: 2021-fall-w03-cli-and-ssh-basics.pdf
+slides: 2021-fall-w02-cli-and-ssh-basics.pdf
 date: 2021-09-03
 ---
 
