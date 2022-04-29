@@ -29,7 +29,7 @@ Whether you're joining us for the first time or the fifth time, there's multiple
 * Website:  http://ritlug.com
 * The Link: https://thelink.rit.edu/organization/Linux
 * Telegram: https://telegram.me/ritlugclub
-* IRC:      https://webchat.freenode.net/?channels=ritlug
+* IRC:      {{site.social.irc}}
 * Facebook: https://www.facebook.com/groups/RITLUG/
 
 If you join, make sure to say hello and let us know you're here!

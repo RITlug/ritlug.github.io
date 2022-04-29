@@ -24,7 +24,7 @@ RITlug is in a variety of places, but the best way to keep in touch with the com
 
 * **Website**:  http://ritlug.com
 * **Telegram**: https://telegram.me/ritlugclub
-* **IRC**:      https://webchat.freenode.net/?channels=ritlug
+* **IRC**:      {{site.social.irc}}
 * **Facebook**: https://www.facebook.com/groups/RITLUG/
 
 If you join, make sure to say hello and let us know you're here!

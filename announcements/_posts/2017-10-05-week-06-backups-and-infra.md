@@ -27,7 +27,7 @@ RITlug is in a variety of places, but the best way to keep in touch with the com
 * [CampusGroups](https://campusgroups.rit.edu/student_community?club_id=16071 "RITlug on CampusGroups")
 * [Website](http://ritlug.com "RIT Linux Users Group website")
 * [Telegram](https://t.me/ritlugclub "Join the Telegram group for RITlug")
-* [IRC](https://webchat.freenode.net/?channels=ritlug "Join the IRC channel for RITlug in a web client")
+* [IRC]({{site.social.irc}} "Join the IRC channel for RITlug in a web client")
 * [Facebook](https://www.facebook.com/groups/RITLUG/ "RITlug on Facebook - not super active!")
 
 If you join, make sure to say hello!

@@ -10,7 +10,7 @@ As a friendly reminder, we also have a few more ways that you can get involved w
 
 * Facebook: https://www.facebook.com/groups/RITLUG/
 * Telegram: https://telegram.me/joinchat/BVxlKADKpMbhHtgxKkdjSQ
-* IRC:      https://webchat.freenode.net/?channels=ritlug
+* IRC:      {{site.social.irc}}
 
 With this being the last week before finals, we've decided this week's meeting will be an open floor for the full two hours. Lightning talks are also welcome! If you have a "hot new thing" you want to present on in five minutes or less, there's never been a better time for it. Otherwise, we will be open to discussion and working on a variety of mixed topics in the meeting.
 
