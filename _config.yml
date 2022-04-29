@@ -23,3 +23,7 @@ future: true
 ritlug-time: 4:30PM - 6:00PM
 ritlug-place: GOL/70-2620 (Medium DB Lab)
 ritlug-day: Friday
+
+# this allows social links to also be easily updated
+social:
+  irc: https://webchat.freenode.net/?channels=ritlug
