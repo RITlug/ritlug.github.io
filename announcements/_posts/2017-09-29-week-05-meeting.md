@@ -49,9 +49,9 @@ RITlug is in a variety of places, but the best way to keep in touch with the com
 
 If you join, make sure to say hello!
 
-To make sure you're in the loop with what's happening with RITlug, make sure you're a member of our [mailing list](https://groups.google.com/forum/#!forum/ritlug-announce "RITlug mailing list - Google Groups"). This is the best way to receive future updates on what we're up to and where you can find us.
+To make sure you're in the loop with what's happening with RITlug, make sure you're a member of our [mailing list]({{site.social.mailinglist}} "RITlug mailing list - Google Groups"). This is the best way to receive future updates on what we're up to and where you can find us.
 
-**[groups.google.com/forum/#!forum/ritlug-announce](https://groups.google.com/forum/#!forum/ritlug-announce "RITlug mailing list - Google Groups")**
+**[groups.google.com/forum/#!forum/ritlug-announce]({{site.social.mailinglist}} "RITlug mailing list - Google Groups")**
 
 We hope to see you today. Sorry for the late email reminder. As always, keep the FOSS flag high!
 
