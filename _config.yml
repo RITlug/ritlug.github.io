@@ -26,6 +26,6 @@ ritlug-day: Friday
 
 # this allows social links to also be easily updated
 social:
-  irc: https://webchat.freenode.net/?channels=ritlug
+  irc: https://web.libera.chat/gamja/?channels=%23rit-lug
   mailinglist: https://groups.google.com/forum/#!forum/ritlug-announce
   discord: https://discord.gg/xev2W62
