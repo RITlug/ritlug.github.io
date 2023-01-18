@@ -2,8 +2,8 @@
 author: Ryan Schanzenbacher
 title: "Week #1: Introductions"
 layout: post-event
-date-start: "2022-10-28 16:30"
-date-end: "2022-10-28 18:00"
+date-start: "2023-01-20 16:30"
+date-end: "2023-01-20 18:00"
 location: "GOL-2455"
 ---
 
