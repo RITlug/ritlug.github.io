@@ -21,7 +21,7 @@ if [ ! -d ./.bundle-cache ]; then
 fi
 
 # Check if docker is installed
-if command -v podman &> /dev/null; then
+if command -v docker &> /dev/null; then
     DOCKER_INSTALLED=1
 fi
 
