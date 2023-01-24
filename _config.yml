@@ -21,7 +21,8 @@ future: true
 # is recommended that you follow the format already here when
 # updating them.
 ritlug-time: 4:30PM - 6:00PM
-ritlug-place: GOL/70-2620 (Medium DB Lab)
+#ritlug-place: GOL/70-2620 (Medium DB Lab)
+ritlug-place: GOL/70-2455
 ritlug-day: Friday
 
 # this allows social links to also be easily updated
