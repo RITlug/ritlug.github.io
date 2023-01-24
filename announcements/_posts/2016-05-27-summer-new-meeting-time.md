@@ -16,6 +16,6 @@ It may be summertime, but RITlug is still active over the summer! You can get mo
 
 * Facebook: https://www.facebook.com/groups/RITLUG/
 * Telegram: https://telegram.me/joinchat/BVxlKADKpMbhHtgxKkdjSQ
-* IRC:      https://webchat.freenode.net/?channels=ritlug
+* IRC:      {{site.social.irc}}
 
 Looking forward to seeing you all next semester. If you're an alumni or just graduated, don't be a stranger! Visitors are always welcome, and if you'd like to give a talk sometime, you're always welcome to stop by. Thanks everyone!

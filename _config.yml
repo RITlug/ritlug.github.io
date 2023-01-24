@@ -23,3 +23,9 @@ future: true
 ritlug-time: 4:30PM - 6:00PM
 ritlug-place: GOL/70-2620 (Medium DB Lab)
 ritlug-day: Friday
+
+# this allows social links to also be easily updated
+social:
+  irc: https://web.libera.chat/gamja/?channels=%23rit-lug
+  mailinglist: https://groups.google.com/forum/#!forum/ritlug-announce
+  discord: https://discord.gg/xev2W62

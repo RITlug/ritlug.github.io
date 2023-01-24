@@ -34,14 +34,14 @@ RITlug is in a variety of places, but the best way to keep in touch with the com
 * [CampusGroups](https://campusgroups.rit.edu/student_community?club_id=16071 "RITlug on CampusGroups")
 * [Website](http://ritlug.com "RIT Linux Users Group website")
 * [Telegram](https://t.me/ritlugclub "Join the Telegram group for RITlug")
-* [IRC](https://webchat.freenode.net/?channels=ritlug "Join the IRC channel for RITlug in a web client")
+* [IRC]({{site.social.irc}} "Join the IRC channel for RITlug in a web client")
 * [Facebook](https://www.facebook.com/groups/RITLUG/ "RITlug on Facebook - not super active!")
 
 If you join, make sure to say hello!
 
-To make sure you're in the loop with what's happening with RITlug, make sure you're a member of our [mailing list](https://groups.google.com/forum/#!forum/ritlug-announce "RITlug mailing list - Google Groups"). This is the best way to receive future updates on what we're up to and where you can find us.
+To make sure you're in the loop with what's happening with RITlug, make sure you're a member of our [mailing list]({{site.social.mailinglist}} "RITlug mailing list - Google Groups"). This is the best way to receive future updates on what we're up to and where you can find us.
 
-**[groups.google.com/forum/#!forum/ritlug-announce](https://groups.google.com/forum/#!forum/ritlug-announce "RITlug mailing list - Google Groups")**
+**[groups.google.com/forum/#!forum/ritlug-announce]({{site.social.mailinglist}} "RITlug mailing list - Google Groups")**
 
 We hope to see you this week! As always, keep the FOSS flag high!
 

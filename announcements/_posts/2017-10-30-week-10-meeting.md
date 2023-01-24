@@ -40,11 +40,11 @@ RITlug on CampusGroups")
 If you join, make sure to say hello!
 
 To get the bare minimum news about RITlug, make sure you're a member of our
-[mailing list](https://groups.google.com/forum/#!forum/ritlug-announce "RITlug 
+[mailing list]({{site.social.mailinglist}} "RITlug 
 mailing list - Google Groups"). This is the best way to receive future updates
 on what we're up to and where you can find us.
 
-**[groups.google.com/forum/#!forum/ritlug-announce](https://groups.google.com/forum/#!forum/ritlug-announce "RITlug mailing list - Google Groups")**
+**[groups.google.com/forum/#!forum/ritlug-announce]({{site.social.mailinglist}} "RITlug mailing list - Google Groups")**
 
 We hope to see you this week! As always, keep the FOSS flag high!
 
