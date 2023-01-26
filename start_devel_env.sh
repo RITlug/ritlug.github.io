@@ -98,8 +98,7 @@ case $ANDED in
             # [0m
             #   ∟ Resetting the color back to normal cause if you don't it'll stay the previous color
             # 
-            # Learn more here - https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
-            # If the link's broken then either search "ANSI Color Sequences" or wayback machine
+            # Learn more here - https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences (or https://archive.is/bMIsg)
 
             echo -e "Both Docker \033[1;31m(0)\033[0m and Podman \033[1;31m(1)\033[0m seem to be installed, which would you like to use?"
             echo -n -e "\033[1;31m(0, 1)\033[0m - "
