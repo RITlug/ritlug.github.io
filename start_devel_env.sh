@@ -10,6 +10,26 @@ PODMAN_INSTALLED=0
 
 choice=0
 
+function run_docker() {
+    # Serve the site via Docker and update site when files changed in repo
+    docker run --rm \
+        -p 4000:4000 \
+        -v "$PWD:/srv/jekyll:Z" \
+        -v "$PWD/.bundle-cache:/usr/local/bundle" \
+        -it "jekyll/jekyll:$JEKYLL_VERSION" \
+        sh -c "jekyll serve --watch"
+}
+
+function run_podman() {
+    # Serve the site via Podman and update site when files changed in repo
+    podman run --rm \
+        -p 4000:4000 \
+        -v "$PWD:/srv/jekyll:Z" \
+        -v "$PWD/.bundle-cache:/usr/local/bundle" \
+        -it "docker.io/jekyll/jekyll:$JEKYLL_VERSION" \
+        sh -c "jekyll serve --watch"
+}
+
 # Ensure _site directory is created for Jekyll engine
 if [ ! -d ./_site ]; then
     mkdir ./_site
@@ -21,7 +41,7 @@ if [ ! -d ./.bundle-cache ]; then
 fi
 
 # Check if docker is installed
-if command -v docker &> /dev/null; then
+if command -v podman &> /dev/null; then
     DOCKER_INSTALLED=1
 fi
 
@@ -39,24 +59,13 @@ case $ANDED in
         if (( $DOCKER_INSTALLED == 1 )); then
             echo "Detected Docker installation, using that..."
 
-            # Serve the site via Docker and update site when files changed in repo
-            docker run --rm \
-                -p 4000:4000 \
-                -v "$PWD:/srv/jekyll:Z" \
-                -v "$PWD/.bundle-cache:/usr/local/bundle" \
-                -it "jekyll/jekyll:$JEKYLL_VERSION" \
-                sh -c "jekyll serve --watch"
+            run_docker
 
         elif (( $PODMAN_INSTALLED ==1 )); then
             echo "Detected Podman installation, using that..."
 
-            # Serve the site via Podman and update site when files changed in repo
-            podman run --rm \
-                -p 4000:4000 \
-                -v "$PWD:/srv/jekyll:Z" \
-                -v "$PWD/.bundle-cache:/usr/local/bundle" \
-                -it "docker.io/jekyll/jekyll:$JEKYLL_VERSION" \
-                sh -c "jekyll serve --watch"
+            run_podman
+
         else
             echo "It appears you don't have Docker or Podman installed. Please ensure it is installed and proceed with running the development environment."
         fi
@@ -73,22 +82,10 @@ case $ANDED in
             # Caseing the choice for whether the user wants to use Podman or Docker
             case $choice in
                 0)
-                    # Serve the site via Docker and update site when files changed in repo
-                    docker run --rm \
-                        -p 4000:4000 \
-                        -v "$PWD:/srv/jekyll:Z" \
-                        -v "$PWD/.bundle-cache:/usr/local/bundle" \
-                        -it "jekyll/jekyll:$JEKYLL_VERSION" \
-                        sh -c "jekyll serve --watch"
+                    run_docker
                 ;;
                 1)
-                    # Serve the site via Podman and update site when files changed in repo
-                    podman run --rm \
-                        -p 4000:4000 \
-                        -v "$PWD:/srv/jekyll:Z" \
-                        -v "$PWD/.bundle-cache:/usr/local/bundle" \
-                        -it "docker.io/jekyll/jekyll:$JEKYLL_VERSION" \
-                        sh -c "jekyll serve --watch"
+                    run_podman
                 ;;
                 
                 # If the user entered an invalid option it'll exit
