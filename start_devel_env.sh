@@ -72,8 +72,35 @@ case $ANDED in
     ;;
     1)
         invalid=0
-
+        
+        # Looping the user input in case they input an invalid number
         while [ $invalid -eq 0 ]; do
+            # Goofy ANSI escape codes
+            # What they mean:
+            #
+            # Full string:
+            # \033[1;31m(0)\033[0m
+            #
+            # Broken down:
+            #
+            # \033
+            #   ∟ Escape character
+            #
+            # [1;31m
+            #   ∟ 1-Bold; 31m means red foreground
+            #
+            # (0)
+            #   ∟ The text displayed
+            #
+            # \033
+            #   ∟ Escape character
+            #
+            # [0m
+            #   ∟ Resetting the color back to normal cause if you don't it'll stay the previous color
+            # 
+            # Learn more here - https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
+            # If the link's broken then either search "ANSI Color Sequences" or wayback machine
+
             echo -e "Both Docker \033[1;31m(0)\033[0m and Podman \033[1;31m(1)\033[0m seem to be installed, which would you like to use?"
             echo -n -e "\033[1;31m(0, 1)\033[0m - "
             read choice
@@ -84,6 +111,7 @@ case $ANDED in
                 0)
                     run_docker
                 ;;
+
                 1)
                     run_podman
                 ;;
