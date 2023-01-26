@@ -87,7 +87,7 @@ case $ANDED in
             #   ∟ Escape character in ANSI telling the terminal "Hey there's a color sequence coming up"
             #
             # [1;31m
-            #   ∟ 1-Bold; 31m means red foreground `m` probablyy means end of sequence or something
+            #   ∟ 1-Bold; 31m means red foreground `m` probably means end of sequence or something
             #
             # (0)
             #   ∟ The text displayed
@@ -116,7 +116,7 @@ case $ANDED in
                     run_podman
                 ;;
                 
-                # If the user entered an invalid option it'll exit
+                # If the user entered an invalid option it'll loop
                 *)
                     echo "Invalid option selected, please try again. (Or press C-c to exit)..."
                     invalid=0
