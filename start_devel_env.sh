@@ -84,16 +84,16 @@ case $ANDED in
             # Broken down:
             #
             # \033
-            #   ∟ Escape character
+            #   ∟ Escape character in ANSI telling the terminal "Hey there's a color sequence coming up"
             #
             # [1;31m
-            #   ∟ 1-Bold; 31m means red foreground
+            #   ∟ 1-Bold; 31m means red foreground `m` probablyy means end of sequence or something
             #
             # (0)
             #   ∟ The text displayed
             #
             # \033
-            #   ∟ Escape character
+            #   ∟ Escape character in ANSI telling the terminal "Hey there's a color sequence coming up"
             #
             # [0m
             #   ∟ Resetting the color back to normal cause if you don't it'll stay the previous color
