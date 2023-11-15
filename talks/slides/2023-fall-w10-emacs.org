@@ -1,0 +1,482 @@
+* Emacs isn't a text editor, it's a lifestyle.
+- All hail Emacs.
+
+* Emacs? That sounds like an Apple™ thing.
+- Emacs stands for ​*E*​ditor ​*MAC*​ro​*S*​.
+- Emacs started as some macros for TECO (​*T*​ext ​*E*​ditor and ​*CO*​rrector)
+- Created in 1976 by some people, including Guy Steele.
+
+* Some stuff about Emacs.
+- Emacs is a graphical text editor
+  - ~-nw~ flag in case you gotta use a terminal
+- ~C-h t~ to start the tutorial
+  - Next slide will explain notation
+
+* Shortcuts.
+- ~C-h t~ to start the tutorial
+- Shortcuts show sequences of key presses
+  - The ~C-~ prefix represents the ~control~ key being held
+  - The ~M-~ prefix represents the ~alt~ (meta) key being held
+- Some more examples:
+  - ~C-p~, ~C-n~, ~C-f~, and ~C-b~ move the cursor thing up, down, rightward, and leftward respectively.
+  - Of course, you can make some shortcuts of your own.
+
+* Code Blocks
+#+BEGIN_SRC elisp
+  (message "Hello, World!")
+#+END_SRC
+
+#+RESULTS:
+: Hello, World!
+
+#+BEGIN_SRC python
+  def foo (n) :
+      if n == 0 :
+          return 1
+      return n * foo(n-1)
+  return foo(5)
+#+END_SRC
+
+#+RESULTS:
+: 120
+
+* Games
+[[./chess.png]]
+#+BEGIN_SRC elisp :results silent
+  (chess) ; With AI
+#+END_SRC
+
+#+BEGIN_SRC elisp :results silent
+  (chess '(nil)) ; No AI
+#+END_SRC
+
+#+BEGIN_SRC elisp :results silent
+  (chess-tutorial)
+#+END_SRC
+
+* Games
+#+BEGIN_SRC elisp :results silent
+  (slime-volleyball)
+#+END_SRC
+
+* Games
+There are a lot of games, ok?
+
+* XKCD
+#+BEGIN_SRC elisp :results silent
+  (xkcd-get 378)
+#+END_SRC
+
+#+BEGIN_SRC elisp :results silent
+  (butterfly)
+#+END_SRC
+
+* Calculator
+#+BEGIN_SRC elisp :results silent
+  (calc)
+#+END_SRC
+
+You can also just do a code block if you wanna.
+#+BEGIN_SRC python
+  return "The answer to life, the universe, and everything is %d." % (6 * 7)
+#+END_SRC
+
+#+RESULTS:
+: The answer to life, the universe, and everything is 42.
+
+* Tables
+#+PLOT: title:"Emacs vs Coolness" ind:1 ; C-c " g
+#+NAME: table1
+| Emacs Usage (hours/day) | "Coolness" |
+|-------------------------+------------|
+|                       0 |          0 |
+|                       1 |          1 |
+|                       2 |          4 |
+|                       3 |          9 |
+|                       4 |         16 |
+|                       5 |         25 |
+|                       6 |         36 |
+|                       7 |         49 |
+|                       8 |         64 |
+|                       9 |         81 |
+|                      10 |        100 |
+|                      11 |        121 |
+|                      12 |        144 |
+|                      13 |        169 |
+|                      14 |        196 |
+|                      15 |        225 |
+|                      16 |        256 |
+|                      17 |        289 |
+|                      18 |        324 |
+|                      19 |        361 |
+|                      20 |        400 |
+|                      21 |        441 |
+|                      22 |        484 |
+|                      23 |        529 |
+|                      24 |        576 |
+|                      25 |       1024 |
+#+TBLFM: $2=$1*$1
+#+TBLFM: @27$2=1024
+
+* Tables as input to code
+#+BEGIN_SRC python :var tab=table1
+  import functools
+  max_coolness = functools.reduce(lambda a,b: max(a,b[1]), tab, tab[0][1])
+  return max_coolness
+#+END_SRC
+
+#+RESULTS:
+: 1024
+
+* Tables as output from code
+#+BEGIN_SRC python
+  import random
+  tab = []
+  for j in range(4) :
+    tab.append([])
+    for i in range(4) :
+      tab[j].append(random.randint(0,9))
+  return tab
+#+END_SRC
+
+#+RESULTS:
+| 5 | 2 | 8 | 4 |
+| 2 | 0 | 9 | 9 |
+| 5 | 6 | 5 | 9 |
+| 3 | 2 | 4 | 7 |
+
+* Elisp (1)
+About time, eh?
+#+BEGIN_SRC elisp
+  (message "Hello, World!")
+#+END_SRC
+
+#+RESULTS:
+: Hello, World!
+
+- ~"LISP"~ = ~"Lots of Irritating Superfluous Parentheses"~
+- ~"E"~ = ~"Emacs"~
+
+- ~M-x ielm~ to run ~elisp~.
+- You can also run a line of ~elisp~ with ~C-x C-e~.
+
+* Elisp (2)
+Functions
+#+BEGIN_SRC elisp
+  (defun call-it-cool (thing) (message "%s is cool." thing))
+  (call-it-cool "Emacs")
+#+END_SRC
+
+#+RESULTS:
+: Emacs is cool.
+
+* Elisp (3)
+Lists
+#+BEGIN_SRC elisp :results value
+  (list 1 2 3
+        4 5 6
+        7 8 9)
+#+END_SRC
+
+#+RESULTS:
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+
+* Elisp (4)
+#+BEGIN_SRC elisp :results silent
+  (switch-to-buffer "*Messages*")
+#+END_SRC
+
+#+BEGIN_SRC elisp :results silent
+  (switch-to-buffer "*scratch*")
+  (goto-char (point-min))
+  (set-mark-command (point))
+  (goto-char (point-max))
+  (delete-active-region)
+#+END_SRC
+
+* Elisp (5)
+#+BEGIN_SRC elisp :results value
+    ( + 1 2 3
+      ( * 2 2 )
+    )
+#+END_SRC
+
+#+RESULTS:
+: 10
+
+* Elisp (6)
+#+BEGIN_SRC elisp :results value
+  (car '(1 2 7 3))
+#+END_SRC
+
+#+RESULTS:
+: 1
+
+#+BEGIN_SRC elisp :results value
+  (cdr '(1 2 7 3))
+#+END_SRC
+
+#+RESULTS:
+| 2 | 7 | 3 |
+
+* Elisp (7)
+#+BEGIN_SRC elisp :results value
+  (defun fac (n) (if (= n 0)
+         1
+         (* n (fac (- n 1)))
+  ))
+  (fac 5)
+#+END_SRC
+
+#+RESULTS:
+: 120
+
+* Elisp (8)
+#+BEGIN_SRC elisp :results value
+  (defun reduce (f l v)
+    (if l
+      (reduce f (cdr l) (funcall f v (car l)))
+      v
+    )
+  )
+  (reduce '+ '(8 6 7 5 3 0 9) 0)
+#+END_SRC
+
+#+RESULTS:
+: 38
+
+* Elisp (9)
+#+BEGIN_SRC elisp :results value
+  (seq-reduce '+ '(8 6 7 5 3 0 9) 0)
+#+END_SRC
+
+#+RESULTS:
+: 38
+
+#+BEGIN_SRC elisp :results value
+  (mapcar '1+ [1 2 3])
+#+END_SRC
+
+#+RESULTS:
+| 2 | 3 | 4 |
+
+* Elisp (10)
+#+BEGIN_SRC elisp :results silent
+  (defun example-interactive-function (x y s)
+    (interactive "nFirst Number: \nnSecond Number: \nMString: ")
+    (message "%d %s" (+ x y) s))
+  (call-interactively 'example-interactive-function)
+#+END_SRC
+
+* Elisp (11)
+Characters are like integers
+#+BEGIN_SRC elisp :results value
+  (- ?C ?A)
+#+END_SRC
+
+#+RESULTS:
+: 2
+
+#+BEGIN_SRC elisp :results value
+  ?A
+#+END_SRC
+
+#+RESULTS:
+: 65
+
+#+BEGIN_SRC elisp :results value
+  (kbd "C-x M-c M-🦋")
+#+END_SRC
+
+#+RESULTS:
+: [24 134217827 134347147]
+
+* Elisp (12)
+#+BEGIN_SRC elisp :results value
+  (list
+    (integerp 17)
+    (integerp '(1 2 3))
+    (sequencep '(1 2 3))
+    (sequencep 17)
+  )
+#+END_SRC
+
+#+RESULTS:
+| t | nil | t | nil |
+
+* Elisp (13)
+#+BEGIN_SRC elisp :results value
+  (list
+    (format "%c" (elt "Some text" 3))
+    (elt '(42 65 100 2) 2)
+  )
+#+END_SRC
+
+#+RESULTS:
+| e | 100 |
+
+* Elisp (14)
+#+BEGIN_SRC elisp :results value
+  (cons 1 (cons 2 (cons 3 (cons 4 nil))))
+#+END_SRC
+
+#+RESULTS:
+| 1 | 2 | 3 | 4 |
+
+#+BEGIN_SRC elisp :results value
+  '(1 . (2 . (3 . (4 . nil))))
+#+END_SRC
+
+#+RESULTS:
+| 1 | 2 | 3 | 4 |
+
+#+BEGIN_SRC elisp :results value
+  '(1 2 3 4)
+#+END_SRC
+
+#+RESULTS:
+| 1 | 2 | 3 | 4 |
+
+* Elisp (15)
+#+BEGIN_SRC elisp :results value
+  (setq counter-thing 0)
+  (setq string-thing "Some numbers:")
+  (while (< counter-thing 10)
+    (setq string-thing (format "%s %s" string-thing counter-thing))
+    (setq counter-thing (+ counter-thing 1))
+  )
+  string-thing
+#+END_SRC
+
+#+RESULTS:
+: Some numbers: 0 1 2 3 4 5 6 7 8 9
+
+* Elisp (16)
+#+BEGIN_SRC elisp :returns value
+  (let* ((a 12)
+         (b (* a 7))
+         (c (/ b 2)))
+    c
+  )
+#+END_SRC
+
+#+RESULTS:
+: 42
+
+* Elisp (17)
+#+BEGIN_SRC elisp :results silent
+  (set-background-color "black")
+  (set-foreground-color "green")
+#+END_SRC
+
+#+BEGIN_SRC elisp :results silent
+  (set-background-color "white")
+  (set-foreground-color "black")
+#+END_SRC
+
+#+BEGIN_SRC elisp :results silent
+  (set-background-color "#272822") ; Theme's Default
+  (set-foreground-color "white")
+#+END_SRC
+
+Nullam eu ante vel est convallis dignissim.
+Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.
+Nunc porta vulputate tellus.
+Nunc rutrum turpis sed pede.
+Sed bibendum.
+Aliquam posuere.
+Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.
+Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.
+Curabitur vulputate vestibulum lorem.
+Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia eros.
+Sed id ligula quis est convallis tempor.
+Curabitur lacinia pulvinar nibh.  Nam a sapien.
+
+* Elisp (18)
+#+BEGIN_SRC elisp :results silent
+  (highlight-regexp "[AaEeIiOoUu]" "hi-pink") ;M-s h r
+#+END_SRC
+
+#+BEGIN_SRC elisp :results silent
+  (unhighlight-regexp "[AaEeIiOoUu]") ;M-s h u
+#+END_SRC
+
+Nullam eu ante vel est convallis dignissim.
+Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.
+Nunc porta vulputate tellus.
+Nunc rutrum turpis sed pede.
+Sed bibendum.
+Aliquam posuere.
+Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.
+Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.
+Curabitur vulputate vestibulum lorem.
+Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia eros.
+Sed id ligula quis est convallis tempor.
+Curabitur lacinia pulvinar nibh.  Nam a sapien.
+
+* Elisp (19)
+#+BEGIN_SRC elisp :results silent
+  (highlight-changes-mode)
+#+END_SRC
+
+Nullam eu ante vel est convallis dignissim.
+Fusce suscipit, wisi nec facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis odio.
+Nunc porta vulputate tellus.
+Nunc rutrum turpis sed pede.
+Sed bibendum.
+Aliquam posuere.
+Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.
+Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet urna.
+Curabitur vulputate vestibulum lorem.
+Fusce sagittis, libero non molestie mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia eros.
+Sed id ligula quis est convallis tempor.
+Curabitur lacinia pulvinar nibh.  Nam a sapien.
+
+* Elisp (20)
+I ran ~lorem-ipsum-insert-paragraphs~ to get the [[https://en.wikipedia.org/wiki/Lorem_ipsum][Lorem Ipsum]].
+#+BEGIN_SRC elisp :results silent
+  (search-forward "•")
+  (lorem-ipsum-insert-paragraphs)
+  ; Make sure to click somewhere after the dot.
+  ; You wouldn't want lorem ipsum in your code, would you?
+  ; Also, be able to edit.
+#+END_SRC
+
+•
+
+* Terminal Emulators in Emacs
+#+BEGIN_SRC elisp :results silent
+  (term "/bin/zsh")
+#+END_SRC
+
+* EWW
+#+BEGIN_SRC elisp :results silent
+  (eww "https://www.google.com/")
+#+END_SRC
+
+* Some Org mode stuff I forgot about
+** Collapse with Tab
+- How many are checked? [3/5]
+  - [X] Check / Uncheck
+  - [ ] Check / Uncheck
+  - [X] Check / Uncheck
+  - [-] Check / Uncheck [1/2]
+    - [ ] Check / Uncheck
+    - [X] Check / Uncheck
+  - [X] Check / Uncheck
+
+* The End.
+
+* The End?
+
+* +The End+
+I'll keep going, then?
+#+BEGIN_SRC elisp :results silent
+  (setq number (% (+ (% (random) 10) 10) 10))
+  (defun guess-number       (guess) (interactive "nGuess: ") (if (= guess number) (message "You got it.") (if (> guess number) (call-interactively 'guess-number-hi) (call-interactively 'guess-number-lo))))
+  (defun guess-number-hi (guess) (interactive "nToo High: ") (if (= guess number) (message "You got it.") (if (> guess number) (call-interactively 'guess-number-hi) (call-interactively 'guess-number-lo))))
+  (defun guess-number-lo  (guess) (interactive "nToo Low: ") (if (= guess number) (message "You got it.") (if (> guess number) (call-interactively 'guess-number-hi) (call-interactively 'guess-number-lo))))
+  (call-interactively 'guess-number)
+#+END_SRC
+
+* The End!
