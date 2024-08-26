@@ -9,6 +9,6 @@ location: "GOL-2455"
 
 Hello everyone, and welcome to the fall semester at RIT! This week's meeting will be a chance for new and returning members to introduce themselves, and for eboard to quickly introduce the club and what we do.
 
-Due to a scheduling conflict, we have been moved upstairs this semester. LUG meetings will occur in Golisano room 2455 from 4:30 PM to 6:00 PM.
+Due to a scheduling conflict, we have been moved upstairs this semester. We will be meeting this Friday and all subsequent Fridays in Golisano room 2455 from 4:30 PM to 6:00 PM.
 
 See you all there!
