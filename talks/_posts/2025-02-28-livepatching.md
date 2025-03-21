@@ -1,5 +1,5 @@
 ---
-title: Spring 2025 Week 5 - Text Processing
+title: Spring 2025 Week 7 - Kernel Livepatching
 author: Simon Kadesh
 layout: post
 slides: 2025-spring-w07-livepatching.pdf
