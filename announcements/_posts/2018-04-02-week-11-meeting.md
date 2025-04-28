@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Introduction to Swift - April 6, 4pm"
 layout: post
 date: 2018-04-02
@@ -56,5 +56,5 @@ list - Google Groups").
 We hope to see you this week! As always, keep the FOSS flag high.
 
 Cheers,
-- Justin W. Flory (jwf / jflory)
+- Justin Wheeler (jwheel)
 

@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Help RITlug choose our new logo!"
 layout: post
 ---
@@ -24,4 +24,4 @@ Don't forget that we have our [meeting on backups](http://ritlug.com/announcemen
 
 
 Cheers,
-- Justin W. Flory (jflory7 / jwf)
+- Justin Wheeler (jwheel)

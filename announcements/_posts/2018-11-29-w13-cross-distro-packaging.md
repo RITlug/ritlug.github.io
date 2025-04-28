@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory (@jwf / @jflory7)
+author: Justin Wheeler
 title: "Welcome, new & old alike!"
 layout: post-event
 date-start: "2018-11-30 16:00"
@@ -25,7 +25,7 @@ We hope to see you at this week's meeting.
 If you aren't in our Slack already, don't forget to come and say hello!
 
 Cheers,
-- Justin W. Flory (jwf / jflory7)
+- Justin Wheeler (jwheel)
 
 
 **Upcoming Events:**

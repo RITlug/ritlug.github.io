@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Fall 2016 Week 10: What is a LAMP stack?"
 layout: post
 ---
@@ -37,4 +37,4 @@ Also, to ensure you receive the latest news from RITlug, make sure you're a memb
 Hope to see you all in the meeting! Feel free to reach out if you have comments, questions, or concerns. As always, keep the FOSS flag high!
 
 Cheers,
-- Justin W. Flory (jflory7)
+- Justin Wheeler (jwheel)
