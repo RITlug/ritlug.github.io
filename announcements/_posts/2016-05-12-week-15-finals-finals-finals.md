@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Spring Week 15: Last meeting of the year"
 layout: post
 ---

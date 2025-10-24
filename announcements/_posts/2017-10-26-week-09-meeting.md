@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Hacktoberfest is here, and we can help! - Oct. 26, 4pm"
 layout: post
 date: 2017-10-26
@@ -10,14 +10,14 @@ Hey RITluggers!
 We're flying into Week 9 already, and October is almost over. Maybe you're
 planning your costume, stocking up on candy, or trying to get your last few
 contributions in for
-[Hacktoberfest](https://hacktoberfest.digitalocean.com/ "Hacktoberfest 2017 - 
+[Hacktoberfest](https://hacktoberfest.digitalocean.com/ "Hacktoberfest 2017 -
 DigitalOcean")!
-And this week, RITlug is here to help (with your hacks, not your candy). 
+And this week, RITlug is here to help (with your hacks, not your candy).
 
 
 ### Hacktoberfest Procrasti-fest
 
-Every year, DigitalOcean and GitHub partner up for 
+Every year, DigitalOcean and GitHub partner up for
 [Hacktoberfest](https://hacktoberfest.digitalocean.com/ "Hacktoberfest 2017 -
 DigitalOcean"). The goal? Make four contributions to any open source project on
 GitHub in October. If you do it, DigitalOcean sends you free stickers and a
@@ -56,7 +56,7 @@ RITlug on CampusGroups")
 If you join, make sure to say hello!
 
 To get the bare minimum news about RITlug, make sure you're a member of our
-[mailing list]({{site.social.mailinglist}} "RITlug 
+[mailing list]({{site.social.mailinglist}} "RITlug
 mailing list - Google Groups"). This is the best way to receive future updates
 on what we're up to and where you can find us.
 
@@ -66,4 +66,4 @@ We hope to see you this week! As always, keep the FOSS flag high!
 
 
 Cheers,
-- Justin W. Flory (jflory7 / jwf)
+- Justin Wheeler (jwheel)
