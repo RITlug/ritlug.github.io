@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Women in Open Source - Oct. 20th, 4pm"
 layout: post
 date: 2017-10-16
@@ -47,4 +47,4 @@ We hope to see you this week! As always, keep the FOSS flag high!
 
 
 Cheers,
-- Justin W. Flory (jflory7 / jwf)
+- Justin Wheeler (jwheel)
