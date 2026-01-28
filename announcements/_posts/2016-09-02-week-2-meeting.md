@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Fall 2016 Week 2: First meeting of the year"
 layout: post
 ---
@@ -46,7 +46,7 @@ We're also hoping to introduce new member services for RITluggers this year! We 
 
 === 2016-2017 Eboard ===
 
-* President: Justin W. Flory
+* President: Justin Wheeler
 * Vice President: Solomon Rubin
 
 This year, we will only have one member of eboard on campus at a time. I will be here during this semester for meetings and talks. Solomon is on co-op this semester, but will return in January. Hopefully you will all have a chance to meet Solomon before then if you have not already!
