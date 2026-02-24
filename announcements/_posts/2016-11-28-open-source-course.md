@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Add open source to your courses"
 layout: post
 ---
@@ -12,7 +12,6 @@ As a reminder, this Friday (Dec. 2, 2016) will be the "Open Source 101" meeting!
 
 Additionally, did you know that RIT actually has a minor in Free and Open Source Software? If you want a course on FOSS that also counts as a gen-ed elective and towards the FOSS minor, you can check out this course in SIS / Tiger Center!
 
- 
 * IGME 582-01 M-W-F, 9:00am-9:50am, Joe Anderson
 * Humanitarian Free and Open Source Software Development
 * Make open source content educational games for the developing world! (qualifies as gen-ed)
@@ -48,4 +47,4 @@ Also, to ensure you receive the latest news from RITlug, make sure you're a memb
 Keep the FOSS flag high! Hope to see you on Friday.
 
 Cheers,
-- Justin W. Flory (jflory7)
+- Justin Wheeler (jwheel)

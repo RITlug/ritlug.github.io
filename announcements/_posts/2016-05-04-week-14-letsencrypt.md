@@ -1,12 +1,12 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Spring Week 14: LetsEncrypt"
 layout: post
 ---
 
 Welcome to Week 14, RITluggers! Hope everyone's week is going well so far.
 
-In case you missed it, our new Eboard was officially elected at our last meeting. The 2016-2017 President is Justin W. Flory and Vice President is Solomon Rubin. For this week and the next, we'll be getting a headstart into running the club.
+In case you missed it, our new Eboard was officially elected at our last meeting. The 2016-2017 President is Justin Wheeler and Vice President is Solomon Rubin. For this week and the next, we'll be getting a headstart into running the club.
 
 As of this week, we also have a few more ways that you can get involved with RITlug! We set up a bridge between our IRC channel and our new Telegram group. Here's the links for all of them if you want to join us!
 

@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Election Night Hackathon: November 8, 5pm-11:30pm"
 layout: post
 ---
@@ -17,4 +17,4 @@ Pizza and other consumables will be provided. Please RSVP so we know how much to
 Hope to see you there!
 
 Cheers,
-- Justin W. Flory (jflory7)
+- Justin Wheeler (jwheel)

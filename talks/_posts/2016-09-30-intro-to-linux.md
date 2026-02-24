@@ -1,6 +1,6 @@
 ---
 title: Fall 2016 - Introduction to Linux
-author: Justin W. Flory
+author: Justin Wheeler
 layout: post
 slides: 2016-w06-fall-intro-to-linux.pdf
 date: 2016-09-30

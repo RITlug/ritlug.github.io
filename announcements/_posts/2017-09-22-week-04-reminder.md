@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Reminder: Build your first virtual reality experience!"
 layout: post
 ---
@@ -23,5 +23,5 @@ Hope to see you today! As always, keep the FOSS flag high. 💯💯💯
 
 
 Cheers,
-- Justin W. Flory (jflory7 / jwf)
+- Justin Wheeler (jwheel)
 
