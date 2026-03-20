@@ -38,7 +38,7 @@ get_dep () {
 	then
 		return 0
 	fi
-	package="$({[ -n "$3" ] && [ -n "$nix" ] && echo "$3"} || echo "$2")"
+	package="$({ [ -n "$3" ] && [ -n "$nix" ] && echo "$3" ; } || echo "$2")"
 	MISSING_DEPS="$MISSING_DEPS${MISSING_DEPS+ }$package"
 }
 
