@@ -8,8 +8,7 @@ case "$0" in
 		"$tmp"
 		exit $?
 		;;
-	*sh)
-		</dev/tty
+	*[^.]sh|sh)
 		export tmp="$(mktemp "${TMP:-/tmp}/presentation.XXXXXX")"
 		cat > "$tmp"
 		chmod +x "$tmp"
@@ -38,8 +37,8 @@ get_dep () {
 	then
 		return 0
 	fi
-	package="$({ [ -n "$3" ] && [ -n "$nix" ] && echo "$3" ; } || echo "$2")"
-	MISSING_DEPS="$MISSING_DEPS${MISSING_DEPS+ }$package"
+	package="$({ [ -n "${3:-}" ] && [ -n "${nix:-}" ] && echo "$3" ; } || echo "$2")"
+	MISSING_DEPS="${MISSING_DEPS:-}${MISSING_DEPS+ }$package"
 }
 
 first () {
@@ -265,7 +264,7 @@ do
 				stepped '1 line in file = 1 command in terminal'
 				get_any
 				script_test bash bash '
-< /dev/urandom tr -d -c [:graph:] | head -c 32'
+< /dev/urandom tr -d -c "[:graph:]" | head -c 32'
 				;;
 			9)
 				title 'Other scripting languages'
