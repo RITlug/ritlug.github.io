@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "2018-2019 Eboard nominations open"
 layout: post
 date: 2018-03-30
@@ -55,5 +55,5 @@ Looking forward to the election in Week 12. See you in RITlug today!
 As always, keep the FOSS flag high.
 
 Cheers,
-- Justin W. Flory (jwf / jflory)
+- Justin Wheeler (jwheel)
 

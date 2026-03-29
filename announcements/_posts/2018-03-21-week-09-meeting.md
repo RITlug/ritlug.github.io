@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Unify your local music library - March 23, 4:30pm"
 layout: post
 date: 2018-03-21
@@ -56,5 +56,5 @@ list - Google Groups").
 We hope to see you this week!
 
 Cheers,
-- Justin W. Flory (jflory7 / jwf)
+- Justin Wheeler (jwheel)
 

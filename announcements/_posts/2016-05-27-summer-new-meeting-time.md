@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Choosing next year's RITlug meeting time"
 layout: post
 ---
