@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Fall 2016 Week 4: Meeting canceled"
 layout: post
 ---
@@ -30,4 +30,4 @@ Also, to ensure you receive the latest news from RITlug, make sure you're a memb
 
 Thanks for your patience this week, everyone. Looking forward to seeing you later this month! Feel free to reach out if you have comments, questions, or concerns. Keep the FOSS flag high!
 
-- Justin (jflory7)
+- Justin (jwheel)

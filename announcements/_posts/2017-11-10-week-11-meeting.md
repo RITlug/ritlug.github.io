@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Freedom From State - Nov. 3, 4pm"
 layout: post
 date: 2017-11-10
@@ -49,7 +49,7 @@ RITlug on CampusGroups")
 If you join, make sure to say hello!
 
 To get the bare minimum news about RITlug, make sure you're a **member of our
-[mailing list]({{site.social.mailinglist}} "RITlug 
+[mailing list]({{site.social.mailinglist}} "RITlug
 mailing list - Google Groups")**. This is the best way to receive future updates
 on what we're up to and where you can find us.
 
@@ -59,5 +59,5 @@ We hope to see you this week! As always, keep the FOSS flag high!
 
 
 Cheers,
-- Justin W. Flory (jflory7 / jwf)
+- Justin Wheeler (jwheel)
 
