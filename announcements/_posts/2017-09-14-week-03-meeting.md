@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Open source is an ocean, but don't get lost!"
 layout: post
 ---
@@ -37,4 +37,4 @@ We hope to see you this Friday. As always, keep the FOSS flag high!
 
 
 Cheers,
-- Justin W. Flory (jflory7 / jwf)
+- Justin Wheeler (jwheel)
