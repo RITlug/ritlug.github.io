@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Save the world with LetsEncrypt and free encryption"
 layout: post
 ---
@@ -57,4 +57,4 @@ We hope to see you today. Sorry for the late email reminder. As always, keep the
 
 
 Cheers,
-~ Justin W. Flory (jflory7 / jwf)
+~ Justin Wheeler (jwheel)

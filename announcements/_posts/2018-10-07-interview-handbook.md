@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory (@jwf / @jflory7)
+author: Justin Wheeler
 title: "Ace your interviews and get the offer"
 layout: post
 ---
@@ -63,4 +63,4 @@ These resources have helped me countless times and I hope they will also help yo
 As a gentle reminder, RITlug will be back this coming Friday with a Hacktoberfest-themed meeting.
 Stay tuned for more information in a future email.
 
-- Justin W. Flory (jwf / jflory7)
+- Justin Wheeler (jwheel)

@@ -1,6 +1,6 @@
 ---
 title: Encrypt ALL the things with LetsEncrypt
-author: Justin W. Flory, Solomon Rubin
+author: Justin Wheeler, Solomon Rubin
 layout: post
 slides: 2016-spring-letsencrypt.pdf
 date: 2016-05-06

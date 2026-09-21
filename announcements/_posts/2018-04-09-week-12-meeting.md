@@ -1,5 +1,5 @@
 ---
-author: Justin W. Flory
+author: Justin Wheeler
 title: "Open Source 101 - April 13, 4pm"
 layout: post
 date: 2018-04-09
@@ -67,5 +67,5 @@ list - Google Groups").
 We hope to see you this week! As always, keep the FOSS flag high.
 
 Cheers,
-- Justin W. Flory (jwf / jflory)
+- Justin Wheeler (jwheel)
 

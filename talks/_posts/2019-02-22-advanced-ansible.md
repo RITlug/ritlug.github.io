@@ -1,6 +1,6 @@
 ---
 title: "Advanced Ansible: better infrastructure"
-author: Justin W. Flory
+author: Justin Wheeler
 layout: post
 slides: 2019-spring-w06-advanced-ansible.pdf
 ---
